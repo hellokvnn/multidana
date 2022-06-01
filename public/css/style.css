@@ -1,0 +1,143 @@
+/* Navbar */
+.nav-link {
+    font-family: Inter;
+    font-size: 16px;
+    color: #A00043;
+    font-weight: bold;
+    margin-right: 25px;
+}
+/* End Navbar */
+
+/* Carousel */
+.carousel-inner {
+    margin-top: 50px;
+    border-radius: 12px
+}
+
+.carousel-indicators {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+/* End Carousel */
+
+/* Container Heading */
+.heading {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    text-align: center;
+    color: #A00043;
+}
+
+.heading h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.heading h5 {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+/* End Container Heading */
+
+/* Card */
+.card {
+    background-color: #A00043;
+    color: #ffff;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.card h4 {
+    margin-top: 10px;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+/* End Card */
+
+/* Container Logo */
+.logo {
+    margin-top: 150px;
+}
+
+.logo-heading {
+    font-family: Inter;
+    color: #A00043;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.logo-heading h2 {
+    font-size: 25px;
+}
+
+/* End Container Logo */
+
+
+/* Dekstop Version */
+@media (min-width: 992px) {
+
+    /* .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #A00043;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    } */
+
+    .nav-link.active {
+        background-color: #A00043;
+        border-radius: 40px;
+        color: #ffff !important;
+    }
+
+
+/* Card */
+.card {
+    background-color: #A00043;
+    color: #ffff;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.card h4 {
+    margin-top: 10px;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+/* End Card */
+}
