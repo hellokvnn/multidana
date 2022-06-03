@@ -20,21 +20,21 @@
 
     {{-- Carousel --}}
     <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/test.jpg" width="500px" height="400px" class="d-block w-100" alt="carousel">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="images/test.jpg" width="500px" height="400px" class="d-block w-100" alt="test">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/test2.jpg" width="500px" height="400px" class="d-block w-100" alt="test2">
               </div>
               <div class="carousel-item">
-                <img src="images/test2.jpg" width="500px" height="400px" class="d-block w-100" alt="carousel">
-              </div>
-              <div class="carousel-item">
-                <img src="images/test3.jpg" width="500px" height="400px" class="d-block w-100" alt="carousel">
+                <img src="images/test3.jpg" width="500px" height="400px" class="d-block w-100" alt="test3">
               </div>
             </div>
           </div>
@@ -114,7 +114,9 @@
         </div>
     {{-- End Card --}}
 
-    <div class="container logo">
+    <div class="container-lg-fluid logo">
+      <img src="images/lb.png" alt="lb" class="rounded float-start">
+      <img src="images/rb.png" alt="rb" class="rounded float-end">
       <img src="images/logo2.png" alt="logo2" class="rounded mx-auto d-block">
     </div>
 

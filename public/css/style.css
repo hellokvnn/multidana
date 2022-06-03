@@ -89,6 +89,10 @@
     font-size: 25px;
 }
 
+.logo img {
+    width: 150px;
+    height: 150px;
+}
 /* End Container Logo */
 
 
@@ -110,34 +114,38 @@
         color: #ffff !important;
     }
 
+    /* Card */
+    .card {
+        background-color: #A00043;
+        color: #ffff;
+        margin-top: 30px;
+        border-radius: 15px;
+    }
 
-/* Card */
-.card {
-    background-color: #A00043;
-    color: #ffff;
-    margin-top: 30px;
-    border-radius: 15px;
-}
+    .card img {
+        width: 100px;
+        height: 100px;
+        margin-top: 25px;
+    }
 
-.card img {
-    width: 100px;
-    height: 100px;
-    margin-top: 25px;
-}
+    .card h4 {
+        margin-top: 10px;
+        font-family: Inter;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+    }
 
-.card h4 {
-    margin-top: 10px;
-    font-family: Inter;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center;
-}
+    .card p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+    /* End Card */
 
-.card p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    text-align: center;
-}
-/* End Card */
+    .logo img {
+        width: auto;
+        height: auto;
+    }
 }
