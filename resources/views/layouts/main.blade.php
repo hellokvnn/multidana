@@ -4,14 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Multidana | {{ $title }}</title>
+    {{-- Bootstap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    {{-- End Bootsrap --}}
+
     {{-- My Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    {{-- End My Fonts --}}
+
     {{-- CSS --}}
     <link rel="stylesheet" href="css/style.css">
+    {{-- End CSS --}}
 </head>
 <body>
     {{-- Navbar --}}
@@ -41,79 +47,82 @@
     </div>
     {{-- End Carousel --}}
 
+    {{-- Container Heading --}}
     <div class="container heading">
         <h2><Strong>Pulsa Retail</Strong></h2>
         <h5>Web Report Transaksi</h5>
     </div>
+    {{-- End Container Heading --}}
 
     {{-- Card --}}
-        <div class="container">
+    <div class="container">
 
-          {{-- Info Card --}}
-          <div class="row justify-content-center">
-            <div class="col-sm-3">
-              <div class="card" style="width: 20rem; height: 17rem">
-                <img src="images/hp.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
-                <div class="card-body">
-                  <h4>Pulsa Telepon</h4>
-                  <p class="card-text">Produk Pulsa Retail <br>Terbaik</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card" style="width: 20rem; height: 17rem">
-                <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
-                <div class="card-body">
-                  <h4>PLN TV Kabel Data</h4>
-                  <p class="card-text">Pembayaran listrik, tv kabel dan <br> data seluler</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card" style="width: 20rem; height: 17rem">
-                <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
-                <div class="card-body">
-                  <h4>Voucher Game</h4>
-                  <p class="card-text">Produk Game Online Terbaik</p>
-                </div>
-              </div>
+      {{-- Info Card --}}
+      <div class="row justify-content-center">
+        <div class="col-sm-3">
+          <div class="card" style="width: 20rem; height: 17rem">
+            <img src="images/hp.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
+            <div class="card-body">
+              <h4>Pulsa Telepon</h4>
+              <p class="card-text">Produk Pulsa Retail <br>Terbaik</p>
             </div>
           </div>
-
-          <div class="row justify-content-center">
-            <div class="col-sm-3">
-              <div class="card" style="width: 20rem; height: 17rem">
-                <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
-                <div class="card-body">
-                  <h4>Produk Multibiller</h4>
-                  <p class="card-text">Produk Multibiller dan <br> Pascabyar</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card" style="width: 20rem; height: 17rem">
-                <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
-                <div class="card-body">
-                  <h4>Top-Up E-Money</h4>
-                  <p class="card-text">Gopay, Ovo, Dana, Shopeepay</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card" style="width: 20rem; height: 17rem">
-                <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
-                <div class="card-body">
-                  <h4>Tiket Kereta</h4>
-                  <p class="card-text">Produk Tiket Kereta Api <br> Terbaik</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{-- End Info Card --}}
-
         </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 20rem; height: 17rem">
+            <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
+            <div class="card-body">
+              <h4>PLN TV Kabel Data</h4>
+              <p class="card-text">Pembayaran listrik, tv kabel dan <br> data seluler</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 20rem; height: 17rem">
+            <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
+            <div class="card-body">
+              <h4>Voucher Game</h4>
+              <p class="card-text">Produk Game Online Terbaik</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-sm-3">
+          <div class="card" style="width: 20rem; height: 17rem">
+            <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
+            <div class="card-body">
+              <h4>Produk Multibiller</h4>
+              <p class="card-text">Produk Multibiller dan <br> Pascabyar</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 20rem; height: 17rem">
+            <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
+            <div class="card-body">
+              <h4>Top-Up E-Money</h4>
+              <p class="card-text">Gopay, Ovo, Dana, Shopeepay</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card" style="width: 20rem; height: 17rem">
+            <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
+            <div class="card-body">
+              <h4>Tiket Kereta</h4>
+              <p class="card-text">Produk Tiket Kereta Api <br> Terbaik</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{-- End Info Card --}}
+
+    </div>
     {{-- End Card --}}
 
+    {{-- Container Logo --}}
     <div class="container-lg-fluid logo">
       <img src="images/lb.png" alt="lb" class="rounded float-start">
       <img src="images/rb.png" alt="rb" class="rounded float-end">
@@ -123,6 +132,65 @@
     <div class="container logo-heading">
       <h2><strong>Beragam Layanan Multidana Payment</strong></h2>
     </div>
+
+    <div class="container search-box border border-danger navbar-expand">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Cari Layanan Multidana">
+        <button><img src="images/search.png" alt="search"></button>
+      </form>
+   </div>
+   {{-- End Container Logo --}}
+
+   {{-- Card 2 --}}
+   <div class="container-fluid">
+    
+      <div class="row justify-content-center">
+        <div class="col-sm-3 rounded float-start">
+          <div class="card-2" style="width: 20rem; height: 25rem">
+            <img src="images/server.png" class="card-img-top rounded mx-auto d-block" alt="server">
+            <div class="card-body">
+              <h4>About</h4>
+              <p class="card-text">Multidana merupakan bisnis server pulsa <br>
+                yang berdiri sejak tahun 2017. menjadi <br>
+                bagian dari Multidana Machine membuat <br>
+                server ini menjadi server yang bisa <br>
+                diandalkan dalam menyajikan produk <br>
+                pulsa H2H.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 rounded mx-auto d-block">
+          <div class="card-2" style="width: 20rem; height: 25rem">
+            <img src="images/layanan.png" class="card-img-top rounded mx-auto d-block" alt="layanan">
+            <div class="card-body">
+              <h4>Service</h4>
+              <p class="card-text">Pelayanan terbaik akan selalu kami <br>
+                berikan demi menjaga kenyaman pembeli <br>
+                dan mitra yang sudah mempercayai kami <br>
+                sedari lama. Layanan Costumer Service <br>
+                tersedia selama 24 jam hanya untuk<br>
+                anda.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 rounded float-end">
+          <div class="card-2" style="width: 20rem; height: 25rem">
+            <img src="images/hp2.png" class="card-img-top rounded mx-auto d-block" alt="hp2">
+            <div class="card-body">
+              <h4>Produk</h4>
+              <p class="card-text">Produk yang kami sediakan beraneka <br>
+                ragam dimulai dari pulsa telepon, data <br>
+                seluler, pembayaran PLN dan TV Kabel, <br>
+                juga tidak lupa menyediakan voucher <br>
+                game terbaik untuk pembeli dan mitra <br>
+                kami.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   </div>
+   {{-- End Card 2 --}}
 
     <div class="container mt-4">
         @yield('container')
