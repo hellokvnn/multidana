@@ -124,9 +124,9 @@
 
     {{-- Container Logo --}}
     <div class="container-lg-fluid logo">
-      <img src="images/lb.png" alt="lb" class="rounded float-start">
-      <img src="images/rb.png" alt="rb" class="rounded float-end">
       <img src="images/logo2.png" alt="logo2" class="rounded mx-auto d-block">
+      <img src="images/lb.png" alt="lb" class="rounded float-start"> 
+      <img src="images/rb.png" alt="rb" class="rounded float-end"> 
     </div>
 
     <div class="container logo-heading">
@@ -191,6 +191,29 @@
 
    </div>
    {{-- End Card 2 --}}
+
+   {{-- Jumbotron --}}
+   <div class="jumbotron jumbotron-fluid">
+     <div class="container">
+       <h1 class="display-4">Alasan Memilih Multidana</h1>
+        <div class="container">
+          <img src="images/icon.png" class="rounded mx-lg-auto d-block" alt="icon">
+        </div>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/PZMUjzaLC6Q?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="reason">
+          <h5>Jaringan Nasional <br> Terluas</h5>
+          <p>Multidana Payment hadir di <span> Kota <br>
+             Makasar </span> Provinsi <span> Sulawesi <br>
+             Selatan </span> dengan layanan tersebar <br>
+             di seluruh kota besar di <br>
+             Indonesia.</p>
+            <button type="button" class="btn btn-light">Selengkapnya</button>
+        </div>
+       </div>
+     </div>
+   </div>
+
+   {{-- End Jumbotron --}}
 
     <div class="container mt-4">
         @yield('container')
