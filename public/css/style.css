@@ -31,13 +31,13 @@
 
 .heading h2 {
     text-transform: uppercase;
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
-.heading h5 {
+.heading p {
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 500;
 }
 /* End Container Heading */
@@ -52,8 +52,7 @@
 }
 
 .card img {
-    width: 100px;
-    height: 100px;
+    object-fit: none;
     margin-top: 25px;
 }
 
@@ -104,7 +103,6 @@
     display: flex;
     align-items: center;
     padding: 5px;
-
 }
 
 .search-box > form {
@@ -150,7 +148,6 @@ form:active::after {
 
 .card-2 img {
     object-fit: none;
-    height: 200px;
     margin-top: 30px;
 }
 
@@ -227,10 +224,28 @@ form:active::after {
     font-family: Inter;
     color: #A00043;
     font-weight: bold;
-
 }
 /* End Jumbotron */
 
+/* Heading 2*/
+.heading-2 {
+    margin-top: 150px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #A00043;
+}
+
+.heading-2 h2 {
+    font-weight: bolder;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.heading-2 p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* End Heading 2*/
 
 /* Dekstop Version */
 @media (min-width: 992px) {

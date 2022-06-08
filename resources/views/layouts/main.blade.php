@@ -26,38 +26,36 @@
 
     {{-- Carousel --}}
     <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="images/test.jpg" width="500px" height="400px" class="d-block w-100" alt="test">
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="2000">
-                <img src="images/test.jpg" width="500px" height="400px" class="d-block w-100" alt="test">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/test2.jpg" width="500px" height="400px" class="d-block w-100" alt="test2">
-              </div>
-              <div class="carousel-item">
-                <img src="images/test3.jpg" width="500px" height="400px" class="d-block w-100" alt="test3">
-              </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/test2.jpg" width="500px" height="400px" class="d-block w-100" alt="test2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/test3.jpg" width="500px" height="400px" class="d-block w-100" alt="test3">
             </div>
           </div>
+        </div>
     </div>
     {{-- End Carousel --}}
 
     {{-- Container Heading --}}
     <div class="container heading">
         <h2><Strong>Pulsa Retail</Strong></h2>
-        <h5>Web Report Transaksi</h5>
+        <p>Web Report Transaksi</p>
     </div>
     {{-- End Container Heading --}}
 
-    {{-- Card --}}
+    {{-- Info Card --}}
     <div class="container">
-
-      {{-- Info Card --}}
       <div class="row justify-content-center">
         <div class="col-sm-3">
           <div class="card" style="width: 20rem; height: 17rem">
@@ -117,8 +115,6 @@
           </div>
         </div>
       </div>
-      {{-- End Info Card --}}
-
     </div>
     {{-- End Card --}}
 
@@ -141,7 +137,7 @@
    </div>
    {{-- End Container Logo --}}
 
-   {{-- Card 2 --}}
+   {{-- Info Card 2 --}}
    <div class="container-fluid">
     
       <div class="row justify-content-center">
@@ -190,7 +186,7 @@
       </div>
 
    </div>
-   {{-- End Card 2 --}}
+   {{-- End Info Card 2 --}}
 
    {{-- Jumbotron --}}
    <div class="jumbotron jumbotron-fluid">
@@ -212,8 +208,78 @@
        </div>
      </div>
    </div>
-
    {{-- End Jumbotron --}}
+   
+   {{-- Container Heading --}}
+   <div class="container heading-2">
+    <h2><Strong>Pulsa H2H</Strong></h2>
+    <p>Web Report Transaksi</p>
+   </div>
+   {{-- End Container Heading --}}
+
+   {{-- Info Card 3 --}}
+   <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-sm-3">
+      <div class="card" style="width: 20rem; height: 17rem">
+        <img src="images/hp.png" class="card-img-top rounded mx-auto " alt="hp" >
+        <div class="card-body">
+          <h4>Pulsa Telepon</h4>
+          <p class="card-text">Produk Pulsa Retail <br>Terbaik</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card" style="width: 20rem; height: 17rem">
+        <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
+        <div class="card-body">
+          <h4>PLN TV Kabel Data</h4>
+          <p class="card-text">Pembayaran listrik, tv kabel dan <br> data seluler</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card" style="width: 20rem; height: 17rem">
+        <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
+        <div class="card-body">
+          <h4>Voucher Game</h4>
+          <p class="card-text">Produk Game Online Terbaik</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="row justify-content-center">
+    <div class="col-sm-3">
+      <div class="card" style="width: 20rem; height: 17rem">
+        <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
+        <div class="card-body">
+          <h4>Produk Multibiller</h4>
+          <p class="card-text">Produk Multibiller dan <br> Pascabyar</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card" style="width: 20rem; height: 17rem">
+        <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
+        <div class="card-body">
+          <h4>Top-Up E-Money</h4>
+          <p class="card-text">Gopay, Ovo, Dana, Shopeepay</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card" style="width: 20rem; height: 17rem">
+        <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
+        <div class="card-body">
+          <h4>Tiket Kereta</h4>
+          <p class="card-text">Produk Tiket Kereta Api <br> Terbaik</p>
+        </div>
+      </div>
+    </div>
+    </div>
+   </div>
+   {{-- End Info Card 3 --}}
 
     <div class="container mt-4">
         @yield('container')
