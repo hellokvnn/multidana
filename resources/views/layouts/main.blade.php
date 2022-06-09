@@ -210,12 +210,12 @@
    </div>
    {{-- End Jumbotron --}}
    
-   {{-- Container Heading --}}
+   {{-- Container Heading 2 --}}
    <div class="container heading-2">
     <h2><Strong>Pulsa H2H</Strong></h2>
     <p>Web Report Transaksi</p>
    </div>
-   {{-- End Container Heading --}}
+   {{-- End Container Heading 2 --}}
 
    {{-- Info Card 3 --}}
    <div class="container">
@@ -281,10 +281,170 @@
    </div>
    {{-- End Info Card 3 --}}
 
-    <div class="container mt-4">
-        @yield('container')
+   {{-- Jumbotron 2 --}}
+   <div class="jumbotron-2 jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4"></h1>
+        <div id="carouselExampleIndicators-2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators indicators-2">
+              <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner inner-2">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="images/test.jpg" class="d-block w-100" alt="test">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/test2.jpg" class="d-block w-100" alt="test2">
+              </div>
+              <div class="carousel-item">
+                <img src="images/test3.jpg" class="d-block w-100" alt="test3">
+              </div>
+            </div>
+          </div>
+        <div class="reason-2">
+          <h5>Aplikasi Multidana</h5>
+          <p>Multidana merupakan bisnis server pulsa yang berdiri <br>
+             sejak tahun 2007. Menjadi bagian dari FLASH MACHINE <br>
+             membuat Multidana menjadi salah satu server pulsa <br>
+             handal dalam menyajikan produk H2H, pelayanan dan <br>
+             perangkat yang dapat diandalkan.
+          </p>
+            <button type="button" class="btn btn-success btn-2">Download</button>
+        </div>
+        <div class="container-2">
+          <img src="images/logo3.png" class="rounded float-end" alt="logo3">
+        </div>
+      </div>
+    </div>
+   </div>
+   {{-- End Jumbotron 2 --}}
+
+   {{-- Container Heading 2 --}}
+   <div class="container heading-3">
+    <h2><Strong>Format Transaksi </Strong></h2>
+    <p>Kode tiap transaksi yang terdapat di aplikasi Multidana</p>
+   </div>
+   {{-- End Container Heading 2 --}}
+
+   {{-- Info Card 3 --}}
+   <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/transaksi-pulsa.png" class="card-img-top rounded mx-auto d-block" alt="transaksi pulsa" >
+          <div class="card-body">
+            <h4>Transaksi Pulsa</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/cek-saldo.png" class="card-img-top rounded mx-auto d-block" alt="cek saldo" >
+          <div class="card-body">
+            <h4>Cek Saldo</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/deposit.png" class="card-img-top rounded mx-auto d-block" alt="deposit" >
+          <div class="card-body">
+            <h4>Deposit Via Tiket</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/ganti-pin.png" class="card-img-top rounded mx-auto d-block" alt="ganti pin" >
+          <div class="card-body">
+            <h4>Ganti Pin</h4>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <br>
+
+    <div class="row justify-content-center">
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/rekap-transaksi.png" class="card-img-top rounded mx-auto d-block" alt="rekap transaksi" >
+          <div class="card-body">
+            <h4>Rekap Transaksi</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/komplain.png" class="card-img-top rounded mx-auto d-block" alt="komplain" >
+          <div class="card-body">
+            <h4 class="h4-fix-2">Komplain</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/tagihan.png" class="card-img-top rounded mx-auto d-block" alt="tagihan" >
+          <div class="card-body">
+            <h4 class="h4-fix">Cek Tagihan <br> Pembayaran</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/pembayaran.png" class="card-img-top rounded mx-auto d-block" alt="pembayaran" >
+          <div class="card-body">
+            <h4 class="h4-fix">Pembayaran <br> Pascabayar</h4>
+          </div>
+        </div>
+     </div>
+    </div>
+
+    <br>
+
+    <div class="row justify-content-center">
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/cek-harga.png" class="card-img-top rounded mx-auto d-block" alt="cek harga" >
+          <div class="card-body">
+            <h4>Cek Harga Produk</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/" class="card-img-top rounded mx-auto d-block" alt="transfer deposit" >
+          <div class="card-body">
+            <h4>Transfer Deposit</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/markup-global.png" class="card-img-top rounded mx-auto d-block" alt="markup global" >
+          <div class="card-body">
+            <h4>Markup Global</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card-3" style="width: 217px; height: 160px">
+          <img src="images/.png" class="card-img-top rounded mx-auto d-block" alt="markup spesifik" >
+          <div class="card-body">
+            <h4>Markup Spesifik</h4>
+          </div>
+        </div>
+     </div>
+    </div>
+   </div>
+   {{-- End Info Card 3 --}}
+
+  <div class="container mt-4">
+      @yield('container')
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
