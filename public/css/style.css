@@ -422,7 +422,7 @@ form:active::after {
     .card-2 img {
         object-fit: none;
         width: auto;
-        height: 100px;
+        height: 200px;
         margin-top: 30px;
     }
 
@@ -603,7 +603,7 @@ form:active::after {
     }
 
     .card-3 .h4-fix-2 {
-        margin-left: -10px;
+        margin-left: -15px;
     }
 
     .card-3 h4 {

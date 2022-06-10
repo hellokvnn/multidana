@@ -134,12 +134,11 @@
         <input class="form-control me-2" type="search" placeholder="Cari Layanan Multidana">
         <button><img src="images/search.png" alt="search"></button>
       </form>
-   </div>
-   {{-- End Container Logo --}}
+    </div>
+    {{-- End Container Logo --}}
 
-   {{-- Info Card 2 --}}
-   <div class="container-fluid">
-    
+    {{-- Info Card 2 --}}
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-sm-3 rounded float-start">
           <div class="card-2" style="width: 20rem; height: 25rem">
@@ -184,41 +183,40 @@
           </div>
         </div>
       </div>
+    </div>
+    {{-- End Info Card 2 --}}
 
-   </div>
-   {{-- End Info Card 2 --}}
-
-   {{-- Jumbotron --}}
-   <div class="jumbotron jumbotron-fluid">
-     <div class="container">
-       <h1 class="display-4">Alasan Memilih Multidana</h1>
+    {{-- Jumbotron --}}
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Alasan Memilih Multidana</h1>
         <div class="container">
           <img src="images/icon.png" class="rounded mx-lg-auto d-block" alt="icon">
         </div>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/PZMUjzaLC6Q?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PZMUjzaLC6Q?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="reason">
           <h5>Jaringan Nasional <br> Terluas</h5>
           <p>Multidana Payment hadir di <span> Kota <br>
-             Makasar </span> Provinsi <span> Sulawesi <br>
-             Selatan </span> dengan layanan tersebar <br>
-             di seluruh kota besar di <br>
-             Indonesia.</p>
+              Makasar </span> Provinsi <span> Sulawesi <br>
+              Selatan </span> dengan layanan tersebar <br>
+              di seluruh kota besar di <br>
+              Indonesia.</p>
             <button type="button" class="btn btn-light">Selengkapnya</button>
         </div>
-       </div>
-     </div>
-   </div>
-   {{-- End Jumbotron --}}
-   
-   {{-- Container Heading 2 --}}
-   <div class="container heading-2">
+        </div>
+      </div>
+    </div>
+    {{-- End Jumbotron --}}
+    
+    {{-- Container Heading 2 --}}
+    <div class="container heading-2">
     <h2><Strong>Pulsa H2H</Strong></h2>
     <p>Web Report Transaksi</p>
-   </div>
-   {{-- End Container Heading 2 --}}
+    </div>
+    {{-- End Container Heading 2 --}}
 
-   {{-- Info Card 3 --}}
-   <div class="container">
+    {{-- Info Card 3 --}}
+    <div class="container">
     <div class="row justify-content-center">
     <div class="col-sm-3">
       <div class="card" style="width: 20rem; height: 17rem">
@@ -278,11 +276,11 @@
       </div>
     </div>
     </div>
-   </div>
-   {{-- End Info Card 3 --}}
+    </div>
+    {{-- End Info Card 3 --}}
 
-   {{-- Jumbotron 2 --}}
-   <div class="jumbotron-2 jumbotron-fluid">
+    {{-- Jumbotron 2 --}}
+    <div class="jumbotron-2 jumbotron-fluid">
     <div class="container">
       <h1 class="display-4"></h1>
         <div id="carouselExampleIndicators-2" class="carousel slide" data-bs-ride="carousel">
@@ -306,10 +304,10 @@
         <div class="reason-2">
           <h5>Aplikasi Multidana</h5>
           <p>Multidana merupakan bisnis server pulsa yang berdiri <br>
-             sejak tahun 2007. Menjadi bagian dari FLASH MACHINE <br>
-             membuat Multidana menjadi salah satu server pulsa <br>
-             handal dalam menyajikan produk H2H, pelayanan dan <br>
-             perangkat yang dapat diandalkan.
+              sejak tahun 2007. Menjadi bagian dari FLASH MACHINE <br>
+              membuat Multidana menjadi salah satu server pulsa <br>
+              handal dalam menyajikan produk H2H, pelayanan dan <br>
+              perangkat yang dapat diandalkan.
           </p>
             <button type="button" class="btn btn-success btn-2">Download</button>
         </div>
@@ -318,18 +316,18 @@
         </div>
       </div>
     </div>
-   </div>
-   {{-- End Jumbotron 2 --}}
+    </div>
+    {{-- End Jumbotron 2 --}}
 
-   {{-- Container Heading 2 --}}
-   <div class="container heading-3">
+    {{-- Container Heading 2 --}}
+    <div class="container heading-3">
     <h2><Strong>Format Transaksi </Strong></h2>
     <p>Kode tiap transaksi yang terdapat di aplikasi Multidana</p>
-   </div>
-   {{-- End Container Heading 2 --}}
+    </div>
+    {{-- End Container Heading 2 --}}
 
-   {{-- Info Card 3 --}}
-   <div class="container-fluid">
+    {{-- Info Card 3 --}}
+    <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-2">
         <div class="card-3" style="width: 217px; height: 160px">
@@ -399,7 +397,7 @@
             <h4 class="h4-fix">Pembayaran <br> Pascabayar</h4>
           </div>
         </div>
-     </div>
+      </div>
     </div>
 
     <br>
@@ -436,10 +434,10 @@
             <h4>Markup Spesifik</h4>
           </div>
         </div>
-     </div>
+      </div>
     </div>
-   </div>
-   {{-- End Info Card 3 --}}
+    </div>
+    {{-- End Info Card 3 --}}
 
   <div class="container mt-4">
       @yield('container')
