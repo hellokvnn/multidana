@@ -58,6 +58,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-3">
+          <a href="/pulsa-retail" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
             <img src="images/hp.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
             <div class="card-body">
@@ -65,6 +66,7 @@
               <p class="card-text">Produk Pulsa Retail <br>Terbaik</p>
             </div>
           </div>
+          </a>
         </div>
         <div class="col-sm-3">
           <div class="card" style="width: 20rem; height: 17rem">
@@ -201,7 +203,7 @@
               Selatan </span> dengan layanan tersebar <br>
               di seluruh kota besar di <br>
               Indonesia.</p>
-            <button type="button" class="btn btn-light">Selengkapnya</button>
+            <button class="btn">Selengkapnya</button>
         </div>
         </div>
       </div>
@@ -309,7 +311,7 @@
               handal dalam menyajikan produk H2H, pelayanan dan <br>
               perangkat yang dapat diandalkan.
           </p>
-            <button type="button" class="btn btn-success btn-2">Download</button>
+          <button class="btn btn-2 btn-success">Download</button>
         </div>
         <div class="container-2">
           <img src="images/logo3.png" class="rounded float-end" alt="logo3">
@@ -319,130 +321,543 @@
     </div>
     {{-- End Jumbotron 2 --}}
 
-    {{-- Container Heading 2 --}}
+    {{-- Container Heading 3 --}}
     <div class="container heading-3">
     <h2><Strong>Format Transaksi </Strong></h2>
     <p>Kode tiap transaksi yang terdapat di aplikasi Multidana</p>
     </div>
-    {{-- End Container Heading 2 --}}
+    {{-- End Container Heading 3 --}}
 
     {{-- Info Card 3 --}}
     <div class="container-fluid">
+      
     <div class="row justify-content-center">
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/transaksi-pulsa.png" class="card-img-top rounded mx-auto d-block" alt="transaksi pulsa" >
-          <div class="card-body">
-            <h4>Transaksi Pulsa</h4>
+        <div class="accordion" id="accordionExampleSatu">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingSatu1">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSatu1" aria-expanded="true" aria-controls="collapseSatu1">
+                  <div class="card-3" style="width: 217px; height: 160px">
+                    <img src="images/transaksi-pulsa.png" class="card-img-top rounded mx-auto d-block" alt="transaksi pulsa" >
+                    <div class="card-body">
+                      <h4>Transaksi Pulsa</h4>
+                    </div>
+                  </div>
+              </button>
+              </h2>
+              <div id="collapseSatu1" class="accordion-collapse collapse" aria-labelledby="headingSatu1" data-bs-parent="#accordionExampleSatu">
+              <div class="accordion-body bodyy-1 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/cek-saldo.png" class="card-img-top rounded mx-auto d-block" alt="cek saldo" >
-          <div class="card-body">
-            <h4>Cek Saldo</h4>
+        <div class="accordion" id="accordionExampleDua">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingDua2">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDua2" aria-expanded="true" aria-controls="collapseDua2">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/cek-saldo.png" class="card-img-top rounded mx-auto d-block" alt="cek saldo" >
+                  <div class="card-body">
+                    <h4>Cek Saldo</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseDua2" class="accordion-collapse collapse" aria-labelledby="headingDua2" data-bs-parent="#accordionExampleSatu">
+              <div class="accordion-body bodyy-2 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/deposit.png" class="card-img-top rounded mx-auto d-block" alt="deposit" >
-          <div class="card-body">
-            <h4>Deposit Via Tiket</h4>
+        <div class="accordion" id="accordionExampleTiga">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingTiga3">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTiga3" aria-expanded="true" aria-controls="collapseTiga3">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/deposit.png" class="card-img-top rounded mx-auto d-block" alt="deposit" >
+                  <div class="card-body">
+                    <h4>Deposit Via Tiket</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseTiga3" class="accordion-collapse collapse" aria-labelledby="headingTiga3" data-bs-parent="#accordionExampleDua">
+              <div class="accordion-body bodyy-3 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/ganti-pin.png" class="card-img-top rounded mx-auto d-block" alt="ganti pin" >
-          <div class="card-body">
-            <h4>Ganti Pin</h4>
+        <div class="accordion" id="accordionExampleEmpat">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingEmpat4">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmpat4" aria-expanded="true" aria-controls="collapseEmpat4">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/ganti-pin.png" class="card-img-top rounded mx-auto d-block" alt="ganti pin" >
+                  <div class="card-body">
+                    <h4>Ganti Pin</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseEmpat4" class="accordion-collapse collapse" aria-labelledby="headingEmpat4" data-bs-parent="#accordionExampleTiga">
+              <div class="accordion-body bodyy-4 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
     </div>
 
     <br>
 
     <div class="row justify-content-center">
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/rekap-transaksi.png" class="card-img-top rounded mx-auto d-block" alt="rekap transaksi" >
-          <div class="card-body">
-            <h4>Rekap Transaksi</h4>
+        <div class="accordion" id="accordionExampleLima">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingLima5">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLima5" aria-expanded="true" aria-controls="collapseLima5">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/rekap-transaksi.png" class="card-img-top rounded mx-auto d-block" alt="rekap transaksi" >
+                  <div class="card-body">
+                    <h4>Rekap Transaksi</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseLima5" class="accordion-collapse collapse" aria-labelledby="headingLima5" data-bs-parent="#accordionExampleEmpat">
+              <div class="accordion-body bodyy-1 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/komplain.png" class="card-img-top rounded mx-auto d-block" alt="komplain" >
-          <div class="card-body">
-            <h4 class="h4-fix-2">Komplain</h4>
+        <div class="accordion" id="accordionExampleEnam">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingEnam6">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEnam6" aria-expanded="true" aria-controls="collapseEnam6">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/komplain.png" class="card-img-top rounded mx-auto d-block" alt="komplain" >
+                  <div class="card-body">
+                    <h4 class="h4-fix-2">Komplain</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseEnam6" class="accordion-collapse collapse" aria-labelledby="headingEnam6" data-bs-parent="#accordionExampleLima">
+              <div class="accordion-body bodyy-2 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/tagihan.png" class="card-img-top rounded mx-auto d-block" alt="tagihan" >
-          <div class="card-body">
-            <h4 class="h4-fix">Cek Tagihan <br> Pembayaran</h4>
+        <div class="accordion" id="accordionExampleTujuh">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingTujuh7">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTujuh7" aria-expanded="true" aria-controls="collapseTujuh7">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/tagihan.png" class="card-img-top rounded mx-auto d-block" alt="tagihan" >
+                  <div class="card-body">
+                    <h4 class="h4-fix">Cek Tagihan <br> Pembayaran</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseTujuh7" class="accordion-collapse collapse" aria-labelledby="headingTujuh7" data-bs-parent="#accordionExampleEnam">
+              <div class="accordion-body bodyy-3 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/pembayaran.png" class="card-img-top rounded mx-auto d-block" alt="pembayaran" >
-          <div class="card-body">
-            <h4 class="h4-fix">Pembayaran <br> Pascabayar</h4>
+        <div class="accordion" id="accordionExampleDelapan">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingDelapan8">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDelapan8" aria-expanded="true" aria-controls="collapseDelapan8">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/pembayaran.png" class="card-img-top rounded mx-auto d-block" alt="pembayaran" >
+                  <div class="card-body">
+                    <h4 class="h4-fix">Pembayaran <br> Pascabayar</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseDelapan8" class="accordion-collapse collapse" aria-labelledby="headingDelapan8" data-bs-parent="#accordionExampleTujuh">
+              <div class="accordion-body bodyy-4 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
     </div>
 
     <br>
 
     <div class="row justify-content-center">
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/cek-harga.png" class="card-img-top rounded mx-auto d-block" alt="cek harga" >
-          <div class="card-body">
-            <h4>Cek Harga Produk</h4>
+        <div class="accordion" id="accordionExampleSembilan">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingSembilan9">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSembilan9" aria-expanded="true" aria-controls="collapseSembilan9">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/cek-harga.png" class="card-img-top rounded mx-auto d-block" alt="cek harga" >
+                  <div class="card-body">
+                    <h4>Cek Harga Produk</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseSembilan9" class="accordion-collapse collapse" aria-labelledby="headingSembilan9" data-bs-parent="#accordionExampleDelapan">
+              <div class="accordion-body bodyy-1 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/" class="card-img-top rounded mx-auto d-block" alt="transfer deposit" >
-          <div class="card-body">
-            <h4>Transfer Deposit</h4>
+        <div class="accordion" id="accordionExampleSepuluh">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingSepuluh10">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSepuluh10" aria-expanded="true" aria-controls="collapseSepuluh10">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/" class="card-img-top rounded mx-auto d-block" alt="transfer deposit" >
+                  <div class="card-body">
+                    <h4>Transfer Deposit</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseSepuluh10" class="accordion-collapse collapse" aria-labelledby="headingSepuluh10" data-bs-parent="#accordionExampleSembilan">
+              <div class="accordion-body bodyy-2 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/markup-global.png" class="card-img-top rounded mx-auto d-block" alt="markup global" >
-          <div class="card-body">
-            <h4>Markup Global</h4>
+        <div class="accordion" id="accordionExampleSebelas">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingSebelas11">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSebelas11" aria-expanded="true" aria-controls="collapseSebelas11">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/markup-global.png" class="card-img-top rounded mx-auto d-block" alt="markup global" >
+                  <div class="card-body">
+                    <h4>Markup Global</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseSebelas11" class="accordion-collapse collapse" aria-labelledby="headingSebelas11" data-bs-parent="#accordionExampleSepuluh">
+              <div class="accordion-body bodyy-3 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
       <div class="col-2">
-        <div class="card-3" style="width: 217px; height: 160px">
-          <img src="images/.png" class="card-img-top rounded mx-auto d-block" alt="markup spesifik" >
-          <div class="card-body">
-            <h4>Markup Spesifik</h4>
+        <div class="accordion" id="accordionExampleDuabelas">
+          <div class="accordion-item item-1">
+              <h2 class="accordion-header header-1" id="headingDuabelas12">
+              <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDuabelas12" aria-expanded="true" aria-controls="collapseDuabelas12">
+                <div class="card-3" style="width: 217px; height: 160px">
+                  <img src="images/.png" class="card-img-top rounded mx-auto d-block" alt="markup spesifik" >
+                  <div class="card-body">
+                    <h4>Markup Spesifik</h4>
+                  </div>
+                </div>
+              </button>
+              </h2>
+              <div id="collapseDuabelas12" class="accordion-collapse collapse" aria-labelledby="headingDuabelas12" data-bs-parent="#accordionExampleSebelas">
+              <div class="accordion-body bodyy-4 border border-2">
+                <form>
+                  <div class="mb-3">
+                    <label for="disableTextInput1" class="form-label">format:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disableTextInput2" class="form-label">contoh:</label>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                  </div>
+                </form>
+                <div class="container heading-8">
+                  <h4>Cek Saldo</h4>
+                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
+
     </div>
+
     </div>
     {{-- End Info Card 3 --}}
+
+    {{-- Container Heading 4 --}}
+    <div class="container heading-4">
+      <h2><Strong>Hubungi Kami</Strong></h2>
+      <hr>
+      </div>
+    {{-- End Container Heading 4 --}}
+
+    {{-- Komplain --}}
+    <div class="container-lg-fluid">
+      <img src="images/lb.png" alt="lb" class="rounded float-start">
+      <img src="images/cs.png" class="cs" alt="cs">
+      <div class="container align-items-end heading-5">
+        <h5 class="fw-semibold">Komplain</h5>
+      </div>
+      <div class="container">
+        <input class="form-control-2" type="text"  placeholder="Nama Lengkap">
+        <input class="form-control-2" type="email"  placeholder="Email">
+        <select class="form-select form-control-2" aria-label="Default select example">
+          <option selected>Keluhan</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <textarea class="form-control-2 textarea" id="exampleFormControlTextarea1" placeholder="Text"></textarea> <br>
+        <button class="btn kirim">Kirim</button>
+      </div>
+      <img src="images/rb.png" alt="rb" class="rounded float-end"> 
+    </div>
+    {{-- End Komplain --}}
+
+    {{-- Container Heading 6 --}}
+    <div class="container justify-content-center heading-6">
+      <h5>Team Support Layanan Multidana Telegram</h5>
+      <hr>
+    </div>
+    {{-- End Container Heading 6 --}}
+
+    {{-- Info Card 5 --}}
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-2">
+          <div class="card-4" style="width: 217px; height: 160px">
+            <img src="images/cs2.png" class="card-img-top rounded mx-auto d-block" alt="cs2" >
+            <div class="card-body">
+              <h4>CS Multidana</h4>
+              <p>0813 3223 2321</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card-4" style="width: 217px; height: 160px">
+            <img src="images/cs2.png" class="card-img-top rounded mx-auto d-block" alt="cs2" >
+            <div class="card-body">
+              <h4>CS Billing</h4>
+              <p>0813 3223 2321</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card-4" style="width: 217px; height: 160px">
+            <img src="images/cs2.png" class="card-img-top rounded mx-auto d-block" alt="cs2" >
+            <div class="card-body">
+              <h4>CS H2H</h4>
+              <p>0813 3223 2321</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card-4" style="width: 217px; height: 160px">
+            <img src="images/cs2.png" class="card-img-top rounded mx-auto d-block" alt="cs2" >
+            <div class="card-body">
+              <h4>CS Komplain</h4>
+              <p>0813 3223 2321</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{-- End Info Card 5 --}}
 
   <div class="container mt-4">
       @yield('container')
   </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+{{-- Footer --}}
+@include('partials.footer')
+{{-- End Footer --}}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

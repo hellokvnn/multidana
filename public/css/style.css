@@ -297,7 +297,11 @@ form:active::after {
     color: #ffff;
     font-weight: bold;
     background-color: #20A15C;
+}
 
+.reason-2 button:hover {
+    color: #ffff;
+    background-color: #20A15C;
 }
 
 .reason-2 br {
@@ -330,7 +334,429 @@ form:active::after {
     font-size: 16px;
     margin-top: 10px;
 }
-/* End Heading 2*/
+/* End Heading 3*/
+
+/* Heading 4 */
+.heading-4 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #A00043;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.heading-4 img {
+    margin-top: -30px;
+}
+
+.heading-4 hr {
+    margin-top: 15px;
+    margin-left: 500px;
+    width: 300px;
+    color: #A00043;
+    background-color: #A00043;
+}
+/* End Heading 4 */
+
+/* Heading 5 */
+.heading-5 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: bold;
+    color: #A00043;
+    margin-top: -360px;
+    text-align: right;
+    margin-left: -350px;
+
+}
+/* End Heading 5 */
+
+/* Komplain */
+.cs {
+    margin-top: -170px;
+    margin-left: 90px;
+} 
+
+.form-control-2 {
+    margin-top: 10px;
+    width: 377px;
+    height: 37px;
+    border-radius: 8px;
+    border: solid;
+    border-color: #A00043;
+    font-family: Inter;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 680px;
+}
+
+.form-select {
+    margin-left: 748px;
+}
+
+.textarea {
+    height: 80px;
+}
+
+.kirim {
+    background-color: #A00043;
+    color: #ffff;
+    width: 100px;
+    border-radius: 8px;
+    font-family: Inter;
+    font-size: 15px;
+    margin-left: 750px;
+    margin-top: 25px;
+    border: solid;
+    border-color: #A00043 !important;
+}
+
+.kirim:hover {
+    background-color: #A00043;
+    color: #ffff;
+}
+
+/* End Komplain */
+
+/* Heading 6 */
+.heading-6 {
+    font-family: Inter;
+    font-size: 18px;
+    color: #A00043;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.heading-6 hr {
+    margin-top: 30px;
+    margin-left: 240px;
+    width: 800px;
+    color: #A00043;
+    background-color: #A00043;
+}
+/* End Heading 6 */
+
+/* Card 4 */
+.card-4 {
+    background-color: #fff;
+    color: #A00043;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card-4 img {
+    object-fit: none;
+    height: 120px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.card-4 h4 {
+    margin-top: 10px;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card-4 p {
+    margin-top: -10px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+/* End Card 4 */
+
+/* Jumbotron 3 */
+ .jumbotron-3 {
+    background-color: #A00043;
+    background-size: cover;
+    height: 600px;
+    margin-top: 100px;
+    color: #ffff;
+    font-family: Inter;
+    padding-left: 100px;
+}
+
+.jumbotron-3 .display-4 {
+    font-family: Inter;
+    color: #ffff;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 80px;
+}
+
+.jumbotron-3 img {
+    margin-bottom: 5px;
+}
+
+.jumbotron-3 .text-footer {
+    text-transform: uppercase;
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.jumbotron-3 h5 {
+    text-transform: uppercase;
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.jumbotron-3 p {
+    margin-left: 4px;
+    font-size: 16px;
+}
+
+.container-footer {
+    margin-top: -350px;
+    margin-left: 1100px;
+}
+
+.container-footer img {
+    margin-bottom: 30px;
+}
+
+.container-footer p {
+    font-family: Inter;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.container-footer .img-footer-1 {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.container-footer .img-footer-2 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/* End Jumbotron 3 */
+
+/* Heading 7 */
+.heading-7 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #A00043;
+}
+
+.heading-7 h2 {
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.heading-7 p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* End Heading 7*/
+
+/* Info Card 5 */
+.card-5 {
+    background-color: #fff;
+    color: #A00043;
+    margin: auto;
+    border: solid #A00043;
+}
+
+.card-5:hover {
+    background-color: #A00043;
+    color: #fff;
+}
+
+.card-5 img {
+    object-fit: none;
+    height: 100px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.card-5 .h4-fix-2 {
+    margin-left: -10px;
+}
+
+.card-5 h4 {
+    margin-top: 10px;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card-5 .h4-fix {
+    margin-top: -3px;
+}
+/*  End Info Card 5 */
+
+/* Accordion */
+.accordion-button {
+    display: contents;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-header {
+    margin-bottom: 20px;
+}
+
+.accordion-body {
+    background-color: #F1F1F1;
+    position: relative;
+    width: 977px;
+    margin-left: 7px !important;
+    margin: auto;
+    border-color: #BBBBBB !important;
+}
+
+.body-2 {
+    background-color: #F1F1F1;
+    position: relative;
+    width: 977px;
+    margin-left: -247px !important;
+    margin: auto;
+    border-color: #BBBBBB !important;
+}
+
+.body-3 {
+    background-color: #F1F1F1;
+    position: relative;
+    width: 977px;
+    margin-left: -500px !important;
+    margin: auto;
+    border-color: #BBBBBB !important;
+}
+
+.body-4 {
+    background-color: #F1F1F1;
+    position: relative;
+    width: 977px;
+    margin-left: -753px !important;
+    margin: auto;
+    border-color: #BBBBBB !important;
+}
+
+.table {
+    font-family: Inter;
+    font-size: 20px;
+    color: #A00043;
+    text-align: center;
+    width: 50%;
+    margin-left: 240px;
+}
+
+.table th {
+    margin: auto;
+}
+
+.table td {
+    background-color: #fff;
+    border: solid;
+    border-color: #F1F1F1;
+}
+
+/* End Accordion */
+
+/* Accordion 2 */
+.button-1 {
+    display: contents;
+}
+
+.item-1 {
+    border-color: #BBBBBB !important;
+}
+
+.header-1 {
+    margin-bottom: 20px;
+}
+
+.bodyy-1 {
+    background-color: #F1F1F1;
+    position: relative;
+    width: 470px;
+    margin-left: 7px !important;
+    margin: auto;
+    height: 200px;
+}
+
+.bodyy-2 {
+    background-color: #F1F1F1;
+    position: relative;
+    width: 470px;
+    margin-left: -247px !important;
+    margin: auto;
+    height: 200px;
+}
+
+.bodyy-3 {
+    background-color: #F1F1F1;
+    position: relative;
+    width: 470px;
+    margin-left: -500px !important;
+    margin: auto;
+    height: 200px;
+}
+
+.bodyy-4 {
+    background-color: #F1F1F1;
+    position: relative;
+    width: 470px;
+    margin-left: -753px !important;
+    margin: auto;
+    height: 200px;
+}
+
+.control-3 {
+    font-family: Inter;
+    color: #A00043;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #fff !important;
+    border-radius: 0%;
+    border-color: #BBBBBB !important;
+}
+
+.form-label {
+    font-family: Inter;
+    font-size: 13px;
+    padding-left: 10px;
+    color: #A00043;
+    font-weight: bold;
+}
+
+.heading-8 {
+    font-family: Inter;
+    color: #A00043;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -130px;
+} 
+
+.heading-8 h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.heading-8 p {
+    font-size: 12px;
+}
+
+/* End Accordion 2 */
+
+
 
 /* Dekstop Version */
 @media (min-width: 992px) {
@@ -504,8 +930,10 @@ form:active::after {
     }
 
     .reason button:hover {
+        background-color: #ffff;
         color: #A00043;
     }
+
     /* End Jumbotron */
 
     /* Jumbotron 2 */
@@ -562,14 +990,21 @@ form:active::after {
         color: #ffff;
         font-weight: bold;
         background-color: #20A15C;
+        position: absolute;
+    }
 
+    .reason-2 button:hover {
+        color: #ffff;
+        background-color: #20A15C;
     }
 
     .container-2 img {
         height: 500px;
-        margin-top: -63px;
+        margin-top: -25px;
         margin-right: -100px;
     }
+
+    /* End Jumbotron 2 */
 
     /* Carousel */
     .inner-2 {
@@ -603,7 +1038,7 @@ form:active::after {
     }
 
     .card-3 .h4-fix-2 {
-        margin-left: -15px;
+        margin-left: -10px;
     }
 
     .card-3 h4 {
