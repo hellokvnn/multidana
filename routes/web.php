@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\IndosatController;
+use App\Models\Indosat;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,72 +52,71 @@ Route::get('/kontak-kami', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard', [
+    return view('/dashboard/dashboard', [
         "title" => "Dashboard"
     ]);
 });
 
 Route::get('/slider', function () {
-    return view('slider', [
+    return view('/dashboard/slider', [
         "title" => "Slider"
     ]);
 });
 
 Route::get('/pulsa-retail-setting', function () {
-    return view('pulsa-retail-setting', [
+    return view('/dashboard/pulsa-retail-setting', [
         "title" => "Pulsa Retail Setting"
     ]);
 });
 
 Route::get('/pulsa-telepon-setting', function () {
-    return view('pulsa-telepon-setting', [
+    return view('/dashboard/pulsa/pulsa-telepon-setting', [
         "title" => "Pulsa Telepon Setting"
     ]);
 });
 
-Route::get('/indosat-retail', function () {
-    return view('indosat-retail', [
-        "title" => "Indosat Retail"
-    ]);
-});
-
 Route::get('/telkomsel-retail', function () {
-    return view('telkomsel-retail', [
+    return view('/dashboard/telkomsel-retail', [
         "title" => "Telkomsel Retail"
     ]);
 });
 Route::get('/axis-retail', function () {
-    return view('axis-retail', [
+    return view('/dashboard/axis-retail', [
         "title" => "Axis Retail"
     ]);
 });
 
 Route::get('/xl-retail', function () {
-    return view('xl-retail', [
+    return view('/dashboard/xl-retail', [
         "title" => "XL Retail"
     ]);
 });
 
 Route::get('/smartfren-retail', function () {
-    return view('smartfren-retail', [
+    return view('/dashboard/smartfren-retail', [
         "title" => "Smartfren Retail"
     ]);
 });
 
 Route::get('/three-retail', function () {
-    return view('three-retail', [
+    return view('/dashboard/three-retail', [
         "title" => "Three Retail"
     ]);
 });
 
 Route::get('/mtix-retail', function () {
-    return view('mtix-retail', [
+    return view('/dashboard/mtix-retail', [
         "title" => "MTIX Retail"
     ]);
 });
 
 Route::get('/tix-retail', function () {
-    return view('tix-retail', [
+    return view('/dashboard/tix-retail', [
         "title" => "TIX Retail"
     ]);
 });
+
+
+Route::get('indosat-retail', [IndosatController::class, 'index']);
+
+Route::get('pulsa-retail', [IndosatController::class, 'indexMain']);

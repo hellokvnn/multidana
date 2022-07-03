@@ -62,41 +62,13 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @foreach ($indosats as $indosat )
                       <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
+                        <td> {{$indosat->kode}} </td>
+                        <td> {{$indosat->operator}} </td>
+                        <td> {{$indosat->harga}} </td>
                       </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>

@@ -774,7 +774,7 @@
     <div class="container heading-4">
       <h2><Strong>Hubungi Kami</Strong></h2>
       <hr>
-      </div>
+    </div>
     {{-- End Container Heading 4 --}}
 
     {{-- Komplain --}}

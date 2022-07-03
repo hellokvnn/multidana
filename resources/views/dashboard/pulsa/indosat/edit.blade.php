@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Multidana | {{ $title }}</title>
+    <title>Multidana</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -41,7 +41,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Dashboard") ? 'active' : '' }}" href="/dashboard">
+                <a class="nav-link" href="/dashboard">
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -53,7 +53,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item pl-5">
-                <a class="nav-link {{ ($title === "Slider") ? 'active' : '' }}" href="/slider">
+                <a class="nav-link" href="/slider">
                     <i class=""></i>
                     <span>Slider</span></a>
             </li>
@@ -86,7 +86,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Indosat Retail") ? 'active' : '' }}" href="/pulsa-retail-setting">
+                <a class="nav-link" href="/pulsa-retail-setting">
                     <i class=""><img src="images/pulsaretail.png" alt="pulsaretail"></i>
                     <span>Pulsa Retail</span></a>
             </li>
@@ -198,30 +198,25 @@
 
                     <div class="row">
                         <!-- Card Example -->
-                        <div class="card-body">
-                            <table class="table text-center" id="dataTable" width="100%">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Kode</th>
-                                        <th scope="col">Operator</th>
-                                        <th scope="col">Harga</th>
-                                        <th scope="col"></th>
-                                    </tr>
-                                </thead >
-                                <tbody>
-                                     <tr>
-                                        <td>1</td>
-                                        <td>xx</td>
-                                        <td>zz</td>
-                                        <td>
-                                            <a href="" class="text-decoration-none">
-                                                <img src="/images/edit.png" alt="edit">
-                                            </a>
-                                        </td>
-                                     </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <form method="POST" action="" enctype="multipart/form-data">
+                            @csrf
+                            @method('PUT')
+                            <div style="margin-top: 20px" class="card-body ml-5">
+                                <div style="column-width: 650px" class="form-group mb-4">
+                                    <label for="kode">Kode</label>
+                                    <input type="text" class="form-control" name="kode" value="{{$indosat->kode}}">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="operator">Operator</label>
+                                    <input type="text" class="form-control" name="operator" value="{{$indosat->operator}}">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="harga">Harga</label>
+                                    <input type="number" class="form-control" name="harga" value="{{$indosat->harga}}">
+                                </div>
+                                <button style="margin-left: 550px" type="submit" class="btn btn-success">Simpan</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <!-- /.container-fluid -->
