@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Indosat;
+use App\Models\Mtix;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rules\In;
 
-class IndosatController extends Controller
+class MtixController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +14,12 @@ class IndosatController extends Controller
      */
     public function index()
     {
-        return view('dashboard.pulsa.indosat.index', [
-            "title" => "Indosat Retail",
-            "indosats" => Indosat::all()
+        return view('dashboard.pulsa.mtix.index', [
+            "title" => "Mtix Retail",
+            "mtixes" => Mtix::all()
         ]); 
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -60,9 +60,9 @@ class IndosatController extends Controller
      */
     public function edit($id)
     {
-        return view('dashboard.pulsa.indosat.edit', [
-            "title" => "Indosat Edit",
-            'indosat' => Indosat::find($id)
+        return view('dashboard.pulsa.mtix.edit', [
+            "title" => "Mtix Edit",
+            'mtix' => Mtix::find($id)
         ]);
     }
 
@@ -73,12 +73,12 @@ class IndosatController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Indosat $indosat, $id)
+    public function update(Request $request, $id)
     {
-        $indosat = Indosat::find($id);
+        $mtix = Mtix::find($id);
 
-        $indosat->update($request->all());
-        return redirect('indosat-retail')-> with('status', 'Data Berhasil Diubah !');
+        $mtix->update($request->all());
+        return redirect('mtix-retail')-> with('status', 'Data Berhasil Diubah !');
     }
 
     /**

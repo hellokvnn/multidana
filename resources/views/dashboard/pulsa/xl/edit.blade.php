@@ -86,7 +86,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Indosat Edit") ? 'active' : '' }}" href="/pulsa-retail-setting">
+                <a class="nav-link {{ ($title === "XL Edit") ? 'active' : '' }}" href="/pulsa-retail-setting">
                     <i class=""><img src="/images/pulsaretail.png" alt="pulsaretail"></i>
                     <span>Pulsa Retail</span></a>
             </li>
@@ -179,7 +179,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 style="color: black" class="h3 mb-4">Edit Indosat Nasional</h1>
+                    <h1 style="color: black" class="h3 mb-4">Edit XL Nasional</h1>
 
                     <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
                     <script>
@@ -196,21 +196,21 @@
 
                     <div class="row">
                         <!-- Card Example -->
-                        <form method="POST" action="{{route('indosat-retail.update', $indosat->id )}}" enctype="multipart/form-data">
+                        <form method="POST" action="{{route('xl-retail.update', $xl->id )}}" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div style="margin-top: 20px" class="card-body ml-5">
                                 <div style="column-width: 650px" class="form-group mb-4">
                                     <label for="kode">Kode</label>
-                                    <input type="text" class="form-control" name="kode" value="{{$indosat->kode}}">
+                                    <input type="text" class="form-control" name="kode" value="{{$xl->kode}}">
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="operator">Operator</label>
-                                    <input type="text" class="form-control" name="operator" value="{{$indosat->operator}}">
+                                    <input type="text" class="form-control" name="operator" value="{{$xl->operator}}">
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="harga">Harga</label>
-                                    <input type="number" class="form-control" name="harga" value="{{$indosat->harga}}">
+                                    <input type="number" class="form-control" name="harga" value="{{$xl->harga}}">
                                 </div>
                                 <button style="margin-left: 550px" type="submit" class="btn btn-success">Simpan</button>
                             </div>

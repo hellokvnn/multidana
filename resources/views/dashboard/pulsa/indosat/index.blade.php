@@ -196,6 +196,17 @@
 
                     <br>
 
+                    <div class="container">
+                        @if (session('status'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{session('status')}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        @endif
+                    </div>
+
                     <div class="row">
                         <!-- Card Example -->
                         <div class="card-body">
@@ -215,7 +226,7 @@
                                         <td> {{$indosat->operator}} </td>
                                         <td> {{$indosat->harga}}  </td>
                                         <td>
-                                            <a href="" class="text-decoration-none">
+                                            <a href="{{route('indosat-retail.edit', $indosat->id )}}" class="text-decoration-none">
                                                 <img src="/images/edit.png" alt="edit">
                                             </a>
                                         </td>

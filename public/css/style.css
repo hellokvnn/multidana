@@ -800,6 +800,17 @@ br {
         color: #ffff !important;
     }
 
+    .nav-link:hover {
+        color: black;
+    }
+/* 
+    .btn.nav-link {
+        border: none;
+        color: #fff;
+        background-color: #A00043;
+        border-radius: 50px;
+    } */
+
     /* Info Card */
     .card {
         background-color: #A00043;
@@ -1051,6 +1062,11 @@ br {
         color: #A00043;
         margin: auto;
         border: solid #A00043;
+    }
+
+    .card-3:hover {
+        background-color: #A00043;
+        color: #fff;
     }
 
     .card-3 img {

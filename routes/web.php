@@ -1,7 +1,16 @@
 <?php
 
+use App\Http\Controllers\PulsaController;
 use App\Http\Controllers\IndosatController;
+use App\Http\Controllers\TelkomselController;
+use App\Http\Controllers\AxisController;
+use App\Http\Controllers\SmartfrenController;
+use App\Http\Controllers\XlController;
+use App\Http\Controllers\ThreeController;
+use App\Http\Controllers\MtixController;
+use App\Http\Controllers\TixController;
 use App\Models\Indosat;
+use App\Models\Telkomsel;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -75,48 +84,20 @@ Route::get('/pulsa-telepon-setting', function () {
     ]);
 });
 
-Route::get('/telkomsel-retail', function () {
-    return view('/dashboard/telkomsel-retail', [
-        "title" => "Telkomsel Retail"
-    ]);
-});
-Route::get('/axis-retail', function () {
-    return view('/dashboard/axis-retail', [
-        "title" => "Axis Retail"
-    ]);
-});
+Route::resource('indosat-retail', IndosatController::class);
 
-Route::get('/xl-retail', function () {
-    return view('/dashboard/xl-retail', [
-        "title" => "XL Retail"
-    ]);
-});
+Route::resource('telkomsel-retail', TelkomselController::class);
 
-Route::get('/smartfren-retail', function () {
-    return view('/dashboard/smartfren-retail', [
-        "title" => "Smartfren Retail"
-    ]);
-});
+Route::resource('axis-retail', AxisController::class);
 
-Route::get('/three-retail', function () {
-    return view('/dashboard/three-retail', [
-        "title" => "Three Retail"
-    ]);
-});
+Route::resource('smartfren-retail', SmartfrenController::class);
 
-Route::get('/mtix-retail', function () {
-    return view('/dashboard/mtix-retail', [
-        "title" => "MTIX Retail"
-    ]);
-});
+Route::resource('xl-retail', XlController::class);
 
-Route::get('/tix-retail', function () {
-    return view('/dashboard/tix-retail', [
-        "title" => "TIX Retail"
-    ]);
-});
+Route::resource('three-retail', ThreeController::class);
 
+Route::resource('mtix-retail', MtixController::class);
 
-Route::get('indosat-retail', [IndosatController::class, 'index']);
+Route::resource('tix-retail', TixController::class);
 
-Route::get('pulsa-retail', [IndosatController::class, 'indexMain']);
+Route::get('pulsa-retail', [PulsaController::class, 'index']);

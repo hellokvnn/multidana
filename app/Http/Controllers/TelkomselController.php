@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Indosat;
+use App\Models\Telkomsel;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rules\In;
 
-class IndosatController extends Controller
+class TelkomselController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +14,9 @@ class IndosatController extends Controller
      */
     public function index()
     {
-        return view('dashboard.pulsa.indosat.index', [
-            "title" => "Indosat Retail",
-            "indosats" => Indosat::all()
+        return view('dashboard.pulsa.telkomsel.index', [
+            "title" => "Telkomsel Retail",
+            "telkomsels" => Telkomsel::all()
         ]); 
     }
     /**
@@ -60,9 +59,9 @@ class IndosatController extends Controller
      */
     public function edit($id)
     {
-        return view('dashboard.pulsa.indosat.edit', [
-            "title" => "Indosat Edit",
-            'indosat' => Indosat::find($id)
+        return view('dashboard.pulsa.telkomsel.edit', [
+            "title" => "Telkomsel Edit",
+            'telkomsel' => Telkomsel::find($id)
         ]);
     }
 
@@ -73,12 +72,12 @@ class IndosatController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Indosat $indosat, $id)
+    public function update(Request $request, $id)
     {
-        $indosat = Indosat::find($id);
+        $telkomsel = Telkomsel::find($id);
 
-        $indosat->update($request->all());
-        return redirect('indosat-retail')-> with('status', 'Data Berhasil Diubah !');
+        $telkomsel->update($request->all());
+        return redirect('telkomsel-retail')-> with('status', 'Data Berhasil Diubah !');
     }
 
     /**

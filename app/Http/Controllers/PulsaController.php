@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Indosat;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rules\In;
+use App\Models\Indosat;
+use App\Models\Telkomsel;
+use App\Models\Axis;
+use App\Models\Mtix;
+use App\Models\Smartfren;
+use App\Models\Three;
+use App\Models\Tix;
+use App\Models\Xl;
 
-class IndosatController extends Controller
+class PulsaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +21,20 @@ class IndosatController extends Controller
      */
     public function index()
     {
-        return view('dashboard.pulsa.indosat.index', [
-            "title" => "Indosat Retail",
-            "indosats" => Indosat::all()
+        return view('pulsa-retail', [
+            "title" => "Pulsa Retail",
+            "telkomsels" => Telkomsel::all(),
+            "indosats" => Indosat::all(),
+            "axes" => Axis::all(),
+            "xls" => Xl::all(),
+            "smartfrens" => Smartfren::all(),
+            "threes" => Three::all(),
+            "mtixes" => Mtix::all(),
+            "tixes" => Tix::all()
         ]); 
+
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -60,10 +75,7 @@ class IndosatController extends Controller
      */
     public function edit($id)
     {
-        return view('dashboard.pulsa.indosat.edit', [
-            "title" => "Indosat Edit",
-            'indosat' => Indosat::find($id)
-        ]);
+        //
     }
 
     /**
@@ -73,12 +85,9 @@ class IndosatController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Indosat $indosat, $id)
+    public function update(Request $request, $id)
     {
-        $indosat = Indosat::find($id);
-
-        $indosat->update($request->all());
-        return redirect('indosat-retail')-> with('status', 'Data Berhasil Diubah !');
+        //
     }
 
     /**

@@ -62,7 +62,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($indosats as $indosat )
+                      @foreach ($indosats as $indosat)
                       <tr>
                         <td> {{$indosat->kode}} </td>
                         <td> {{$indosat->operator}} </td>
@@ -101,41 +101,13 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @foreach ($telkomsels as $telkomsel)
                       <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
+                        <td> {{$telkomsel->kode}} </td>
+                        <td> {{$telkomsel->operator}} </td>
+                        <td> {{$telkomsel->harga}} </td>
                       </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>
@@ -168,41 +140,13 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @foreach ($axes as $axis)
                       <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
+                        <td> {{$axis->kode}} </td>
+                        <td> {{$axis->operator}} </td>
+                        <td> {{$axis->harga}} </td>
                       </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>
@@ -235,41 +179,13 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @foreach ($xls as $xl)
                       <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
+                        <td> {{$xl->kode}} </td>
+                        <td> {{$xl->operator}} </td>
+                        <td> {{$xl->harga}} </td>
                       </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>
@@ -308,41 +224,13 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @foreach ($smartfrens as $smartfren)
                       <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
+                        <td> {{$smartfren->kode}} </td>
+                        <td> {{$smartfren->operator}} </td>
+                        <td> {{$smartfren->harga}} </td>
                       </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>
@@ -375,41 +263,13 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @foreach ($threes as $three)
                       <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
+                        <td> {{$three->kode}} </td>
+                        <td> {{$three->operator}} </td>
+                        <td> {{$three->harga}} </td>
                       </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>
@@ -442,41 +302,13 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @foreach ($mtixes as $mtix)
                       <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
+                        <td> {{$mtix->kode}} </td>
+                        <td> {{$mtix->operator}} </td>
+                        <td> {{$mtix->harga}} </td>
                       </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>
@@ -510,41 +342,13 @@
                       </tr>
                     </thead>
                     <tbody>
+                      @foreach ($tixes as $tix)
                       <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
+                        <td> {{$tix->kode}} </td>
+                        <td> {{$tix->operator}} </td>
+                        <td> {{$tix->harga}} </td>
                       </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
-                      <tr>
-                        <td>IM5</td>
-                        <td>Indosat 5000</td>
-                        <td>6200</td>
-                      </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>

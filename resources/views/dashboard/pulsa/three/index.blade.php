@@ -41,7 +41,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Dashboard") ? 'active' : '' }}" href="/dashboard">
+                <a class="nav-link" href="/dashboard">
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -53,7 +53,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item pl-5">
-                <a class="nav-link {{ ($title === "Slider") ? 'active' : '' }}" href="/slider">
+                <a class="nav-link" href="/slider">
                     <i class=""></i>
                     <span>Slider</span></a>
             </li>
@@ -196,6 +196,17 @@
 
                     <br>
 
+                    <div class="container">
+                        @if (session('status'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{session('status')}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        @endif
+                    </div>
+
                     <div class="row">
                         <!-- Card Example -->
                         <div class="card-body">
@@ -209,16 +220,18 @@
                                     </tr>
                                 </thead >
                                 <tbody>
+                                    @foreach ($threes as $three)
                                      <tr>
-                                        <td>1</td>
-                                        <td>xx</td>
-                                        <td>zz</td>
+                                        <td> {{$three->kode}} </td>
+                                        <td> {{$three->operator}} </td>
+                                        <td> {{$three->harga}} </td>
                                         <td>
-                                            <a href="" class="text-decoration-none">
+                                            <a href="{{route('three-retail.edit', $three->id )}}" class="text-decoration-none">
                                                 <img src="/images/edit.png" alt="edit">
                                             </a>
                                         </td>
-                                     </tr>
+                                      </tr>
+                                     @endforeach
                                 </tbody>
                             </table>
                         </div>
