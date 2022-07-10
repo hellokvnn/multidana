@@ -6,6 +6,10 @@
     font-weight: bold;
     margin-right: 25px;
 }
+
+.nav-link:hover {
+    color: #A00043;
+}
 /* End Navbar */
 
 /* Carousel */
@@ -306,7 +310,7 @@ form:active::after {
 
 .container-2 img {
     height: 213px;
-    margin-top: -15px;
+    margin-top: -25px;
     margin-right: -30px;
 }
 /* End Jumbotron 2 */
@@ -611,7 +615,7 @@ br {
 .card-5 img {
     object-fit: none;
     height: 100px;
-    width: 150px;
+    width: 160px;
     margin-top: 10px;
 }
 
@@ -657,7 +661,7 @@ br {
 .body-2 {
     background-color: #F1F1F1;
     position: relative;
-    width: 200px;
+    width: 300px;
     margin-bottom: 20px;
     border-color: #BBBBBB !important;
 }
@@ -665,7 +669,7 @@ br {
 .body-3 {
     background-color: #F1F1F1;
     position: relative;
-    width: 200px;
+    width: 300px;
     margin-bottom: 20px;
     border-color: #BBBBBB !important;
 }
@@ -673,7 +677,15 @@ br {
 .body-4 {
     background-color: #F1F1F1;
     position: relative;
-    width: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-color: #BBBBBB !important;
+}
+
+.body-5 {
+    background-color: #F1F1F1;
+    position: relative;
+    width: 300px;
     margin-bottom: 20px;
     border-color: #BBBBBB !important;
 }
@@ -801,15 +813,12 @@ br {
     }
 
     .nav-link:hover {
-        color: black;
+        color: #A00043;
     }
-/* 
-    .btn.nav-link {
-        border: none;
-        color: #fff;
+
+    .dropdown-item:active {
         background-color: #A00043;
-        border-radius: 50px;
-    } */
+    }
 
     /* Info Card */
     .card {
@@ -1378,7 +1387,7 @@ br {
     .card-5 img {
         object-fit: none;
         height: 100px;
-        width: 150px;
+        width: 160px;
         margin-top: 10px;
     }
 
@@ -1445,6 +1454,33 @@ br {
         position: relative;
         width: 977px;
         margin-left: -753px !important;
+        margin: auto;
+        border-color: #BBBBBB !important;
+    }
+
+    .body-5 {
+        background-color: #F1F1F1;
+        position: relative;
+        width: 977px;
+        margin-left: -370px !important;
+        margin: auto;
+        border-color: #BBBBBB !important;
+    }
+
+    .body-6 {
+        background-color: #F1F1F1;
+        position: relative;
+        width: 977px;
+        margin-left: -120px !important;
+        margin: auto;
+        border-color: #BBBBBB !important;
+    }
+
+    .body-7 {
+        background-color: #F1F1F1;
+        position: relative;
+        width: 977px;
+        margin-left: -620px !important;
         margin: auto;
         border-color: #BBBBBB !important;
     }

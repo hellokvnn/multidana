@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Multidana | Home</title>
+    <title>Multidana</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,15 +26,15 @@
                 <a class="nav-link {{ ($title === "About") ? 'active' : '' }}"  href="/about">About</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link {{ ($title === "Pulsa Retail") ? 'active' : '' }} dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link {{ ($title === "Pulsa Telepon") ? 'active' : '' }} dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Pulsa Retail
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="/pulsa-retail">Pulsa Telepon</a></li>
-                  <li><a class="dropdown-item" href="#">PLN TV Kabel</a></li>
-                  <li><a class="dropdown-item" href="#">Voucher Game</a></li>
-                  <li><a class="dropdown-item" href="#">Produk Multibiller</a></li>
-                  <li><a class="dropdown-item" href="#">Top Up E-Money</a></li>
+                  <li><a class="dropdown-item" href="/pulsa-telepon">Pulsa Telepon</a></li>
+                  <li><a class="dropdown-item" href="/pln-tv-kabel">PLN TV Kabel</a></li>
+                  <li><a class="dropdown-item" href="/voucher-games">Voucher Game</a></li>
+                  <li><a class="dropdown-item" href="/produk-multibiller">Produk Multibiller</a></li>
+                  <li><a class="dropdown-item" href="/topup-e-money">Top Up E-Money</a></li>
                   <li><a class="dropdown-item" href="#">Tiket Kereta</a></li>
                 </ul>
               </li>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Multidana | {{ $title }}</title>
+    <title>Multidana</title>
     {{-- Bootstap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     {{-- End Bootsrap --}}
@@ -58,7 +58,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-3">
-          <a href="/pulsa-retail" class="text-decoration-none">
+          <a href="/pulsa-telepon" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
             <img src="images/hp.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
             <div class="card-body">
@@ -69,6 +69,7 @@
           </a>
         </div>
         <div class="col-sm-3">
+          <a href="/pln-tv-kabel" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
             <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
             <div class="card-body">
@@ -76,8 +77,10 @@
               <p class="card-text">Pembayaran listrik, tv kabel dan <br> data seluler</p>
             </div>
           </div>
+          </a>
         </div>
         <div class="col-sm-3">
+          <a href="/voucher-games" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
             <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
             <div class="card-body">
@@ -85,11 +88,13 @@
               <p class="card-text">Produk Game Online Terbaik</p>
             </div>
           </div>
+          </a>
         </div>
       </div>
 
       <div class="row justify-content-center">
         <div class="col-sm-3">
+          <a href="/voucher-games" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
             <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
             <div class="card-body">
@@ -97,8 +102,11 @@
               <p class="card-text">Produk Multibiller dan <br> Pascabyar</p>
             </div>
           </div>
+          </a>
         </div>
+
         <div class="col-sm-3">
+          <a href="/voucher-games" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
             <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
             <div class="card-body">
@@ -106,7 +114,9 @@
               <p class="card-text">Gopay, Ovo, Dana, Shopeepay</p>
             </div>
           </div>
+          </a>
         </div>
+
         <div class="col-sm-3">
           <div class="card" style="width: 20rem; height: 17rem">
             <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >

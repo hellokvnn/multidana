@@ -21,8 +21,8 @@ class PulsaController extends Controller
      */
     public function index()
     {
-        return view('pulsa-retail', [
-            "title" => "Pulsa Retail",
+        return view('pulsa-telepon', [
+            "title" => "Pulsa Telepon",
             "telkomsels" => Telkomsel::all(),
             "indosats" => Indosat::all(),
             "axes" => Axis::all(),

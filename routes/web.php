@@ -36,9 +36,33 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/pulsa-retail', function () {
-    return view('pulsa-retail', [
-        "title" => "Pulsa Retail"
+Route::get('/pulsa-telepon', function () {
+    return view('pulsa-telepon', [
+        "title" => "Pulsa Telepon"
+    ]);
+});
+
+Route::get('/pln-tv-kabel', function () {
+    return view('pln-tv-kabel', [
+        "title" => "PLN TV Kabel"
+    ]);
+});
+
+Route::get('/voucher-games', function () {
+    return view('voucher-games', [
+        "title" => "Voucher Games"
+    ]);
+});
+
+Route::get('/produk-multibiller', function () {
+    return view('produk-multibiller', [
+        "title" => "Produk Multibiller"
+    ]);
+});
+
+Route::get('/topup-e-money', function () {
+    return view('topup-e-money', [
+        "title" => "Top Up E-Money"
     ]);
 });
 
@@ -100,4 +124,4 @@ Route::resource('mtix-retail', MtixController::class);
 
 Route::resource('tix-retail', TixController::class);
 
-Route::get('pulsa-retail', [PulsaController::class, 'index']);
+Route::get('pulsa-telepon', [PulsaController::class, 'index']);

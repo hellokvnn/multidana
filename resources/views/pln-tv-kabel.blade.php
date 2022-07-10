@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multidana | {{ $title }}</title>
+    <title>Multidana</title>
 
      {{-- Bootstap --}}
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -28,7 +28,7 @@
 
 {{-- Container Heading --}}
 <div class="container heading-7">
-    <h2><Strong>Pulsa Retail</Strong></h2>
+    <h2><Strong>PLN TV Kabel Paket Data</Strong></h2>
     <p>Server Pulsa dengan Dukungan Software Terbaik</p>
 </div>
 {{-- End Container Heading --}}
@@ -46,7 +46,7 @@
                 <div class="card-5" style="width: 217px; height: 170px">
                     <img src="images/indosat.png" class="card-img-top rounded mx-auto d-block" alt="indosat" >
                     <div class="card-body">
-                    <h4>Indosat <br> Nasional</h4>
+                    <h4>Indosat <br> Data</h4>
                     </div>
                 </div>
             </button>
@@ -62,13 +62,11 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($indosats as $indosat)
                       <tr>
-                        <td> {{$indosat->kode}} </td>
-                        <td> {{$indosat->operator}} </td>
-                        <td> {{$indosat->harga}} </td>
+                        <td> qwe </td>
+                        <td> qwe </td>
+                        <td> qwe </td>
                       </tr>
-                      @endforeach
                     </tbody>
                 </table>
             </div>
@@ -85,7 +83,7 @@
                 <div class="card-5" style="width: 217px; height: 170px">
                     <img src="images/telkomsel.png" class="card-img-top rounded mx-auto d-block" alt="telkomsel" >
                     <div class="card-body">
-                    <h4>Telkomsel <br> Nasional</h4>
+                    <h4>Telkomsel <br> Data</h4>
                     </div>
                 </div>
             </button>
@@ -101,13 +99,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($telkomsels as $telkomsel)
-                      <tr>
-                        <td> {{$telkomsel->kode}} </td>
-                        <td> {{$telkomsel->operator}} </td>
-                        <td> {{$telkomsel->harga}} </td>
-                      </tr>
-                      @endforeach
+                        <td> qwe </td>
+                        <td> qwe </td>
+                        <td> qwe </td>
                     </tbody>
                 </table>
             </div>
@@ -124,7 +118,7 @@
                 <div class="card-5" style="width: 217px; height: 170px">
                     <img src="images/axis.png" class="card-img-top rounded mx-auto d-block" alt="axis" >
                     <div class="card-body">
-                    <h4>Axis <br> Nasional</h4>
+                    <h4>Axis <br> Data Bronet</h4>
                     </div>
                 </div>
             </button>
@@ -140,13 +134,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($axes as $axis)
-                      <tr>
-                        <td> {{$axis->kode}} </td>
-                        <td> {{$axis->operator}} </td>
-                        <td> {{$axis->harga}} </td>
-                      </tr>
-                      @endforeach
+                        <td> qwe </td>
+                        <td> qwe </td>
+                        <td> qwe </td>
                     </tbody>
                 </table>
             </div>
@@ -163,7 +153,7 @@
                 <div class="card-5" style="width: 217px; height: 170px">
                     <img src="images/xl.png" class="card-img-top rounded mx-auto d-block" alt="xl" >
                     <div class="card-body">
-                    <h4>XL <br> Nasional</h4>
+                    <h4>XL <br> Hotrod 24Jam</h4>
                     </div>
                 </div>
             </button>
@@ -179,13 +169,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($xls as $xl)
-                      <tr>
-                        <td> {{$xl->kode}} </td>
-                        <td> {{$xl->operator}} </td>
-                        <td> {{$xl->harga}} </td>
-                      </tr>
-                      @endforeach
+                        <td> qwe </td>
+                        <td> qwe </td>
+                        <td> qwe </td>
                     </tbody>
                 </table>
             </div>
@@ -208,12 +194,12 @@
                 <div class="card-5" style="width: 217px; height: 170px">
                     <img src="images/smartfren.png" class="card-img-top rounded mx-auto d-block" alt="smartfren" >
                     <div class="card-body">
-                    <h4>Smartfren <br> Nasional</h4>
+                    <h4>Smartfren <br> Data (Volte)</h4>
                     </div>
                 </div>
             </button>
             </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample5">
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample4">
             <div class="accordion-body border border-2">
                 <table class="table table-sm table-borderless table-responsive">
                     <thead>
@@ -224,13 +210,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($smartfrens as $smartfren)
-                      <tr>
-                        <td> {{$smartfren->kode}} </td>
-                        <td> {{$smartfren->operator}} </td>
-                        <td> {{$smartfren->harga}} </td>
-                      </tr>
-                      @endforeach
+                        <td> qwe </td>
+                        <td> qwe </td>
+                        <td> qwe </td>
                     </tbody>
                 </table>
             </div>
@@ -263,13 +245,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($threes as $three)
-                      <tr>
-                        <td> {{$three->kode}} </td>
-                        <td> {{$three->operator}} </td>
-                        <td> {{$three->harga}} </td>
-                      </tr>
-                      @endforeach
+                        <td> qwe </td>
+                        <td> qwe </td>
+                        <td> qwe </td>
                     </tbody>
                 </table>
             </div>
@@ -284,9 +262,9 @@
             <h2 class="accordion-header" id="headingSeven">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
                 <div class="card-5" style="width: 217px; height: 170px">
-                    <img src="images/mtix.png" class="card-img-top rounded mx-auto d-block" alt="mtix" >
+                    <img src="images/pln.png" class="card-img-top rounded mx-auto d-block" alt="pln" >
                     <div class="card-body">
-                    <h4>MTIX ID <br> XXI</h4>
+                    <h4>PLN</h4>
                     </div>
                 </div>
             </button>
@@ -302,13 +280,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($mtixes as $mtix)
-                      <tr>
-                        <td> {{$mtix->kode}} </td>
-                        <td> {{$mtix->operator}} </td>
-                        <td> {{$mtix->harga}} </td>
-                      </tr>
-                      @endforeach
+                        <td> qwe </td>
+                        <td> qwe </td>
+                        <td> qwe </td>
                     </tbody>
                 </table>
             </div>
@@ -324,9 +298,9 @@
             <h2 class="accordion-header" id="headingEight">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
                 <div class="card-5" style="width: 217px; height: 170px">
-                    <img src="images/tix.png" class="card-img-top rounded mx-auto d-block" alt="tix" >
+                    <img src="images/k-vision.png" class="card-img-top rounded mx-auto d-block" alt="k-vision" >
                     <div class="card-body">
-                    <h4>TIX ID <br> XXI</h4>
+                    <h4>K-Vision</h4>
                     </div>
                 </div>
             </button>
@@ -342,13 +316,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($tixes as $tix)
-                      <tr>
-                        <td> {{$tix->kode}} </td>
-                        <td> {{$tix->operator}} </td>
-                        <td> {{$tix->harga}} </td>
-                      </tr>
-                      @endforeach
+                        <td> qwe </td>
+                        <td> qwe </td>
+                        <td> qwe </td>
                     </tbody>
                 </table>
             </div>
