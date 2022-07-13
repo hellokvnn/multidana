@@ -34,11 +34,11 @@
 {{-- End Container Heading --}}
 
 {{-- Info Card 5 --}}
-<div class="container-fluid">
+<div class="container">
 
 <div class="row justify-content-center">
 
-    <div class="col-2">
+    <div style="margin-right: 35px;" class="col-2">
     <div class="accordion" id="accordionExample1">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -77,7 +77,7 @@
     </div>
     </div>
 
-    <div class="col-2">
+    <div style="margin-right: 35px;" class="col-2">
     <div class="accordion" id="accordionExample2">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
@@ -116,7 +116,7 @@
     </div>
     </div>
 
-    <div class="col-2">
+    <div style="margin-right: 35px;" class="col-2">
     <div class="accordion" id="accordionExample3">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
@@ -155,7 +155,7 @@
     </div>
     </div>
 
-    <div class="col-2">
+    <div style="margin-right: 35px;" class="col-2">
     <div class="accordion" id="accordionExample4">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
@@ -200,7 +200,7 @@
 
 <div class="row justify-content-center">
 
-    <div class="col-2">
+    <div style="margin-right: 35px;" class="col-2">
     <div class="accordion" id="accordionExample5">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
@@ -239,7 +239,7 @@
     </div>
     </div>
     
-    <div class="col-2">
+    <div style="margin-right: 35px;" class="col-2">
     <div class="accordion" id="accordionExample6">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingSix">
@@ -278,7 +278,7 @@
     </div>
     </div>
 
-    <div class="col-2">
+    <div style="margin-right: 35px;" class="col-2">
     <div class="accordion" id="accordionExample7">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingSeven">
@@ -318,7 +318,7 @@
     </div>
 
 
-    <div class="col-2">
+    <div style="margin-right: 35px;" class="col-2">
     <div class="accordion" id="accordionExample8">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingEight">

@@ -60,7 +60,7 @@
         <div class="col-sm-3">
           <a href="/pulsa-telepon" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
-            <img src="images/hp.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
+            <img src="images/pulsa-h2h/pulsa-telepon.png" class="card-img-top rounded mx-auto d-block" alt="pulsa telepon" >
             <div class="card-body">
               <h4>Pulsa Telepon</h4>
               <p class="card-text">Produk Pulsa Retail <br>Terbaik</p>
@@ -71,7 +71,7 @@
         <div class="col-sm-3">
           <a href="/pln-tv-kabel" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
-            <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
+            <img src="images/pulsa-h2h/pln.png" class="card-img-top rounded mx-auto d-block" alt="pln" >
             <div class="card-body">
               <h4>PLN TV Kabel Data</h4>
               <p class="card-text">Pembayaran listrik, tv kabel dan <br> data seluler</p>
@@ -82,7 +82,7 @@
         <div class="col-sm-3">
           <a href="/voucher-games" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
-            <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
+            <img src="images/pulsa-h2h/voucher-game.png" class="card-img-top rounded mx-auto d-block" alt="voucher-game" >
             <div class="card-body">
               <h4>Voucher Game</h4>
               <p class="card-text">Produk Game Online Terbaik</p>
@@ -96,7 +96,7 @@
         <div class="col-sm-3">
           <a href="/voucher-games" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
-            <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
+            <img src="images/pulsa-h2h/multibiller.png" class="card-img-top rounded mx-auto d-block" alt="multibiller" >
             <div class="card-body">
               <h4>Produk Multibiller</h4>
               <p class="card-text">Produk Multibiller dan <br> Pascabyar</p>
@@ -108,7 +108,7 @@
         <div class="col-sm-3">
           <a href="/voucher-games" class="text-decoration-none">
           <div class="card" style="width: 20rem; height: 17rem">
-            <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
+            <img src="images/pulsa-h2h/topup.png" class="card-img-top rounded mx-auto d-block" alt="topup" >
             <div class="card-body">
               <h4>Top-Up E-Money</h4>
               <p class="card-text">Gopay, Ovo, Dana, Shopeepay</p>
@@ -119,7 +119,7 @@
 
         <div class="col-sm-3">
           <div class="card" style="width: 20rem; height: 17rem">
-            <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
+            <img src="images/pulsa-h2h/tiket-kereta.png" class="card-img-top rounded mx-auto d-block" alt="tiket kereta" >
             <div class="card-body">
               <h4>Tiket Kereta</h4>
               <p class="card-text">Produk Tiket Kereta Api <br> Terbaik</p>
@@ -131,10 +131,10 @@
     {{-- End Card --}}
 
     {{-- Container Logo --}}
-    <div class="container-lg-fluid logo">
+    <div class="container logo">
       <img src="images/logo2.png" alt="logo2" class="rounded mx-auto d-block">
-      <img src="images/lb.png" alt="lb" class="rounded float-start"> 
-      <img src="images/rb.png" alt="rb" class="rounded float-end"> 
+      <img style="margin-left: -112px;" src="images/lb.png" alt="lb" class="rounded float-start"> 
+      <img style="margin-right: -111px" src="images/rb.png" alt="rb" class="rounded float-end"> 
     </div>
 
     <div class="container logo-heading">
@@ -150,7 +150,7 @@
     {{-- End Container Logo --}}
 
     {{-- Info Card 2 --}}
-    <div class="container-fluid">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-3 rounded float-start">
           <div class="card-2" style="width: 20rem; height: 25rem">
@@ -199,7 +199,7 @@
     {{-- End Info Card 2 --}}
 
     {{-- Jumbotron --}}
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron">
       <div class="container">
         <h1 class="display-4">Alasan Memilih Multidana</h1>
         <div class="container">
@@ -217,7 +217,6 @@
         </div>
         </div>
       </div>
-    </div>
     {{-- End Jumbotron --}}
     
     {{-- Container Heading 2 --}}
@@ -232,7 +231,7 @@
     <div class="row justify-content-center">
     <div class="col-sm-3">
       <div class="card" style="width: 20rem; height: 17rem">
-        <img src="images/hp.png" class="card-img-top rounded mx-auto " alt="hp" >
+        <img src="images/pulsa-h2h/pulsa-telepon.png" class="card-img-top rounded mx-auto " alt="pulsa telepon" >
         <div class="card-body">
           <h4>Pulsa Telepon</h4>
           <p class="card-text">Produk Pulsa Retail <br>Terbaik</p>
@@ -241,7 +240,7 @@
     </div>
     <div class="col-sm-3">
       <div class="card" style="width: 20rem; height: 17rem">
-        <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
+        <img src="images/pulsa-h2h/pln.png" class="card-img-top rounded mx-auto d-block" alt="pln" >
         <div class="card-body">
           <h4>PLN TV Kabel Data</h4>
           <p class="card-text">Pembayaran listrik, tv kabel dan <br> data seluler</p>
@@ -250,7 +249,7 @@
     </div>
     <div class="col-sm-3">
       <div class="card" style="width: 20rem; height: 17rem">
-        <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
+        <img src="images/pulsa-h2h/voucher-game.png" class="card-img-top rounded mx-auto d-block" alt="voucher game" >
         <div class="card-body">
           <h4>Voucher Game</h4>
           <p class="card-text">Produk Game Online Terbaik</p>
@@ -262,7 +261,7 @@
     <div class="row justify-content-center">
     <div class="col-sm-3">
       <div class="card" style="width: 20rem; height: 17rem">
-        <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
+        <img src="images/pulsa-h2h/multibiller.png" class="card-img-top rounded mx-auto d-block" alt="multibiller" >
         <div class="card-body">
           <h4>Produk Multibiller</h4>
           <p class="card-text">Produk Multibiller dan <br> Pascabyar</p>
@@ -271,7 +270,7 @@
     </div>
     <div class="col-sm-3">
       <div class="card" style="width: 20rem; height: 17rem">
-        <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
+        <img src="images/pulsa-h2h/topup.png" class="card-img-top rounded mx-auto d-block" alt="topup" >
         <div class="card-body">
           <h4>Top-Up E-Money</h4>
           <p class="card-text">Gopay, Ovo, Dana, Shopeepay</p>
@@ -280,7 +279,7 @@
     </div>
     <div class="col-sm-3">
       <div class="card" style="width: 20rem; height: 17rem">
-        <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
+        <img src="images/pulsa-h2h/tiket-kereta.png" class="card-img-top rounded mx-auto d-block" alt="tiket kereta" >
         <div class="card-body">
           <h4>Tiket Kereta</h4>
           <p class="card-text">Produk Tiket Kereta Api <br> Terbaik</p>
@@ -292,7 +291,7 @@
     {{-- End Info Card 3 --}}
 
     {{-- Jumbotron 2 --}}
-    <div class="jumbotron-2 jumbotron-fluid">
+    <div class="jumbotron-2">
     <div class="container">
       <h1 class="display-4"></h1>
         <div id="carouselExampleIndicators-2" class="carousel slide" data-bs-ride="carousel">
@@ -326,9 +325,9 @@
         <div class="container-2">
           <img src="images/logo3.png" class="rounded float-end" alt="logo3">
         </div>
-      </div>
     </div>
     </div>
+
     {{-- End Jumbotron 2 --}}
 
     {{-- Container Heading 3 --}}
@@ -339,17 +338,17 @@
     {{-- End Container Heading 3 --}}
 
     {{-- Info Card 3 --}}
-    <div class="container-fluid">
+    <div class="container">
       
     <div class="row justify-content-center">
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleSatu">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingSatu1">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSatu1" aria-expanded="true" aria-controls="collapseSatu1">
                   <div class="card-3" style="width: 217px; height: 160px">
-                    <img src="images/transaksi-pulsa.png" class="card-img-top rounded mx-auto d-block" alt="transaksi pulsa" >
+                    <img src="images/format-transaksi/transaksi-pulsa.png" class="card-img-top rounded mx-auto d-block" alt="transaksi pulsa" >
                     <div class="card-body">
                       <h4>Transaksi Pulsa</h4>
                     </div>
@@ -378,13 +377,13 @@
         </div>
       </div>
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleDua">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingDua2">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDua2" aria-expanded="true" aria-controls="collapseDua2">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/cek-saldo.png" class="card-img-top rounded mx-auto d-block" alt="cek saldo" >
+                  <img src="images/format-transaksi/cek-saldo.png" class="card-img-top rounded mx-auto d-block" alt="cek saldo" >
                   <div class="card-body">
                     <h4>Cek Saldo</h4>
                   </div>
@@ -413,13 +412,13 @@
         </div>
       </div>
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleTiga">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingTiga3">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTiga3" aria-expanded="true" aria-controls="collapseTiga3">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/deposit.png" class="card-img-top rounded mx-auto d-block" alt="deposit" >
+                  <img src="images/format-transaksi/deposit-via-tiket.png" class="card-img-top rounded mx-auto d-block" alt="deposit" >
                   <div class="card-body">
                     <h4>Deposit Via Tiket</h4>
                   </div>
@@ -448,13 +447,13 @@
         </div>
       </div>
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleEmpat">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingEmpat4">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmpat4" aria-expanded="true" aria-controls="collapseEmpat4">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/ganti-pin.png" class="card-img-top rounded mx-auto d-block" alt="ganti pin" >
+                  <img src="images/format-transaksi/ganti-pin.png" class="card-img-top rounded mx-auto d-block" alt="ganti pin" >
                   <div class="card-body">
                     <h4>Ganti Pin</h4>
                   </div>
@@ -489,13 +488,13 @@
 
     <div class="row justify-content-center">
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleLima">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingLima5">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLima5" aria-expanded="true" aria-controls="collapseLima5">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/rekap-transaksi.png" class="card-img-top rounded mx-auto d-block" alt="rekap transaksi" >
+                  <img src="images/format-transaksi/rekap-transaksi.png" class="card-img-top rounded mx-auto d-block" alt="rekap transaksi" >
                   <div class="card-body">
                     <h4>Rekap Transaksi</h4>
                   </div>
@@ -524,13 +523,13 @@
         </div>
       </div>
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleEnam">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingEnam6">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEnam6" aria-expanded="true" aria-controls="collapseEnam6">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/komplain.png" class="card-img-top rounded mx-auto d-block" alt="komplain" >
+                  <img src="images/format-transaksi/komplain.png" class="card-img-top rounded mx-auto d-block" alt="komplain" >
                   <div class="card-body">
                     <h4 class="h4-fix-2">Komplain</h4>
                   </div>
@@ -559,13 +558,13 @@
         </div>
       </div>
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleTujuh">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingTujuh7">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTujuh7" aria-expanded="true" aria-controls="collapseTujuh7">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/tagihan.png" class="card-img-top rounded mx-auto d-block" alt="tagihan" >
+                  <img src="images/format-transaksi/cek-tagihan-pascabayar.png" class="card-img-top rounded mx-auto d-block" alt="cek tagihan tagihan" >
                   <div class="card-body">
                     <h4 class="h4-fix">Cek Tagihan <br> Pembayaran</h4>
                   </div>
@@ -594,13 +593,13 @@
         </div>
       </div>
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleDelapan">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingDelapan8">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDelapan8" aria-expanded="true" aria-controls="collapseDelapan8">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/pembayaran.png" class="card-img-top rounded mx-auto d-block" alt="pembayaran" >
+                  <img src="images/format-transaksi/pembayaran-pascabayar.png" class="card-img-top rounded mx-auto d-block" alt="pembayaran pascabayar" >
                   <div class="card-body">
                     <h4 class="h4-fix">Pembayaran <br> Pascabayar</h4>
                   </div>
@@ -635,13 +634,13 @@
 
     <div class="row justify-content-center">
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleSembilan">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingSembilan9">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSembilan9" aria-expanded="true" aria-controls="collapseSembilan9">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/cek-harga.png" class="card-img-top rounded mx-auto d-block" alt="cek harga" >
+                  <img src="images/format-transaksi/cek-harga-produk.png" class="card-img-top rounded mx-auto d-block" alt="cek harga produk" >
                   <div class="card-body">
                     <h4>Cek Harga Produk</h4>
                   </div>
@@ -670,13 +669,13 @@
         </div>
       </div>
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleSepuluh">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingSepuluh10">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSepuluh10" aria-expanded="true" aria-controls="collapseSepuluh10">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/" class="card-img-top rounded mx-auto d-block" alt="transfer deposit" >
+                  <img src="images/format-transaksi/transfer-deposit.png" class="card-img-top rounded mx-auto d-block" alt="transfer deposit" >
                   <div class="card-body">
                     <h4>Transfer Deposit</h4>
                   </div>
@@ -705,13 +704,13 @@
         </div>
       </div>
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleSebelas">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingSebelas11">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSebelas11" aria-expanded="true" aria-controls="collapseSebelas11">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/markup-global.png" class="card-img-top rounded mx-auto d-block" alt="markup global" >
+                  <img src="images/format-transaksi/markup-global.png" class="card-img-top rounded mx-auto d-block" alt="markup global" >
                   <div class="card-body">
                     <h4>Markup Global</h4>
                   </div>
@@ -740,13 +739,13 @@
         </div>
       </div>
 
-      <div class="col-2">
+      <div style="margin-right: 30px;" class="col-2">
         <div class="accordion" id="accordionExampleDuabelas">
           <div class="accordion-item item-1">
               <h2 class="accordion-header header-1" id="headingDuabelas12">
               <button class="accordion-button button-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDuabelas12" aria-expanded="true" aria-controls="collapseDuabelas12">
                 <div class="card-3" style="width: 217px; height: 160px">
-                  <img src="images/.png" class="card-img-top rounded mx-auto d-block" alt="markup spesifik" >
+                  <img src="images/format-transaksi/markup-spesifik.png" class="card-img-top rounded mx-auto d-block" alt="markup spesifik" >
                   <div class="card-body">
                     <h4>Markup Spesifik</h4>
                   </div>
@@ -788,8 +787,8 @@
     {{-- End Container Heading 4 --}}
 
     {{-- Komplain --}}
-    <div class="container-lg-fluid">
-      <img src="images/lb.png" alt="lb" class="rounded float-start">
+    <div class="container">
+      <img style="margin-left: -112px;" src="images/lb.png" alt="lb" class="rounded float-start">
       <img src="images/cs.png" class="cs" alt="cs">
       <div class="container align-items-end heading-5">
         <h5 class="fw-semibold">Komplain</h5>
@@ -797,7 +796,7 @@
       <div class="container">
         <input class="form-control-2" type="text"  placeholder="Nama Lengkap">
         <input class="form-control-2" type="email"  placeholder="Email">
-        <select class="form-select form-control-2" aria-label="Default select example">
+        <select class="form-control-2" aria-label="Default select example">
           <option selected>Keluhan</option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -806,7 +805,7 @@
         <textarea class="form-control-2 textarea" id="exampleFormControlTextarea1" placeholder="Text"></textarea> <br>
         <button class="btn kirim">Kirim</button>
       </div>
-      <img src="images/rb.png" alt="rb" class="rounded float-end"> 
+      <img style="margin-right: -111px;" src="images/rb.png" alt="rb" class="rounded float-end"> 
     </div>
     {{-- End Komplain --}}
 

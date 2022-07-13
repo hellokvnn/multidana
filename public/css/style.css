@@ -56,10 +56,10 @@
 }
 
 .card img {
-    object-fit: none;
-    width: auto;
-    height: 100px;
-    margin-top: 25px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
 }
 
 .card h4 {
@@ -345,7 +345,7 @@ form:active::after {
 }
 
 .card-3 img {
-    object-fit: none;
+    object-fit: cover;
     height: 100px;
     width: auto;
     margin-top: 10px;
@@ -373,7 +373,7 @@ br {
 }
 
 .card-3 .h4-fix {
-    margin-top: -3px;
+    margin-top: 10px;
 }
 /*  End Info Card 3 */
 
@@ -408,7 +408,7 @@ br {
     color: #A00043;
     margin-top: -300px;
     text-align: right;
-    margin-left: -260px;
+    margin-left: -245px;
 
 }
 /* End Heading 5 */
@@ -829,10 +829,10 @@ br {
     }
 
     .card img {
-        object-fit: none;
-        height: 100px;
-        width: auto;
-        margin-top: 25px;
+        object-fit: cover;
+        height: 150px;
+        width: 150px;
+        margin-top: 5px;
     }
 
     .card h4 {
@@ -1074,14 +1074,13 @@ br {
     }
 
     .card-3:hover {
-        background-color: #A00043;
+        background-color: #3738A8;
+        border: solid #3738A8;
         color: #fff;
     }
 
     .card-3 img {
-        object-fit: none;
-        height: 100px;
-        width: auto;
+        object-fit: cover;
         margin-top: 10px;
     }
 
@@ -1107,7 +1106,7 @@ br {
     }
 
     .card-3 .h4-fix {
-        margin-top: -3px;
+        margin-top: 10px;
     }
     /*  End Info Card */
 
@@ -1175,7 +1174,7 @@ br {
         color: #A00043;
         margin-top: -360px;
         text-align: right;
-        margin-left: -350px;
+        margin-left: -435px;
 
     }
     /* End Heading 5 */
@@ -1200,11 +1199,7 @@ br {
         padding-right: 10px;
         margin-left: 680px;
     }
-
-    .form-select {
-        margin-left: 748px;
-    }
-
+    
     .textarea {
         height: 80px;
     }
@@ -1327,6 +1322,7 @@ br {
     .container-footer {
         margin-top: -350px;
         margin-left: 1100px;
+
     }
 
     .container-footer img {
@@ -1407,6 +1403,7 @@ br {
     .card-5 .h4-fix {
         margin-top: -3px;
     }
+
     /*  End Info Card 5 */
 
     /* Accordion */
@@ -1425,8 +1422,7 @@ br {
     .accordion-body {
         background-color: #F1F1F1;
         position: relative;
-        width: 977px;
-        margin-left: 7px !important;
+        width: 982px;
         margin: auto;
         border-color: #BBBBBB !important;
     }
@@ -1434,8 +1430,8 @@ br {
     .body-2 {
         background-color: #F1F1F1;
         position: relative;
-        width: 977px;
-        margin-left: -247px !important;
+        width: 982px;
+        margin-left: -255px !important;
         margin: auto;
         border-color: #BBBBBB !important;
     }
@@ -1443,8 +1439,8 @@ br {
     .body-3 {
         background-color: #F1F1F1;
         position: relative;
-        width: 977px;
-        margin-left: -500px !important;
+        width: 982px;
+        margin-left: -510px !important;
         margin: auto;
         border-color: #BBBBBB !important;
     }
@@ -1452,8 +1448,8 @@ br {
     .body-4 {
         background-color: #F1F1F1;
         position: relative;
-        width: 977px;
-        margin-left: -753px !important;
+        width: 982px;
+        margin-left: -765px !important;
         margin: auto;
         border-color: #BBBBBB !important;
     }
@@ -1461,8 +1457,8 @@ br {
     .body-5 {
         background-color: #F1F1F1;
         position: relative;
-        width: 977px;
-        margin-left: -370px !important;
+        width: 982px;
+        margin-left: -375px !important;
         margin: auto;
         border-color: #BBBBBB !important;
     }
@@ -1470,8 +1466,8 @@ br {
     .body-6 {
         background-color: #F1F1F1;
         position: relative;
-        width: 977px;
-        margin-left: -120px !important;
+        width: 982px;
+        margin-left: -125px !important;
         margin: auto;
         border-color: #BBBBBB !important;
     }
@@ -1479,8 +1475,8 @@ br {
     .body-7 {
         background-color: #F1F1F1;
         position: relative;
-        width: 977px;
-        margin-left: -620px !important;
+        width: 982px;
+        margin-left: -625px !important;
         margin: auto;
         border-color: #BBBBBB !important;
     }
@@ -1522,8 +1518,8 @@ br {
     .bodyy-1 {
         background-color: #F1F1F1;
         position: relative;
-        width: 470px;
-        margin-left: 7px !important;
+        width: 465px;
+        margin-left: 1px !important;
         margin: auto;
         height: 200px;
     }
@@ -1531,8 +1527,8 @@ br {
     .bodyy-2 {
         background-color: #F1F1F1;
         position: relative;
-        width: 470px;
-        margin-left: -247px !important;
+        width: 465px;
+        margin-left: -249px !important;
         margin: auto;
         height: 200px;
     }
@@ -1540,7 +1536,7 @@ br {
     .bodyy-3 {
         background-color: #F1F1F1;
         position: relative;
-        width: 470px;
+        width: 465px;
         margin-left: -500px !important;
         margin: auto;
         height: 200px;
@@ -1549,8 +1545,8 @@ br {
     .bodyy-4 {
         background-color: #F1F1F1;
         position: relative;
-        width: 470px;
-        margin-left: -753px !important;
+        width: 465px;
+        margin-left: -749px !important;
         margin: auto;
         height: 200px;
     }

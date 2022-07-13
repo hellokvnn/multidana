@@ -2,15 +2,22 @@
 
 use App\Http\Controllers\PulsaController;
 use App\Http\Controllers\IndosatController;
+use App\Http\Controllers\IndosatPlnController;
 use App\Http\Controllers\TelkomselController;
+use App\Http\Controllers\TelkomselPlnController;
 use App\Http\Controllers\AxisController;
+use App\Http\Controllers\AxisPlnController;
 use App\Http\Controllers\SmartfrenController;
+use App\Http\Controllers\SmartfrenPlnController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\XlController;
+use App\Http\Controllers\XlPlnController;
 use App\Http\Controllers\ThreeController;
+use App\Http\Controllers\ThreePlnController;
 use App\Http\Controllers\MtixController;
 use App\Http\Controllers\TixController;
-use App\Models\Indosat;
-use App\Models\Telkomsel;
+use App\Http\Controllers\PlnPlnController;
+use App\Http\Controllers\KvisionPlnController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -90,12 +97,6 @@ Route::get('/dashboard', function () {
     ]);
 });
 
-Route::get('/slider', function () {
-    return view('/dashboard/slider', [
-        "title" => "Slider"
-    ]);
-});
-
 Route::get('/pulsa-retail-setting', function () {
     return view('/dashboard/pulsa-retail-setting', [
         "title" => "Pulsa Retail Setting"
@@ -105,6 +106,12 @@ Route::get('/pulsa-retail-setting', function () {
 Route::get('/pulsa-telepon-setting', function () {
     return view('/dashboard/pulsa/pulsa-telepon-setting', [
         "title" => "Pulsa Telepon Setting"
+    ]);
+});
+
+Route::get('/pln-setting', function () {
+    return view('/dashboard/pln/pln-setting', [
+        "title" => "PLN Setting"
     ]);
 });
 
@@ -123,5 +130,23 @@ Route::resource('three-retail', ThreeController::class);
 Route::resource('mtix-retail', MtixController::class);
 
 Route::resource('tix-retail', TixController::class);
+
+Route::resource('slider', SliderController::class);
+
+Route::resource('indosat-pln', IndosatPlnController::class);
+
+Route::resource('telkomsel-pln', TelkomselPlnController::class);
+
+Route::resource('axis-pln', AxisPlnController::class);
+
+Route::resource('xl-pln', XlPlnController::class);
+
+Route::resource('smartfren-pln', SmartfrenPlnController::class);
+
+Route::resource('three-pln', ThreePlnController::class);
+
+Route::resource('pln-pln', PlnPlnController::class);
+
+Route::resource('kvision-pln', KvisionPlnController::class);
 
 Route::get('pulsa-telepon', [PulsaController::class, 'index']);

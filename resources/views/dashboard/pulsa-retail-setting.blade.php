@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Multidana | {{ $title }}</title>
+    <title>Multidana</title>
 
     {{-- Bootstap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -210,12 +210,14 @@
                           </a>
                         </div>
                         <div class="col-sm-3">
+                          <a href="/pln-setting" class="text-decoration-none">
                           <div class="card-1" style="width: 20rem; height: 17rem">
                             <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
                             <div class="card-body">
                               <h4>PLN TV Kabel Data</h4>
                             </div>
                           </div>
+                          </a>
                         </div>
                         <div class="col-sm-3">
                           <div class="card-1" style="width: 20rem; height: 17rem">
