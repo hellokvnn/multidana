@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Indosat;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules\In;
+use PHPUnit\Framework\Constraint\Operator;
 
 class IndosatController extends Controller
 {
@@ -27,7 +28,8 @@ class IndosatController extends Controller
      */
     public function create()
     {
-        //
+        $indosats = Indosat::all(); 
+        return view('dashboard.pulsa.indosat.create', compact('indosats'));
     }
 
     /**
@@ -38,7 +40,12 @@ class IndosatController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Indosat::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('indosat-retail')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

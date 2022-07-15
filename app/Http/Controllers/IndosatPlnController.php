@@ -26,7 +26,8 @@ class IndosatPlnController extends Controller
      */
     public function create()
     {
-        //
+        $indosatplns = IndosatPln::all(); 
+        return view('dashboard.pln.indosat.create', compact('indosatplns'));
     }
 
     /**
@@ -37,7 +38,12 @@ class IndosatPlnController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        IndosatPln::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('indosat-pln')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

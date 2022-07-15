@@ -27,7 +27,8 @@ class TelkomselPlnController extends Controller
      */
     public function create()
     {
-        //
+        $telkomselplns = TelkomselPln::all(); 
+        return view('dashboard.pln.telkomsel.create', compact('telkomselplns'));
     }
 
     /**
@@ -38,7 +39,12 @@ class TelkomselPlnController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        TelkomselPln::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('telkomsel-pln')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

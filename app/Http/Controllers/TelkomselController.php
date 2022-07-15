@@ -26,7 +26,8 @@ class TelkomselController extends Controller
      */
     public function create()
     {
-        //
+        $telkomsels = Telkomsel::all(); 
+        return view('dashboard.pulsa.telkomsel.create', compact('telkomsels'));
     }
 
     /**
@@ -37,7 +38,12 @@ class TelkomselController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Telkomsel::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('telkomsel-retail')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

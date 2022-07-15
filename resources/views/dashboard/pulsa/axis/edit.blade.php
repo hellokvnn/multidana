@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Multidana | Edit</title>
+    <title>Multidana</title>
 
     <!-- Custom fonts for this template-->
     <link href="../../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -179,20 +179,25 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 style="color: black" class="h3 mb-4">Edit Axis Nasional</h1>
+                    <div>
+                        <h1 style="color: black" class="h3 mb-4">Edit Axis Nasional</h1>
+                        <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
+                        <script>
+                        var tw = new Date();
+                        if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+                        else (a=tw.getTime());
+                        tw.setTime(a);
+                        var tahun= tw.getFullYear ();
+                        var bulan= tw.getMonth ();
+                        var tanggal= tw.getDate ();
+                        var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+                        document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
+                        </script>
+                    </div>
 
-                    <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
-                    <script>
-                    var tw = new Date();
-                    if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
-                    else (a=tw.getTime());
-                    tw.setTime(a);
-                    var tahun= tw.getFullYear ();
-                    var bulan= tw.getMonth ();
-                    var tanggal= tw.getDate ();
-                    var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
-                    document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
-                    </script>
+                    <a href="/axis-retail">
+                        <img src="/images/back.png" alt="back">
+                    </a>
 
                     <div class="row">
                         <!-- Card Example -->

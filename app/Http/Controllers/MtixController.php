@@ -27,7 +27,8 @@ class MtixController extends Controller
      */
     public function create()
     {
-        //
+        $mtixes = Mtix::all(); 
+        return view('dashboard.pulsa.mtix.create', compact('mtixes'));
     }
 
     /**
@@ -38,7 +39,12 @@ class MtixController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Mtix::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('mtix-retail')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

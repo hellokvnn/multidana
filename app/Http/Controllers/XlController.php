@@ -27,7 +27,8 @@ class XlController extends Controller
      */
     public function create()
     {
-        //
+        $xls = Xl::all(); 
+        return view('dashboard.pulsa.xl.create', compact('xlsn'));
     }
 
     /**
@@ -38,7 +39,12 @@ class XlController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Xl::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('xl-retail')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

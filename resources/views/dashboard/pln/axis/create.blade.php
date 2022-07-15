@@ -12,14 +12,14 @@
     <title>Multidana</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../../../css/sb-admin-2.css" rel="stylesheet">
 
 </head>
 
@@ -35,7 +35,7 @@
             <br>
             <div style="margin-left: -30px" class="sidebar-brand d-flex align-items-center justify-content-center">
                 <div class="sidebar-brand-icon">
-                    <img src="images/logoadmin.png" alt="logoadmin">
+                    <img src="/images/logoadmin.png" alt="logoadmin">
                 </div>
             </div>
 
@@ -86,22 +86,22 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Telkomsel PLN") ? 'active' : '' }}" href="/pulsa-retail-setting">
-                    <i class=""><img src="images/pulsaretail.png" alt="pulsaretail"></i>
+                <a class="nav-link active" href="/pulsa-retail-setting">
+                    <i class=""><img src="/images/pulsaretail.png" alt="pulsaretail"></i>
                     <span>Pulsa Retail</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
+                    <i class=""><img src="/images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/pulsah2h.png" alt="formattransaksi"></i>
+                    <i class=""><img src="/images/pulsah2h.png" alt="formattransaksi"></i>
                     <span>Format Transaksi</span></a>
             </li>
 
@@ -113,21 +113,21 @@
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/komplain-icon.png" alt="komplainicon"></i>
+                    <i class=""><img src="/images/komplain-icon.png" alt="komplainicon"></i>
                     <span>Komplain</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/cs-admin.png" alt="csadmin"></i>
+                    <i class=""><img src="/images/cs-admin.png" alt="csadmin"></i>
                     <span>Customer Service</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/setting.png" alt="setting"></i>
+                    <i class=""><img src="/images/setting.png" alt="setting"></i>
                     <span>Setting</span></a>
             </li>
 
@@ -154,7 +154,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img style="margin-top: -10px" class="img-profile rounded-circle" src="images/undraw_profile.svg">
+                                <img style="margin-top: -10px" class="img-profile rounded-circle" src="/images/undraw_profile.svg">
                                 <span style="margin-top: -25px" class="ml-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <p style="margin-top: 30px; margin-left: -39px;">
                                     <span class="d-none d-lg-inline text-black-600 small">Administrator</span>
@@ -180,7 +180,7 @@
 
                     <!-- Page Heading -->
                     <div>
-                        <h1 style="color: black" class="h3 mb-4">Telkomsel Data</h1>
+                        <h1 style="color: black" class="h3 mb-4">Tambah Axis Data</h1>
                         <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
                         <script>
                         var tw = new Date();
@@ -194,59 +194,31 @@
                         document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
                         </script>
                     </div>
-        
-                    <a href="/pln-setting">
+
+                    <a href="axis-pln">
                         <img src="/images/back.png" alt="back">
                     </a>
 
-                    <a href="{{route('telkomsel-pln.create')}}" class="text-decoration-none">
-                    <button type="button" style="border-color: #A00043; color:#A00043; margin-top: 20px;" class="btn d-block">
-                        <img src="/images/add.png" alt="add"> 
-                            Add Product
-                    </button>
-                    </a>
-
-                    <br>
-
-                    <div class="container">
-                        @if (session('status'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            {{session('status')}}
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        @endif
-                    </div>
-
                     <div class="row">
                         <!-- Card Example -->
-                        <div class="card-body">
-                            <table class="table text-center" id="dataTable" width="100%">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Kode</th>
-                                        <th scope="col">Operator</th>
-                                        <th scope="col">Harga</th>
-                                        <th scope="col"></th>
-                                    </tr>
-                                </thead >
-                                <tbody>
-                                    @foreach ($telkomselplns as $telkomselpln)
-                                    <tr>
-                                        <td> {{$telkomselpln->kode}} </td>
-                                        <td> {{$telkomselpln->operator}} </td>
-                                        <td> {{$telkomselpln->harga}}  </td>
-                                        <td>
-                                            <a href="{{route('telkomsel-pln.edit', $telkomselpln->id )}}" class="text-decoration-none">
-                                                <img src="/images/edit.png" alt="edit">
-                                            </a>
-                                        </td>
-                                     </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
+                        <form method="POST" action="{{route('axis-pln.store')}}" enctype="multipart/form-data">
+                            @csrf
+                            <div style="margin-top: 20px" class="card-body ml-5">
+                                <div style="column-width: 650px" class="form-group mb-4">
+                                    <label for="kode">Kode</label>
+                                    <input type="text" class="form-control" name="kode" required>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="operator">Operator</label>
+                                    <input type="text" class="form-control" name="operator" required>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="harga">Harga</label>
+                                    <input type="number" class="form-control" name="harga" required>
+                                </div>
+                                <button style="margin-left: 550px" type="submit" class="btn btn-success">Simpan</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <!-- /.container-fluid -->
@@ -285,14 +257,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>    
+    <script src="../../../../js/sb-admin-2.min.js"></script>    
 
 </body>
 

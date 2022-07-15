@@ -179,20 +179,32 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 style="color: black" class="h3 mb-4">Axis Data</h1>
+                    <div>
+                        <h1 style="color: black" class="h3 mb-4">Axis Data</h1>
+                        <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
+                        <script>
+                        var tw = new Date();
+                        if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+                        else (a=tw.getTime());
+                        tw.setTime(a);
+                        var tahun= tw.getFullYear ();
+                        var bulan= tw.getMonth ();
+                        var tanggal= tw.getDate ();
+                        var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+                        document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
+                        </script>
+                    </div>
+        
+                    <a href="/pln-setting">
+                        <img src="/images/back.png" alt="back">
+                    </a>
 
-                    <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
-                    <script>
-                    var tw = new Date();
-                    if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
-                    else (a=tw.getTime());
-                    tw.setTime(a);
-                    var tahun= tw.getFullYear ();
-                    var bulan= tw.getMonth ();
-                    var tanggal= tw.getDate ();
-                    var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
-                    document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
-                    </script>
+                    <a href="{{route('axis-pln.create')}}" class="text-decoration-none">
+                    <button type="button" style="border-color: #A00043; color:#A00043; margin-top: 20px;" class="btn d-block">
+                        <img src="/images/add.png" alt="add"> 
+                            Add Product
+                    </button>
+                    </a>
 
                     <br>
 

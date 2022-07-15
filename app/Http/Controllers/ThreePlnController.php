@@ -27,7 +27,8 @@ class ThreePlnController extends Controller
      */
     public function create()
     {
-        //
+        $threeplns = ThreePln::all(); 
+        return view('dashboard.pln.three.create', compact('threeplns'));
     }
 
     /**
@@ -38,7 +39,12 @@ class ThreePlnController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        ThreePln::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('three-pln')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

@@ -27,7 +27,8 @@ class AxisController extends Controller
      */
     public function create()
     {
-        //
+        $axes = Axis::all(); 
+        return view('dashboard.pulsa.axis.create', compact('axes'));
     }
 
     /**
@@ -38,7 +39,12 @@ class AxisController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Axis::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('axis-retail')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

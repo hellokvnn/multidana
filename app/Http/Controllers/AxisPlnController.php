@@ -27,7 +27,8 @@ class AxisPlnController extends Controller
      */
     public function create()
     {
-        //
+        $axisplns = AxisPln::all(); 
+        return view('dashboard.pln.axis.create', compact('axisplns'));
     }
 
     /**
@@ -38,7 +39,12 @@ class AxisPlnController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        AxisPln::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('axis-pln')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

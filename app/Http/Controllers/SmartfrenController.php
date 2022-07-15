@@ -27,7 +27,8 @@ class SmartfrenController extends Controller
      */
     public function create()
     {
-        //
+        $smartfrens = Smartfren::all(); 
+        return view('dashboard.pulsa.smartfren.create', compact('smartfrens'));
     }
 
     /**
@@ -38,7 +39,12 @@ class SmartfrenController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Smartfren::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('smartfren-retail')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

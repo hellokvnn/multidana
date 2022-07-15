@@ -27,7 +27,8 @@ class ThreeController extends Controller
      */
     public function create()
     {
-        //
+        $threes = Three::all(); 
+        return view('dashboard.pulsa.three.create', compact('threes'));
     }
 
     /**
@@ -38,7 +39,12 @@ class ThreeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Three::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('three-retail')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

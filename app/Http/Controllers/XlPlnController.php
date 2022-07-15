@@ -27,7 +27,8 @@ class XlPlnController extends Controller
      */
     public function create()
     {
-        //
+        $xlplns = XlPln::all(); 
+        return view('dashboard.pln.xl.create', compact('xlplns'));
     }
 
     /**
@@ -38,7 +39,12 @@ class XlPlnController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        XlPln::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('xl-pln')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

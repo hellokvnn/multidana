@@ -27,7 +27,8 @@ class SmartfrenPlnController extends Controller
      */
     public function create()
     {
-        //
+        $smartfrenplns = SmartfrenPln::all(); 
+        return view('dashboard.pln.smartfren.create', compact('smartfrenplns'));
     }
 
     /**
@@ -38,7 +39,12 @@ class SmartfrenPlnController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        SmartfrenPln::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('smartfren-pln')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

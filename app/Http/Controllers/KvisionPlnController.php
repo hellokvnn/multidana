@@ -27,7 +27,8 @@ class KvisionPlnController extends Controller
      */
     public function create()
     {
-        //
+        $kvisionplns = KvisionPln::all(); 
+        return view('dashboard.pln.kvision.create', compact('kvisionplns'));
     }
 
     /**
@@ -38,7 +39,12 @@ class KvisionPlnController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        KvisionPln::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('kvision-pln')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

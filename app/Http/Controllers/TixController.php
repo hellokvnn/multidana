@@ -27,7 +27,8 @@ class TixController extends Controller
      */
     public function create()
     {
-        //
+        $tixes = Tix::all(); 
+        return view('dashboard.pulsa.tix.create', compact('tixes'));
     }
 
     /**
@@ -38,7 +39,12 @@ class TixController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Tix::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('tix-retail')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**

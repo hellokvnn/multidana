@@ -27,7 +27,8 @@ class PlnPlnController extends Controller
      */
     public function create()
     {
-        //
+        $plnplns = PlnPln::all(); 
+        return view('dashboard.pln.pln.create', compact('plnplns'));
     }
 
     /**
@@ -38,7 +39,12 @@ class PlnPlnController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        PlnPln::create([
+            'kode' => $request->kode,
+            'operator' => $request->operator,
+            'harga' => $request->harga
+        ]);
+        return redirect('pln-pln')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**
