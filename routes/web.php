@@ -16,6 +16,7 @@ use App\Http\Controllers\ThreeController;
 use App\Http\Controllers\ThreePlnController;
 use App\Http\Controllers\MtixController;
 use App\Http\Controllers\TixController;
+use App\Http\Controllers\PlnController;
 use App\Http\Controllers\PlnPlnController;
 use App\Http\Controllers\KvisionPlnController;
 use Illuminate\Support\Facades\Route;
@@ -150,3 +151,5 @@ Route::resource('pln-pln', PlnPlnController::class);
 Route::resource('kvision-pln', KvisionPlnController::class);
 
 Route::get('pulsa-telepon', [PulsaController::class, 'index']);
+
+Route::get('pln-tv-kabel', [PlnController::class, 'index']);

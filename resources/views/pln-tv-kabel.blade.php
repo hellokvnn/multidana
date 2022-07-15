@@ -62,11 +62,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                      </tr>
+                        @foreach ($indosatplns as $indosatpln)
+                        <tr>
+                          <td> {{$indosatpln->kode}} </td>
+                          <td> {{$indosatpln->operator}} </td>
+                          <td> {{$indosatpln->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -99,9 +101,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($telkomselplns as $telkomselpln)
+                        <tr>
+                          <td> {{$telkomselpln->kode}} </td>
+                          <td> {{$telkomselpln->operator}} </td>
+                          <td> {{$telkomselpln->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -134,9 +140,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($axisplns as $axispln)
+                        <tr>
+                          <td> {{$axispln->kode}} </td>
+                          <td> {{$axispln->operator}} </td>
+                          <td> {{$axispln->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -169,9 +179,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($xlplns as $xlpln)
+                        <tr>
+                          <td> {{$xlpln->kode}} </td>
+                          <td> {{$xlpln->operator}} </td>
+                          <td> {{$xlpln->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -210,9 +224,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($smartfrenplns as $smartfrenpln)
+                        <tr>
+                          <td> {{$smartfrenpln->kode}} </td>
+                          <td> {{$smartfrenpln->operator}} </td>
+                          <td> {{$smartfrenpln->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -245,9 +263,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($threeplns as $threepln)
+                        <tr>
+                          <td> {{$threepln->kode}} </td>
+                          <td> {{$threepln->operator}} </td>
+                          <td> {{$threepln->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -280,9 +302,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($plnplns as $plnpln)
+                        <tr>
+                          <td> {{$plnpln->kode}} </td>
+                          <td> {{$plnpln->operator}} </td>
+                          <td> {{$plnpln->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -316,9 +342,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($kvisionplns as $kvisionpln)
+                        <tr>
+                          <td> {{$kvisionpln->kode}} </td>
+                          <td> {{$kvisionpln->operator}} </td>
+                          <td> {{$kvisionpln->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
