@@ -62,11 +62,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                      </tr>
+                        @foreach ($megaxuses as $megaxus)
+                        <tr>
+                          <td> {{$megaxus->kode}} </td>
+                          <td> {{$megaxus->operator}} </td>
+                          <td> {{$megaxus->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -99,9 +101,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($mlbbs as $mlbb)
+                        <tr>
+                          <td> {{$mlbb->kode}} </td>
+                          <td> {{$mlbb->operator}} </td>
+                          <td> {{$mlbb->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -134,9 +140,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($steams as $steam)
+                        <tr>
+                          <td> {{$steam->kode}} </td>
+                          <td> {{$steam->operator}} </td>
+                          <td> {{$steam->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -169,9 +179,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($garenas as $garena)
+                        <tr>
+                          <td> {{$garena->kode}} </td>
+                          <td> {{$garena->operator}} </td>
+                          <td> {{$garena->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -210,9 +224,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($lytos as $lyto)
+                        <tr>
+                          <td> {{$lyto->kode}} </td>
+                          <td> {{$lyto->operator}} </td>
+                          <td> {{$lyto->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -245,9 +263,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($zyngas as $zynga)
+                        <tr>
+                          <td> {{$zynga->kode}} </td>
+                          <td> {{$zynga->operator}} </td>
+                          <td> {{$zynga->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -280,9 +302,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($digicashes as $digicash)
+                        <tr>
+                          <td> {{$digicash->kode}} </td>
+                          <td> {{$digicash->operator}} </td>
+                          <td> {{$digicash->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -316,9 +342,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($mogplays as $mogplay)
+                        <tr>
+                            <td> {{$mogplay->kode}} </td>
+                            <td> {{$mogplay->operator}} </td>
+                            <td> {{$mogplay->harga}} </td>
+                        </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>
@@ -356,9 +386,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($itunes as $itunes)
+                        <tr>
+                          <td> {{$itunes->kode}} </td>
+                          <td> {{$itunes->operator}} </td>
+                          <td> {{$itunes->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -391,9 +425,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($cherries as $cherry)
+                        <tr>
+                          <td> {{$cherry->kode}} </td>
+                          <td> {{$cherry->operator}} </td>
+                          <td> {{$cherry->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -426,9 +464,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($pts as $pts)
+                        <tr>
+                          <td> {{$pts->kode}} </td>
+                          <td> {{$pts->operator}} </td>
+                          <td> {{$pts->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -445,7 +487,7 @@
                 <div class="card-5" style="width: 217px; height: 170px">
                     <img src="images/iah.png" class="card-img-top rounded mx-auto d-block" alt="iah" >
                     <div class="card-body">
-                    <h4>iCreadit IAH <br> Indonesia</h4>
+                    <h4>iCredit IAH <br> Indonesia</h4>
                     </div>
                 </div>
             </button>
@@ -461,9 +503,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($iahs as $iah)
+                        <tr>
+                          <td> {{$iah->kode}} </td>
+                          <td> {{$iah->operator}} </td>
+                          <td> {{$iah->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -502,9 +548,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($playstations as $playstation)
+                        <tr>
+                          <td> {{$playstation->kode}} </td>
+                          <td> {{$playstation->operator}} </td>
+                          <td> {{$playstation->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -537,9 +587,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($geons as $geon)
+                        <tr>
+                          <td> {{$geon->kode}} </td>
+                          <td> {{$geon->operator}} </td>
+                          <td> {{$geon->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -572,9 +626,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($vcoins as $vcoin)
+                        <tr>
+                          <td> {{$vcoin->kode}} </td>
+                          <td> {{$vcoin->operator}} </td>
+                          <td> {{$vcoin->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -607,9 +665,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($mols as $mol)
+                        <tr>
+                          <td> {{$mol->kode}} </td>
+                          <td> {{$mol->operator}} </td>
+                          <td> {{$mol->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -648,9 +710,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($gemscools as $gemscool)
+                        <tr>
+                          <td> {{$gemscool->kode}} </td>
+                          <td> {{$gemscool->operator}} </td>
+                          <td> {{$gemscool->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

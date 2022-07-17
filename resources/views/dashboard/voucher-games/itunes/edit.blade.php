@@ -11,19 +11,15 @@
 
     <title>Multidana</title>
 
-    {{-- Bootstap --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    {{-- End Bootsrap --}}
-
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="../../../../css/sb-admin-2.css" rel="stylesheet">
 
 </head>
 
@@ -39,13 +35,13 @@
             <br>
             <div style="margin-left: -30px" class="sidebar-brand d-flex align-items-center justify-content-center">
                 <div class="sidebar-brand-icon">
-                    <img src="images/logoadmin.png" alt="logoadmin">
+                    <img src="/images/logoadmin.png" alt="logoadmin">
                 </div>
             </div>
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Dashboard") ? 'active' : '' }}" href="/dashboard">
+                <a class="nav-link" href="/dashboard">
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -57,7 +53,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item pl-5">
-                <a class="nav-link product {{ ($title === "Slider") ? 'active' : '' }}" href="/slider">
+                <a class="nav-link" href="/slider">
                     <i class=""></i>
                     <span>Slider</span></a>
             </li>
@@ -90,22 +86,22 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Pulsa Retail Setting") ? 'active' : '' }}" href="/pulsa-retail-setting">
-                    <i class=""><img src="images/pulsaretail.png" alt="pulsaretail"></i>
+                <a class="nav-link {{ ($title === "Itunes Edit") ? 'active' : '' }}" href="/pulsa-retail-setting">
+                    <i class=""><img src="/images/pulsaretail.png" alt="pulsaretail"></i>
                     <span>Pulsa Retail</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li style="margin-top: -0px; padding-left: 30px" class="nav-item">
+            <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
+                    <i class=""><img src="/images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/pulsah2h.png" alt="formattransaksi"></i>
+                    <i class=""><img src="/images/pulsah2h.png" alt="formattransaksi"></i>
                     <span>Format Transaksi</span></a>
             </li>
 
@@ -117,21 +113,21 @@
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/komplain-icon.png" alt="komplainicon"></i>
+                    <i class=""><img src="/images/komplain-icon.png" alt="komplainicon"></i>
                     <span>Komplain</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/cs-admin.png" alt="csadmin"></i>
+                    <i class=""><img src="/images/cs-admin.png" alt="csadmin"></i>
                     <span>Customer Service</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class=""><img src="images/setting.png" alt="setting"></i>
+                    <i class=""><img src="/images/setting.png" alt="setting"></i>
                     <span>Setting</span></a>
             </li>
 
@@ -158,7 +154,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img style="margin-top: -10px" class="img-profile rounded-circle" src="images/undraw_profile.svg">
+                                <img style="margin-top: -10px" class="img-profile rounded-circle" src="/images/undraw_profile.svg">
                                 <span style="margin-top: -25px" class="ml-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <p style="margin-top: 30px; margin-left: -39px;">
                                     <span class="d-none d-lg-inline text-black-600 small">Administrator</span>
@@ -183,80 +179,49 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 style="color: black" class="h3 mb-4">Slider</h1>
+                    <div>
+                        <h1 style="color: black" class="h3 mb-4">Edit Itunes Gift Card</h1>
+                        <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
+                        <script>
+                        var tw = new Date();
+                        if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+                        else (a=tw.getTime());
+                        tw.setTime(a);
+                        var tahun= tw.getFullYear ();
+                        var bulan= tw.getMonth ();
+                        var tanggal= tw.getDate ();
+                        var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+                        document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
+                        </script>
+                    </div>
 
-                    <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
-                    <script>
-                    var tw = new Date();
-                    if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
-                    else (a=tw.getTime());
-                    tw.setTime(a);
-                    var tahun= tw.getFullYear ();
-                    var bulan= tw.getMonth ();
-                    var tanggal= tw.getDate ();
-                    var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
-                    document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
-                    </script>
+                    <a href="/itunes-voucher-games">
+                        <img src="/images/back.png" alt="back">
+                    </a>
 
-                    <div class="row justify-content-center">
-                        <div class="col-sm-3">
-                          <a href="/pulsa-telepon-setting" class="text-decoration-none">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/hp.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
-                            <div class="card-body">
-                              <h4>Pulsa Telepon</h4>
+                    <div class="row">
+                        <!-- Card Example -->
+                        <form method="POST" action="{{route('itunes-voucher-games.update', $itunes->id )}}" enctype="multipart/form-data">
+                            @csrf
+                            @method('PUT')
+                            <div style="margin-top: 20px" class="card-body ml-5">
+                                <div style="column-width: 650px" class="form-group mb-4">
+                                    <label for="kode">Kode</label>
+                                    <input type="text" class="form-control" name="kode" value="{{$itunes->kode}}">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="operator">Operator</label>
+                                    <input type="text" class="form-control" name="operator" value="{{$itunes->operator}}">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="harga">Harga</label>
+                                    <input type="number" class="form-control" name="harga" value="{{$itunes->harga}}">
+                                </div>
+                                <button style="margin-left: 550px" type="submit" class="btn btn-success">Simpan</button>
                             </div>
-                          </div>
-                          </a>
-                        </div>
-                        <div class="col-sm-3">
-                          <a href="/pln-setting" class="text-decoration-none">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
-                            <div class="card-body">
-                              <h4>PLN TV Kabel Data</h4>
-                            </div>
-                          </div>
-                          </a>
-                        </div>
-                        <div class="col-sm-3">
-                          <a href="/voucher-games-setting" class="text-decoration-none">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
-                            <div class="card-body">
-                              <h4>Voucher Game</h4>
-                            </div>
-                          </div>
-                          </a>
-                        </div>
-                      </div>
-                
-                      <div class="row justify-content-center">
-                        <div class="col-sm-3">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
-                            <div class="card-body">
-                              <h4>Produk Multibiller</h4>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
-                            <div class="card-body">
-                              <h4>Top-Up E-Money</h4>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
-                            <div class="card-body">
-                              <h4>Tiket Kereta</h4>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                        </form>
+                    </div>
+                </div>
                 <!-- /.container-fluid -->
 
             </div>
@@ -293,15 +258,15 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>    
+    <script src="../../../../js/sb-admin-2.min.js"></script>    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -19,6 +19,24 @@ use App\Http\Controllers\TixController;
 use App\Http\Controllers\PlnController;
 use App\Http\Controllers\PlnPlnController;
 use App\Http\Controllers\KvisionPlnController;
+use App\Http\Controllers\CherryController;
+use App\Http\Controllers\DigicashController;
+use App\Http\Controllers\GarenaController;
+use App\Http\Controllers\GemscoolController;
+use App\Http\Controllers\GeonController;
+use App\Http\Controllers\IahController;
+use App\Http\Controllers\ItunesController;
+use App\Http\Controllers\LytoController;
+use App\Http\Controllers\MegaxusController;
+use App\Http\Controllers\MogplayController;
+use App\Http\Controllers\PlaystationController;
+use App\Http\Controllers\MolController;
+use App\Http\Controllers\PtsController;
+use App\Http\Controllers\SteamController;
+use App\Http\Controllers\VcoinController;
+use App\Http\Controllers\ZyngaController;
+use App\Http\Controllers\MlbbController;
+use App\Http\Controllers\VoucherGamesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -116,6 +134,12 @@ Route::get('/pln-setting', function () {
     ]);
 });
 
+Route::get('/voucher-games-setting', function () {
+    return view('/dashboard/voucher-games/voucher-games-setting', [
+        "title" => "Voucher Games Setting"
+    ]);
+});
+
 Route::resource('indosat-retail', IndosatController::class);
 
 Route::resource('telkomsel-retail', TelkomselController::class);
@@ -150,6 +174,42 @@ Route::resource('pln-pln', PlnPlnController::class);
 
 Route::resource('kvision-pln', KvisionPlnController::class);
 
+Route::resource('cherry-voucher-games', CherryController::class);
+
+Route::resource('digicash-voucher-games', DigicashController::class);
+
+Route::resource('garena-voucher-games', GarenaController::class);
+
+Route::resource('gemscool-voucher-games', GemscoolController::class);
+
+Route::resource('geon-voucher-games', GeonController::class);
+
+Route::resource('iah-voucher-games', IahController::class);
+
+Route::resource('itunes-voucher-games', ItunesController::class);
+
+Route::resource('lyto-voucher-games', LytoController::class);
+
+Route::resource('megaxus-voucher-games', MegaxusController::class);
+
+Route::resource('mogplay-voucher-games', MogplayController::class);
+
+Route::resource('playstation-voucher-games', PlaystationController::class);
+
+Route::resource('mol-voucher-games', MolController::class);
+
+Route::resource('pts-voucher-games', PtsController::class);
+
+Route::resource('steam-voucher-games', SteamController::class);
+
+Route::resource('vcoin-voucher-games', VcoinController::class);
+
+Route::resource('zynga-voucher-games', ZyngaController::class);
+
+Route::resource('ml-voucher-games', MlbbController::class);
+
 Route::get('pulsa-telepon', [PulsaController::class, 'index']);
 
 Route::get('pln-tv-kabel', [PlnController::class, 'index']);
+
+Route::get('voucher-games', [VoucherGamesController::class, 'index']);

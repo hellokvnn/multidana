@@ -11,10 +11,6 @@
 
     <title>Multidana</title>
 
-    {{-- Bootstap --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    {{-- End Bootsrap --}}
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +41,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Dashboard") ? 'active' : '' }}" href="/dashboard">
+                <a class="nav-link" href="/dashboard">
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -57,7 +53,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item pl-5">
-                <a class="nav-link product {{ ($title === "Slider") ? 'active' : '' }}" href="/slider">
+                <a class="nav-link" href="/slider">
                     <i class=""></i>
                     <span>Slider</span></a>
             </li>
@@ -90,13 +86,13 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Pulsa Retail Setting") ? 'active' : '' }}" href="/pulsa-retail-setting">
+                <a class="nav-link {{ ($title === "Zynga") ? 'active' : '' }}" href="/pulsa-retail-setting">
                     <i class=""><img src="images/pulsaretail.png" alt="pulsaretail"></i>
                     <span>Pulsa Retail</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li style="margin-top: -0px; padding-left: 30px" class="nav-item">
+            <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
                     <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
@@ -183,80 +179,76 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 style="color: black" class="h3 mb-4">Slider</h1>
+                    <div>
+                        <h1 style="color: black" class="h3 mb-4">Zynga</h1>
+                        <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
+                        <script>
+                        var tw = new Date();
+                        if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+                        else (a=tw.getTime());
+                        tw.setTime(a);
+                        var tahun= tw.getFullYear ();
+                        var bulan= tw.getMonth ();
+                        var tanggal= tw.getDate ();
+                        var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+                        document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
+                        </script>
+                    </div>
+        
+                    <a href="/voucher-games-setting">
+                        <img src="/images/back.png" alt="back">
+                    </a>
 
-                    <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
-                    <script>
-                    var tw = new Date();
-                    if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
-                    else (a=tw.getTime());
-                    tw.setTime(a);
-                    var tahun= tw.getFullYear ();
-                    var bulan= tw.getMonth ();
-                    var tanggal= tw.getDate ();
-                    var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
-                    document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
-                    </script>
+                    <a href="{{route('zynga-voucher-games.create')}}" class="text-decoration-none">
+                    <button type="button" style="border-color: #A00043; color:#A00043; margin-top: 20px;" class="btn d-block">
+                        <img src="/images/add.png" alt="add"> 
+                            Add Product
+                    </button>
+                    </a>
 
-                    <div class="row justify-content-center">
-                        <div class="col-sm-3">
-                          <a href="/pulsa-telepon-setting" class="text-decoration-none">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/hp.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
-                            <div class="card-body">
-                              <h4>Pulsa Telepon</h4>
-                            </div>
-                          </div>
-                          </a>
+                    <br>
+
+                    <div class="container">
+                        @if (session('status'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{session('status')}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <div class="col-sm-3">
-                          <a href="/pln-setting" class="text-decoration-none">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
-                            <div class="card-body">
-                              <h4>PLN TV Kabel Data</h4>
-                            </div>
-                          </div>
-                          </a>
+                        @endif
+                    </div>
+
+                    <div class="row">
+                        <!-- Card Example -->
+                        <div class="card-body">
+                            <table class="table text-center" id="dataTable" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Kode</th>
+                                        <th scope="col">Operator</th>
+                                        <th scope="col">Harga</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead >
+                                <tbody>
+                                    @foreach ($zyngas as $zynga)
+                                     <tr>
+                                        <td> {{$zynga->kode}} </td>
+                                        <td> {{$zynga->operator}} </td>
+                                        <td> {{$zynga->harga}} </td>
+                                        <td>
+                                            <a href="{{route('zynga-voucher-games.edit', $zynga->id )}}" class="text-decoration-none">
+                                                <img src="/images/edit.png" alt="edit">
+                                            </a>
+                                        </td>
+                                      </tr>
+                                     @endforeach
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="col-sm-3">
-                          <a href="/voucher-games-setting" class="text-decoration-none">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
-                            <div class="card-body">
-                              <h4>Voucher Game</h4>
-                            </div>
-                          </div>
-                          </a>
-                        </div>
-                      </div>
-                
-                      <div class="row justify-content-center">
-                        <div class="col-sm-3">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
-                            <div class="card-body">
-                              <h4>Produk Multibiller</h4>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
-                            <div class="card-body">
-                              <h4>Top-Up E-Money</h4>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
-                            <div class="card-body">
-                              <h4>Tiket Kereta</h4>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    </div>
+                </div>
                 <!-- /.container-fluid -->
 
             </div>
@@ -302,6 +294,6 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
+
 </html>

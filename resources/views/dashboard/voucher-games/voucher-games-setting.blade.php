@@ -90,13 +90,13 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Pulsa Retail Setting") ? 'active' : '' }}" href="/pulsa-retail-setting">
+                <a class="nav-link {{ ($title === "Voucher Games Setting") ? 'active' : '' }}" href="/pulsa-retail-setting">
                     <i class=""><img src="images/pulsaretail.png" alt="pulsaretail"></i>
                     <span>Pulsa Retail</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li style="margin-top: -0px; padding-left: 30px" class="nav-item">
+            <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
                     <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
@@ -183,7 +183,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 style="color: black" class="h3 mb-4">Slider</h1>
+                    <h1 style="color: black" class="h3 mb-4">Voucher Games</h1>
 
                     <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
                     <script>
@@ -198,75 +198,211 @@
                     document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
                     </script>
 
-                    <div class="row justify-content-center">
-                        <div class="col-sm-3">
-                          <a href="/pulsa-telepon-setting" class="text-decoration-none">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/hp.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <a href="/megaxus-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/megaxus.png" class="card-img-top rounded mx-auto d-block" alt="megaxus" >
                             <div class="card-body">
-                              <h4>Pulsa Telepon</h4>
+                            <h4>Megaxus</h4>
                             </div>
-                          </div>
-                          </a>
                         </div>
-                        <div class="col-sm-3">
-                          <a href="/pln-setting" class="text-decoration-none">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
+                        </a>    
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/ml-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/ml.png" class="card-img-top rounded mx-auto d-block" alt="ml" >
                             <div class="card-body">
-                              <h4>PLN TV Kabel Data</h4>
+                            <h4>Mobile Legend <br> Bang-Bang</h4>
                             </div>
-                          </div>
-                          </a>
                         </div>
-                        <div class="col-sm-3">
-                          <a href="/voucher-games-setting" class="text-decoration-none">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
+                         </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/steam-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/steam.png" class="card-img-top rounded mx-auto d-block" alt="steam" >
                             <div class="card-body">
-                              <h4>Voucher Game</h4>
+                            <h4>Voucher <br> Steam Sea</h4>
                             </div>
-                          </div>
-                          </a>
                         </div>
-                      </div>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/garena-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/garena.png" class="card-img-top rounded mx-auto d-block" alt="garena" >
+                            <div class="card-body">
+                            <h4>Garena</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <a href="/lyto-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/lyto.png" class="card-img-top rounded mx-auto d-block" alt="lyto" >
+                            <div class="card-body">
+                            <h4>Lyto</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/zynga-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/zynga.png" class="card-img-top rounded mx-auto d-block" alt="zynga" >
+                            <div class="card-body">
+                            <h4>Zynga</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/digicash-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/digicash.png" class="card-img-top rounded mx-auto d-block" alt="digicash" >
+                            <div class="card-body">
+                            <h4>Digicash</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/mogplay-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/mogplay.png" class="card-img-top rounded mx-auto d-block" alt="mogplay" >
+                            <div class="card-body">
+                            <h4>Mogplay</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <a href="/itunes-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/itunes.png" class="card-img-top rounded mx-auto d-block" alt="itunes" >
+                            <div class="card-body">
+                            <h4>Itunes Gift Card</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/cherry-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/cherry.png" class="card-img-top rounded mx-auto d-block" alt="cherry" >
+                            <div class="card-body">
+                            <h4>Cherry Credits</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/pts-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/pts.png" class="card-img-top rounded mx-auto d-block" alt="pts" >
+                            <div class="card-body">
+                            <h4>PTS My Card</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/iah-voucher-games" class="text-decoration-none">
+                            <div class="card-3" style="width: 217px; height: 170px">
+                                <img src="images/iah.png" class="card-img-top rounded mx-auto d-block" alt="iah" >
+                                <div class="card-body">
+                                <h4>iCredit IAH <br> Indonesia</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
                 
-                      <div class="row justify-content-center">
-                        <div class="col-sm-3">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <a href="/playstation-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/playstation.png" class="card-img-top rounded mx-auto d-block" alt="playstation" >
                             <div class="card-body">
-                              <h4>Produk Multibiller</h4>
+                            <h4>Playstation</h4>
                             </div>
-                          </div>
                         </div>
-                        <div class="col-sm-3">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/geon-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/geon.png" class="card-img-top rounded mx-auto d-block" alt="geon" >
                             <div class="card-body">
-                              <h4>Top-Up E-Money</h4>
+                            <h4>Geon</h4>
                             </div>
-                          </div>
                         </div>
-                        <div class="col-sm-3">
-                          <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/vcoin-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/vcoin.png" class="card-img-top rounded mx-auto d-block" alt="vcoin" >
                             <div class="card-body">
-                              <h4>Tiket Kereta</h4>
+                            <h4>V-Coin VTC</h4>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                <!-- /.container-fluid -->
+                        </a>
+                    </div>
+
+                    <div class="col-2">
+                        <a href="/mol-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/mol.png" class="card-img-top rounded mx-auto d-block" alt="mol" >
+                            <div class="card-body">
+                            <h4>MOL Point</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <a href="/gemscool-voucher-games" class="text-decoration-none">
+                        <div class="card-3" style="width: 217px; height: 170px">
+                            <img src="images/gemscool.png" class="card-img-top rounded mx-auto d-block" alt="gemscool" >
+                            <div class="card-body">
+                            <h4>Gemscool</h4>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                </div>
+                <br>
+                <!-- End of Main Content -->
 
             </div>
-            <!-- End of Main Content -->
+            <!-- End of Content Wrapper -->
 
         </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
+        <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
