@@ -357,20 +357,22 @@
               </h2>
               <div id="collapseSatu1" class="accordion-collapse collapse" aria-labelledby="headingSatu1" data-bs-parent="#accordionExampleSatu">
               <div class="accordion-body bodyy-1 border border-2">
+                @foreach ($transaksipulsas as $transaksipulsa)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$transaksipulsa->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$transaksipulsa->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$transaksipulsa->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>

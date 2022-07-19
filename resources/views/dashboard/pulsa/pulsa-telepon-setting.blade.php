@@ -104,7 +104,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link {{ ($title === "Format Setting") ? 'active' : '' }}" href="/format-setting">
                     <i class=""><img src="images/pulsah2h.png" alt="formattransaksi"></i>
                     <span>Format Transaksi</span></a>
             </li>

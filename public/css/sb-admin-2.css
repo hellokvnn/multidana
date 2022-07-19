@@ -4037,11 +4037,10 @@ input[type="button"].btn-block {
     color: #ffff !important;
   }
 
-.nav-link.active .product {
+.nav-link.activee {
     border-bottom: #ffff solid;
-    margin-left: 50px;
     height: 50px;
-    width: 150px !important;
+    width: 170px !important;
     color: #ffff !important;
   }
 
@@ -4118,6 +4117,49 @@ input[type="button"].btn-block {
 
 .card-3 .h4-fix {
   margin-top: -3px;
+}
+
+.col-2 {
+  margin-left: 20px;
+}
+/*  End Info Card */
+
+/* Info Card */
+.card-5 {
+  background-color: #fff;
+  color: #A00043;
+  margin-top: 30px;
+  margin-bottom: -10px;
+  border: solid #A00043;
+}
+
+.card-5:hover {
+  background-color: #A00043;
+  color: #fff;
+}
+
+.card-5 img {
+  object-fit: fill;
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.card-5 .h4-fix-2 {
+  margin-left: -10px;
+}
+
+.card-5 h4 {
+  margin-top: -10px;
+  font-family: Inter;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.card-5 .h4-fix {
+  margin-top: -10px;
 }
 
 .col-2 {

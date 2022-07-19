@@ -104,9 +104,9 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class=""><img src="images/pulsah2h.png" alt="formattransaksi"></i>
-                    <span>Format Transaksi</span></a>
+              <a class="nav-link {{ ($title === "Format Setting") ? 'active' : '' }}" href="/format-setting">
+                  <i class=""><img src="images/pulsah2h.png" alt="formattransaksi"></i>
+                  <span>Format Transaksi</span></a>
             </li>
 
             <!-- Heading -->
@@ -233,20 +233,24 @@
                 
                       <div class="row justify-content-center">
                         <div class="col-sm-3">
+                          <a href="/multibiller-setting" class="text-decoration-none">
                           <div class="card-1" style="width: 20rem; height: 17rem">
                             <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
                             <div class="card-body">
                               <h4>Produk Multibiller</h4>
                             </div>
                           </div>
+                          </a>
                         </div>
                         <div class="col-sm-3">
+                          <a href="/topup-e-money-setting" class="text-decoration-none">
                           <div class="card-1" style="width: 20rem; height: 17rem">
                             <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
                             <div class="card-body">
                               <h4>Top-Up E-Money</h4>
                             </div>
                           </div>
+                          </a>
                         </div>
                         <div class="col-sm-3">
                           <div class="card-1" style="width: 20rem; height: 17rem">

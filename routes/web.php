@@ -37,6 +37,24 @@ use App\Http\Controllers\VcoinController;
 use App\Http\Controllers\ZyngaController;
 use App\Http\Controllers\MlbbController;
 use App\Http\Controllers\VoucherGamesController;
+use App\Http\Controllers\PlnMultibillerController;
+use App\Http\Controllers\TelkomMultibillerController;
+use App\Http\Controllers\PdamMultibillerController;
+use App\Http\Controllers\BpjsMultibillerController;
+use App\Http\Controllers\FinanceMultibillerController;
+use App\Http\Controllers\PostpaidMultibillerController;
+use App\Http\Controllers\TvberlanggananMultibillerController;
+use App\Http\Controllers\GopayTopupController;
+use App\Http\Controllers\OvoTopupController;
+use App\Http\Controllers\EtoolTopupController;
+use App\Http\Controllers\DanaTopupController;
+use App\Http\Controllers\GojekTopupController;
+use App\Http\Controllers\GrabTopupController;
+use App\Http\Controllers\MultibillerController;
+use App\Http\Controllers\TopupController;
+use App\Http\Controllers\TransaksiPulsaController;
+use App\Http\Controllers\FormatController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -122,6 +140,12 @@ Route::get('/pulsa-retail-setting', function () {
     ]);
 });
 
+Route::get('/format-setting', function () {
+    return view('/dashboard/format-setting', [
+        "title" => "Format Setting"
+    ]);
+});
+
 Route::get('/pulsa-telepon-setting', function () {
     return view('/dashboard/pulsa/pulsa-telepon-setting', [
         "title" => "Pulsa Telepon Setting"
@@ -137,6 +161,18 @@ Route::get('/pln-setting', function () {
 Route::get('/voucher-games-setting', function () {
     return view('/dashboard/voucher-games/voucher-games-setting', [
         "title" => "Voucher Games Setting"
+    ]);
+});
+
+Route::get('/multibiller-setting', function () {
+    return view('/dashboard/multibiller/multibiller-setting', [
+        "title" => "Multibiller Setting"
+    ]);
+});
+
+Route::get('/topup-e-money-setting', function () {
+    return view('/dashboard/topupemoney/topup-e-money-setting', [
+        "title" => "Topup E-Money Setting"
     ]);
 });
 
@@ -208,8 +244,42 @@ Route::resource('zynga-voucher-games', ZyngaController::class);
 
 Route::resource('ml-voucher-games', MlbbController::class);
 
+Route::resource('pln-multibiller', PlnMultibillerController::class);
+
+Route::resource('telkom-multibiller', TelkomMultibillerController::class);
+
+Route::resource('pdam-multibiller', PdamMultibillerController::class);
+
+Route::resource('bpjs-multibiller', BpjsMultibillerController::class);
+
+Route::resource('finance-multibiller', FinanceMultibillerController::class);
+
+Route::resource('postpaid-multibiller', PostpaidMultibillerController::class);
+
+Route::resource('tvberlangganan-multibiller', TvberlanggananMultibillerController::class);
+
+Route::resource('gopay-topup', GopayTopupController::class);
+
+Route::resource('ovo-topup', OvoTopupController::class);
+
+Route::resource('etool-topup', EtoolTopupController::class);
+
+Route::resource('dana-topup', DanaTopupController::class);
+
+Route::resource('gojek-topup', GojekTopupController::class);
+
+Route::resource('grab-topup', GrabTopupController::class);
+
+Route::resource('transaksi-pulsa-format', TransaksiPulsaController::class);
+
 Route::get('pulsa-telepon', [PulsaController::class, 'index']);
 
 Route::get('pln-tv-kabel', [PlnController::class, 'index']);
 
 Route::get('voucher-games', [VoucherGamesController::class, 'index']);
+
+Route::get('produk-multibiller', [MultibillerController::class, 'index']);
+
+Route::get('topup-e-money', [TopupController::class, 'index']);
+
+Route::get('', [FormatController::class, 'index']);

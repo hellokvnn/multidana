@@ -62,11 +62,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                      </tr>
+                        @foreach ($gopaytopups as $gopaytopup)
+                        <tr>
+                          <td> {{$gopaytopup->kode}} </td>
+                          <td> {{$gopaytopup->operator}} </td>
+                          <td> {{$gopaytopup->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -99,9 +101,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($ovotopups as $ovotopup)
+                        <tr>
+                          <td> {{$ovotopup->kode}} </td>
+                          <td> {{$ovotopup->operator}} </td>
+                          <td> {{$ovotopup->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -134,9 +140,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($etooltopups as $etooltopup)
+                        <tr>
+                          <td> {{$etooltopup->kode}} </td>
+                          <td> {{$etooltopup->operator}} </td>
+                          <td> {{$etooltopup->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -169,9 +179,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($danatopups as $danatopup)
+                        <tr>
+                          <td> {{$danatopup->kode}} </td>
+                          <td> {{$danatopup->operator}} </td>
+                          <td> {{$danatopup->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -210,9 +224,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($gojektopups as $gojektopup)
+                        <tr>
+                          <td> {{$gojektopup->kode}} </td>
+                          <td> {{$gojektopup->operator}} </td>
+                          <td> {{$gojektopup->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -245,9 +263,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($grabtopups as $grabtopup)
+                        <tr>
+                          <td> {{$grabtopup->kode}} </td>
+                          <td> {{$grabtopup->operator}} </td>
+                          <td> {{$grabtopup->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

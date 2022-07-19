@@ -62,11 +62,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                      </tr>
+                        @foreach ($plnmultibillers as $plnmultibiller)
+                        <tr>
+                          <td> {{$plnmultibiller->kode}} </td>
+                          <td> {{$plnmultibiller->operator}} </td>
+                          <td> {{$plnmultibiller->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -99,9 +101,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($telkommultibillers as $telkommultibiller)
+                        <tr>
+                          <td> {{$telkommultibiller->kode}} </td>
+                          <td> {{$telkommultibiller->operator}} </td>
+                          <td> {{$telkommultibiller->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -134,9 +140,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($pdammultibillers as $pdammultibiller)
+                        <tr>
+                          <td> {{$pdammultibiller->kode}} </td>
+                          <td> {{$pdammultibiller->operator}} </td>
+                          <td> {{$pdammultibiller->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -169,9 +179,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($bpjsmultibillers as $bpjsmultibiller)
+                        <tr>
+                          <td> {{$bpjsmultibiller->kode}} </td>
+                          <td> {{$bpjsmultibiller->operator}} </td>
+                          <td> {{$bpjsmultibiller->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -210,9 +224,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($financemultibillers as $financemultibiller)
+                        <tr>
+                          <td> {{$financemultibiller->kode}} </td>
+                          <td> {{$financemultibiller->operator}} </td>
+                          <td> {{$financemultibiller->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -245,9 +263,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($tvberlanggananmultibillers as $tvberlanggananmultibiller)
+                        <tr>
+                          <td> {{$tvberlanggananmultibiller->kode}} </td>
+                          <td> {{$tvberlanggananmultibiller->operator}} </td>
+                          <td> {{$tvberlanggananmultibiller->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -280,9 +302,13 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <td> qwe </td>
-                        <td> qwe </td>
-                        <td> qwe </td>
+                        @foreach ($postpaidmultibillers as $postpaidmultibiller)
+                        <tr>
+                          <td> {{$postpaidmultibiller->kode}} </td>
+                          <td> {{$postpaidmultibiller->operator}} </td>
+                          <td> {{$postpaidmultibiller->harga}} </td>
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
