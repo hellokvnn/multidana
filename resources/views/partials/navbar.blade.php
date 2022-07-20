@@ -32,9 +32,9 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="/pulsa-telepon">Pulsa Telepon</a></li>
                   <li><a class="dropdown-item" href="/pln-tv-kabel">PLN TV Kabel</a></li>
-                  <li><a class="dropdown-item" href="/voucher-games">Voucher Game</a></li>
+                  <li><a class="dropdown-item" href="/voucher-games">Voucher Games</a></li>
                   <li><a class="dropdown-item" href="/produk-multibiller">Produk Multibiller</a></li>
-                  <li><a class="dropdown-item" href="/topup-e-money">Top Up E-Money</a></li>
+                  <li><a class="dropdown-item" href="/topup-e-money">Top-Up E-Money</a></li>
                   <li><a class="dropdown-item" href="#">Tiket Kereta</a></li>
                 </ul>
               </li>
