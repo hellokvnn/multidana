@@ -53,6 +53,17 @@ use App\Http\Controllers\GrabTopupController;
 use App\Http\Controllers\MultibillerController;
 use App\Http\Controllers\TopupController;
 use App\Http\Controllers\TransaksiPulsaController;
+use App\Http\Controllers\CekSaldoController;
+use App\Http\Controllers\DepositViaTiketController;
+use App\Http\Controllers\GantiPinController;
+use App\Http\Controllers\RekapTransaksiController;
+use App\Http\Controllers\KomplainFormatController;
+use App\Http\Controllers\CekTagihanPembayaranController;
+use App\Http\Controllers\PembayaranPascabayarController;
+use App\Http\Controllers\CekHargaProdukController;
+use App\Http\Controllers\TransferDepositController;
+use App\Http\Controllers\MarkupGlobalController;
+use App\Http\Controllers\MarkupSpesifikController;
 use App\Http\Controllers\FormatController;
 
 use Illuminate\Support\Facades\Route;
@@ -271,6 +282,28 @@ Route::resource('gojek-topup', GojekTopupController::class);
 Route::resource('grab-topup', GrabTopupController::class);
 
 Route::resource('transaksi-pulsa-format', TransaksiPulsaController::class);
+
+Route::resource('cek-saldo-format', CekSaldoController::class);
+
+Route::resource('deposit-via-tiket-format', DepositViaTiketController::class);
+
+Route::resource('ganti-pin-format', GantiPinController::class);
+
+Route::resource('rekap-transaksi-format', RekapTransaksiController::class);
+
+Route::resource('komplain-format', KomplainFormatController::class);
+
+Route::resource('cek-tagihan-pembayaran-format', CekTagihanPembayaranController::class);
+
+Route::resource('pembayaran-pascabayar-format', PembayaranPascabayarController::class);
+
+Route::resource('cek-harga-produk-format', CekHargaProdukController::class);
+
+Route::resource('transfer-deposit-format', TransferDepositController::class);
+
+Route::resource('markup-global-format', MarkupGlobalController::class);
+
+Route::resource('markup-spesifik-format', MarkupSpesifikController::class);
 
 Route::get('pulsa-telepon', [PulsaController::class, 'index']);
 

@@ -2,21 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CekHargaProduk;
 use App\Models\CekSaldo;
-use App\Models\CekTagihanPembayaran;
-use App\Models\DepositViaTiket;
-use App\Models\GantiPin;
-use App\Models\KomlainFormat;
-use App\Models\MarkupGlobal;
-use App\Models\MarkupSpesifik;
-use App\Models\PembayaranPascabayar;
-use App\Models\RekapTransaksi;
-use App\Models\TransaksiPulsa;
-use App\Models\TransferDeposit;
 use Illuminate\Http\Request;
 
-class FormatController extends Controller
+class CekSaldoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,21 +14,10 @@ class FormatController extends Controller
      */
     public function index()
     {
-        return view('layouts.main', [
-            "title" => "Home",
-            "transaksipulsas" => TransaksiPulsa::all(),
-            "ceksaldos" => CekSaldo::all(),
-            "depositviatikets" => DepositViaTiket::all(),
-            "gantipins" => GantiPin::all(),
-            "rekaptransaksis" => RekapTransaksi::all(),
-            "komplainformats" => KomlainFormat::all(),
-            "cektagihanpembayarans" => CekTagihanPembayaran::all(),
-            "pembayaranpascabayars" => PembayaranPascabayar::all(),
-            "cekhargaproduks" => CekHargaProduk::all(),
-            "transferdeposits" => TransferDeposit::all(),
-            "markupglobals" => MarkupGlobal::all(),
-            "markupspesifiks" => MarkupSpesifik::all()
-        ]);
+        return view('dashboard.format.cek-saldo.index', [
+            "title" => "Cek Saldo",
+            "ceksaldos" => CekSaldo::all()
+        ]); 
     }
 
     /**
@@ -82,7 +60,10 @@ class FormatController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('dashboard.format.cek-saldo.edit', [
+            "title" => "Cek Saldo Edit",
+            'ceksaldo' => CekSaldo::find($id)
+        ]);
     }
 
     /**
@@ -94,7 +75,10 @@ class FormatController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $ceksaldo = CekSaldo::find($id);
+
+        $ceksaldo->update($request->all());
+        return redirect('cek-saldo-format')-> with('status', 'Data Berhasil Diubah !');
     }
 
     /**

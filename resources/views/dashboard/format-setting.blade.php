@@ -183,7 +183,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 style="color: black" class="h3 mb-4">Produk Multibiller</h1>
+                    <h1 style="color: black" class="h3 mb-4">Format Transaksi</h1>
 
                     <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
                     <script>

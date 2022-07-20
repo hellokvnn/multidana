@@ -394,20 +394,22 @@
               </h2>
               <div id="collapseDua2" class="accordion-collapse collapse" aria-labelledby="headingDua2" data-bs-parent="#accordionExampleSatu">
               <div class="accordion-body bodyy-2 border border-2">
+                @foreach ($ceksaldos as $ceksaldo)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$ceksaldo->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$ceksaldo->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$ceksaldo->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -429,20 +431,22 @@
               </h2>
               <div id="collapseTiga3" class="accordion-collapse collapse" aria-labelledby="headingTiga3" data-bs-parent="#accordionExampleDua">
               <div class="accordion-body bodyy-3 border border-2">
+                @foreach ($depositviatikets as $depositviatiket)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$depositviatiket->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$depositviatiket->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$depositviatiket->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -464,20 +468,22 @@
               </h2>
               <div id="collapseEmpat4" class="accordion-collapse collapse" aria-labelledby="headingEmpat4" data-bs-parent="#accordionExampleTiga">
               <div class="accordion-body bodyy-4 border border-2">
+                @foreach ($gantipins as $gantipin)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$gantipin->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$gantipin->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$gantipin->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -505,20 +511,22 @@
               </h2>
               <div id="collapseLima5" class="accordion-collapse collapse" aria-labelledby="headingLima5" data-bs-parent="#accordionExampleEmpat">
               <div class="accordion-body bodyy-1 border border-2">
+                @foreach ($rekaptransaksis as $rekaptransaksi)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$rekaptransaksi->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$rekaptransaksi->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$rekaptransaksi->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -540,20 +548,22 @@
               </h2>
               <div id="collapseEnam6" class="accordion-collapse collapse" aria-labelledby="headingEnam6" data-bs-parent="#accordionExampleLima">
               <div class="accordion-body bodyy-2 border border-2">
+                @foreach ($komplainformats as $komplainformat)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$komplainformat->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$komplainformat->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$komplainformat->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -575,20 +585,22 @@
               </h2>
               <div id="collapseTujuh7" class="accordion-collapse collapse" aria-labelledby="headingTujuh7" data-bs-parent="#accordionExampleEnam">
               <div class="accordion-body bodyy-3 border border-2">
+                @foreach ($cektagihanpembayarans as $cektagihanpembayaran)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$cektagihanpembayaran->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$cektagihanpembayaran->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$cektagihanpembayaran->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -610,20 +622,22 @@
               </h2>
               <div id="collapseDelapan8" class="accordion-collapse collapse" aria-labelledby="headingDelapan8" data-bs-parent="#accordionExampleTujuh">
               <div class="accordion-body bodyy-4 border border-2">
+                @foreach ($pembayaranpascabayars as $pembayaranpascabayar)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$pembayaranpascabayar->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$pembayaranpascabayar->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$pembayaranpascabayar->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -651,20 +665,22 @@
               </h2>
               <div id="collapseSembilan9" class="accordion-collapse collapse" aria-labelledby="headingSembilan9" data-bs-parent="#accordionExampleDelapan">
               <div class="accordion-body bodyy-1 border border-2">
+                @foreach ($cekhargaproduks as $cekhargaproduk)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$cekhargaproduk->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$cekhargaproduk->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$cekhargaproduk->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -686,20 +702,22 @@
               </h2>
               <div id="collapseSepuluh10" class="accordion-collapse collapse" aria-labelledby="headingSepuluh10" data-bs-parent="#accordionExampleSembilan">
               <div class="accordion-body bodyy-2 border border-2">
+                @foreach ($transferdeposits as $transferdeposit)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$transferdeposit->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$transferdeposit->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$transferdeposit->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -721,20 +739,22 @@
               </h2>
               <div id="collapseSebelas11" class="accordion-collapse collapse" aria-labelledby="headingSebelas11" data-bs-parent="#accordionExampleSepuluh">
               <div class="accordion-body bodyy-3 border border-2">
+                @foreach ($markupglobals as $markupglobal)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$markupglobal->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$markupglobal->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$markupglobal->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>
@@ -756,20 +776,22 @@
               </h2>
               <div id="collapseDuabelas12" class="accordion-collapse collapse" aria-labelledby="headingDuabelas12" data-bs-parent="#accordionExampleSebelas">
               <div class="accordion-body bodyy-4 border border-2">
+                @foreach ($markupspesifiks as $markupspesifik)
                 <form>
                   <div class="mb-3">
                     <label for="disableTextInput1" class="form-label">format:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="S.PIN" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput1" placeholder="{{$markupspesifik->format}}" disabled>
                   </div>
                   <div class="mb-3">
                     <label for="disableTextInput2" class="form-label">contoh:</label>
-                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="S.1234" disabled>
+                    <input type="text" class="form-control control-3 border border-1" id="disableTextInput2" placeholder="{{$markupspesifik->contoh}}" disabled>
                   </div>
                 </form>
                 <div class="container heading-8">
                   <h4>Cek Saldo</h4>
-                  <p>Untuk melakukan cek saldo deposit Anda yang <br> terdapat di aplikasi Multidana.</p> 
+                  <p>{!!$markupspesifik->desc!!}</p>
                 </div>
+                @endforeach 
               </div>
               </div>
           </div>

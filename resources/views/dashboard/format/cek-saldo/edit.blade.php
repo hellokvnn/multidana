@@ -100,7 +100,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Transaksi Pulsa Edit") ? 'activee' : '' }}" href="/format-setting">
+                <a class="nav-link {{ ($title === "Cek Saldo Edit") ? 'activee' : '' }}" href="/format-setting">
                     <i class=""><img src="/images/pulsah2h.png" alt="formattransaksi"></i>
                     <span>Format Transaksi</span></a>
             </li>
@@ -180,7 +180,7 @@
 
                     <!-- Page Heading -->
                     <div>
-                        <h1 style="color: black" class="h3 mb-4">Edit Transaksi Pulsa</h1>
+                        <h1 style="color: black" class="h3 mb-4">Edit Cek Saldo Format</h1>
                         <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
                         <script>
                         var tw = new Date();
@@ -195,23 +195,23 @@
                         </script>
                     </div>
 
-                    <a href="/transaksi-pulsa-format">
+                    <a href="/cek-saldo-format">
                         <img src="/images/back.png" alt="back">
                     </a>
 
                     <div class="row">
                         <!-- Card Example -->
-                        <form method="POST" action="{{route('transaksi-pulsa-format.update', $transaksipulsa->id )}}" enctype="multipart/form-data">
+                        <form method="POST" action="{{route('cek-saldo-format.update', $ceksaldo->id )}}" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div style="margin-top: 20px" class="card-body ml-5">
                                 <div style="column-width: 650px" class="form-group mb-4">
                                     <label for="format">Format</label>
-                                    <input type="text" class="form-control" name="format" value="{{$transaksipulsa->format}}">
+                                    <input type="text" class="form-control" name="format" value="{{$ceksaldo->format}}">
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="contoh">Contoh</label>
-                                    <input type="text" class="form-control" name="contoh" value="{{$transaksipulsa->Contoh}}">
+                                    <input type="text" class="form-control" name="contoh" value="{{$ceksaldo->contoh}}">
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="description">Description</label>

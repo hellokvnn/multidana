@@ -2,21 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CekHargaProduk;
-use App\Models\CekSaldo;
-use App\Models\CekTagihanPembayaran;
-use App\Models\DepositViaTiket;
 use App\Models\GantiPin;
-use App\Models\KomlainFormat;
-use App\Models\MarkupGlobal;
-use App\Models\MarkupSpesifik;
-use App\Models\PembayaranPascabayar;
-use App\Models\RekapTransaksi;
-use App\Models\TransaksiPulsa;
-use App\Models\TransferDeposit;
 use Illuminate\Http\Request;
 
-class FormatController extends Controller
+class GantiPinController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,21 +14,10 @@ class FormatController extends Controller
      */
     public function index()
     {
-        return view('layouts.main', [
-            "title" => "Home",
-            "transaksipulsas" => TransaksiPulsa::all(),
-            "ceksaldos" => CekSaldo::all(),
-            "depositviatikets" => DepositViaTiket::all(),
-            "gantipins" => GantiPin::all(),
-            "rekaptransaksis" => RekapTransaksi::all(),
-            "komplainformats" => KomlainFormat::all(),
-            "cektagihanpembayarans" => CekTagihanPembayaran::all(),
-            "pembayaranpascabayars" => PembayaranPascabayar::all(),
-            "cekhargaproduks" => CekHargaProduk::all(),
-            "transferdeposits" => TransferDeposit::all(),
-            "markupglobals" => MarkupGlobal::all(),
-            "markupspesifiks" => MarkupSpesifik::all()
-        ]);
+        return view('dashboard.format.ganti-pin.index', [
+            "title" => "Ganti Pin",
+            "gantipins" => GantiPin::all()
+        ]); 
     }
 
     /**
@@ -82,7 +60,10 @@ class FormatController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('dashboard.format.ganti-pin.edit', [
+            "title" => "Ganti Pin Edit",
+            'gantipin' => GantiPin::find($id)
+        ]);
     }
 
     /**
@@ -94,7 +75,10 @@ class FormatController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $gantipin = GantiPin::find($id);
+
+        $gantipin->update($request->all());
+        return redirect('ganti-pin-format')-> with('status', 'Data Berhasil Diubah !');
     }
 
     /**
