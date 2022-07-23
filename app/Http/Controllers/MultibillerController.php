@@ -21,7 +21,7 @@ class MultibillerController extends Controller
     public function index()
     {
         return view('produk-multibiller', [
-            "title" => "produk-ultibiller",
+            "title" => "Produk Multibiller",
             "plnmultibillers" => PlnMultibiller::all(),
             "telkommultibillers" => TelkomMultibiller::all(),
             "pdammultibillers" => PdamMultibiller::all(),
