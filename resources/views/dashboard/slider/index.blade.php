@@ -53,7 +53,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item pl-5">
-                <a class="nav-link {{ ($title === "Slider") ? 'active' : '' }}" href="/slider">
+                <a class="nav-link {{ ($title === "Slider Setting") ? 'active' : '' }}" href="/slider-setting">
                     <i class=""></i>
                     <span>Slider</span></a>
             </li>
@@ -213,9 +213,9 @@
                                     <tr>
                                         <td> {{$loop->iteration}}</td>
                                         <td> {{$slider->nama}} </td>
-                                        <td> <img width="162px" height="51px" style="object-fit: cover" src="{{asset('storgae/imgslider/') . $slider->foto}}"> </td>
+                                        <td> <img width="162px" height="51px" style="object-fit: cover" src="{{asset('slider/' . $slider->foto)}}"> </td>
                                         <td colspan="2">
-                                            <a href="{{route('slider.edit', $slider->id )}}" class="text-decoration-none">
+                                            <a href="{{route('slider-setting.edit', $slider->id )}}" class="text-decoration-none">
                                                 <img src="/images/edit.png" alt="edit">
                                             </a>
                                             <a href="">

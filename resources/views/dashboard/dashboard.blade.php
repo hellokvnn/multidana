@@ -53,7 +53,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item pl-5">
-                <a class="nav-link {{ ($title === "Slider") ? 'active' : '' }}" href="/slider">
+                <a class="nav-link {{ ($title === "Slider Setting") ? 'active' : '' }}" href="/slider-setting">
                     <i class=""></i>
                     <span>Slider</span></a>
             </li>

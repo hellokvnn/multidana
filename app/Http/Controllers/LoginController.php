@@ -2,25 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Slider;
 use Illuminate\Http\Request;
 
-class SliderController extends Controller
+class LoginController extends Controller
 {
-     /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('dashboard.slider.index', [
-            "title" => "Slider Setting",
-            "sliders" => Slider::all()
-        ]); 
+        return view('login.index', [
+            'title' => "Login"
+        ]);
     }
 
-       /**
+    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -38,14 +36,7 @@ class SliderController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'nama' => 'required|max:255',
-            'foto' => 'image|file'
-        ]);
-
-        $validatedData = $request->file('image')->store('slider');
-
-        Slider::create($validatedData);
+        //
     }
 
     /**
@@ -67,10 +58,7 @@ class SliderController extends Controller
      */
     public function edit($id)
     {
-        return view('dashboard.slider.edit', [
-            "title" => "Slider Edit",
-            'slider' => Slider::find($id)
-        ]);
+        //
     }
 
     /**
@@ -82,16 +70,7 @@ class SliderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $slider = Slider::find($id);
-
-        $image = $request->image;
-        $dest = 'slider';
-        $pictureName = 'img' . '_' . date(("YmdHis")) . "." . $image->getClientOriginalExtension();
-        $image->move($dest, $pictureName);
-
-        $slider->update($request->all());
-        
-        return redirect('slider-setting')->with('status', 'Data Berhasil Diubah !');
+        //
     }
 
     /**

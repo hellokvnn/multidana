@@ -9,7 +9,6 @@ use App\Http\Controllers\AxisController;
 use App\Http\Controllers\AxisPlnController;
 use App\Http\Controllers\SmartfrenController;
 use App\Http\Controllers\SmartfrenPlnController;
-use App\Http\Controllers\SliderController;
 use App\Http\Controllers\XlController;
 use App\Http\Controllers\XlPlnController;
 use App\Http\Controllers\ThreeController;
@@ -65,6 +64,8 @@ use App\Http\Controllers\TransferDepositController;
 use App\Http\Controllers\MarkupGlobalController;
 use App\Http\Controllers\MarkupSpesifikController;
 use App\Http\Controllers\FormatController;
+use App\Http\Controllers\SliderController;
+use App\Http\Controllers\LoginController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -187,6 +188,12 @@ Route::get('/topup-e-money-setting', function () {
     ]);
 });
 
+Route::get('/slider-setting', function () {
+    return view('/dashboard/slider', [
+        "title" => "Slider Setting"
+    ]);
+});
+
 Route::resource('indosat-retail', IndosatController::class);
 
 Route::resource('telkomsel-retail', TelkomselController::class);
@@ -202,8 +209,6 @@ Route::resource('three-retail', ThreeController::class);
 Route::resource('mtix-retail', MtixController::class);
 
 Route::resource('tix-retail', TixController::class);
-
-Route::resource('slider', SliderController::class);
 
 Route::resource('indosat-pln', IndosatPlnController::class);
 
@@ -304,6 +309,10 @@ Route::resource('transfer-deposit-format', TransferDepositController::class);
 Route::resource('markup-global-format', MarkupGlobalController::class);
 
 Route::resource('markup-spesifik-format', MarkupSpesifikController::class);
+
+Route::resource('slider-setting', SliderController::class);
+
+Route::get('login', [LoginController::class, 'index']);
 
 Route::get('pulsa-telepon', [PulsaController::class, 'index']);
 

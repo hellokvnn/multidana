@@ -182,7 +182,7 @@
 
                     <div class="row">
                         <!-- Card Example -->
-                        <form method="POST" action="{{route('slider.update', $slider->id )}}" enctype="multipart/form-data">
+                        <form method="POST" action="{{route('slider-setting.update', $slider->id )}}" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div style="margin-top: 20px" class="card-body ml-5">
