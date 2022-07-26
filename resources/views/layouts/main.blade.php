@@ -31,19 +31,16 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
+            @foreach ($sliders as $slider)
             <div class="carousel-item active" data-bs-interval="2000">
-              <img src="images/test.jpg" width="500px" height="400px" class="d-block w-100" alt="test">
+              <img src="{{asset('storage/' . $slider->foto)}}" width="500px" height="400px" class="d-block w-100">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="images/test2.jpg" width="500px" height="400px" class="d-block w-100" alt="test2">
-            </div>
-            <div class="carousel-item">
-              <img src="images/test3.jpg" width="500px" height="400px" class="d-block w-100" alt="test3">
-            </div>
+            @endforeach
           </div>
-        </div>
+      </div>
     </div>
     {{-- End Carousel --}}
 
@@ -207,13 +204,21 @@
         </div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PZMUjzaLC6Q?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="reason">
+        
           <h5>Jaringan Nasional <br> Terluas</h5>
+
           <p>Multidana Payment hadir di <span> Kota <br>
               Makasar </span> Provinsi <span> Sulawesi <br>
               Selatan </span> dengan layanan tersebar <br>
               di seluruh kota besar di <br>
               Indonesia.</p>
-            <button class="btn">Selengkapnya</button>
+              <div class="collapse" id="collapseExample"> 
+          </div>
+
+          <button style="background: #fff; color: #A00043; border: transparent" class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+            Selengkapnya
+          </button>
+
         </div>
         </div>
       </div>
@@ -320,7 +325,7 @@
               handal dalam menyajikan produk H2H, pelayanan dan <br>
               perangkat yang dapat diandalkan.
           </p>
-          <button class="btn btn-2 btn-success">Download</button>
+          <button style="background: #20A15C; border: transparent" class="btn">Download</button>
         </div>
         <div class="container-2">
           <img src="images/logo3.png" class="rounded float-end" alt="logo3">
@@ -817,20 +822,25 @@
       <div class="container align-items-end heading-5">
         <h5 class="fw-semibold">Komplain</h5>
       </div>
+      <form method="POST" action="{{route('store')}}" enctype="multipart/form-data">
+        @csrf
       <div class="container">
-        <input class="form-control-2" type="text"  placeholder="Nama Lengkap">
-        <input class="form-control-2" type="email"  placeholder="Email">
-        <select class="form-control-2" aria-label="Default select example">
-          <option selected>Keluhan</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-        <textarea class="form-control-2 textarea" id="exampleFormControlTextarea1" placeholder="Text"></textarea> <br>
-        <button class="btn kirim">Kirim</button>
+        <input class="form-control-2" type="text" name="nama"  placeholder="Nama Lengkap">
+        <input class="form-control-2" type="email" name="email" placeholder="Email">
+        <input class="form-control-2" type="text" name="subject"  placeholder="Subject:">
+        <textarea class="form-control-2 textarea" name="text" id="exampleFormControlTextarea1" placeholder="Text"></textarea> <br>
+        <button onclick="myFunction()" type="submit" class="btn kirim">Kirim</button>
+        <script>
+          function myFunction() {
+            alert("Komplain Sudah Dikirim !")
+          }
+        </script>
       </div>
-      <img style="margin-right: -111px;" src="images/rb.png" alt="rb" class="rounded float-end"> 
+        <img style="margin-right: -111px;" src="images/rb.png" alt="rb" class="rounded float-end"> 
+      </form>
     </div>
+    </form>
+
     {{-- End Komplain --}}
 
     {{-- Container Heading 6 --}}
@@ -843,42 +853,17 @@
     {{-- Info Card 5 --}}
     <div class="container">
       <div class="row justify-content-center">
+        @foreach ($customerservicesettings as $customerservicesetting)
         <div class="col-2">
           <div class="card-4" style="width: 217px; height: 160px">
             <img src="images/cs2.png" class="card-img-top rounded mx-auto d-block" alt="cs2" >
             <div class="card-body">
-              <h4>CS Multidana</h4>
-              <p>0813 3223 2321</p>
+            <h4>{{$customerservicesetting->nama}}</h4>
+             <p>{{$customerservicesetting->nomor}}</p>
             </div>
           </div>
         </div>
-        <div class="col-2">
-          <div class="card-4" style="width: 217px; height: 160px">
-            <img src="images/cs2.png" class="card-img-top rounded mx-auto d-block" alt="cs2" >
-            <div class="card-body">
-              <h4>CS Billing</h4>
-              <p>0813 3223 2321</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card-4" style="width: 217px; height: 160px">
-            <img src="images/cs2.png" class="card-img-top rounded mx-auto d-block" alt="cs2" >
-            <div class="card-body">
-              <h4>CS H2H</h4>
-              <p>0813 3223 2321</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <div class="card-4" style="width: 217px; height: 160px">
-            <img src="images/cs2.png" class="card-img-top rounded mx-auto d-block" alt="cs2" >
-            <div class="card-body">
-              <h4>CS Komplain</h4>
-              <p>0813 3223 2321</p>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
     </div>
     {{-- End Info Card 5 --}}

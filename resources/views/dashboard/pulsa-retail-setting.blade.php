@@ -116,14 +116,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link {{ ($title === "Komplain") ? 'active' : '' }}" href="/komplain">
                     <i class=""><img src="images/komplain-icon.png" alt="komplainicon"></i>
                     <span>Komplain</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link {{ ($title === "Customer Service Setting") ? 'activeee' : '' }}" href="/customer-service-setting">
                     <i class=""><img src="images/cs-admin.png" alt="csadmin"></i>
                     <span>Customer Service</span></a>
             </li>
@@ -183,7 +183,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 style="color: black" class="h3 mb-4">Slider</h1>
+                    <h1 style="color: black" class="h3 mb-4">Pulsa Retail</h1>
 
                     <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
                     <script>
@@ -289,8 +289,15 @@
                 </div>
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="logout.php">Logout</a>
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                  <a class="btn btn-primary" href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();">
+                      Logout
+                  </a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                      @csrf
+                  </form>
                 </div>
             </div>
         </div>

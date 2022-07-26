@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Slider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class SliderController extends Controller
 {
@@ -16,7 +17,7 @@ class SliderController extends Controller
     {
         return view('dashboard.slider.index', [
             "title" => "Slider Setting",
-            "sliders" => Slider::all()
+            "sliders" => Slider::all(),
         ]); 
     }
 
@@ -27,7 +28,8 @@ class SliderController extends Controller
      */
     public function create()
     {
-        //
+        $sliders = Slider::all(); 
+        return view('dashboard.slider.create', compact('sliders'));
     }
 
     /**
@@ -38,14 +40,15 @@ class SliderController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'nama' => 'required|max:255',
-            'foto' => 'image|file'
+        $path = $request->file('foto')->store('slider');
+        $path = Storage::putFile('slider', $request->file('foto'));
+
+        Slider::create([
+            'nama' => $request->nama,
+            'foto' => $path
         ]);
 
-        $validatedData = $request->file('image')->store('slider');
-
-        Slider::create($validatedData);
+        return redirect('slider-setting')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**
@@ -84,12 +87,13 @@ class SliderController extends Controller
     {
         $slider = Slider::find($id);
 
-        $image = $request->image;
-        $dest = 'slider';
-        $pictureName = 'img' . '_' . date(("YmdHis")) . "." . $image->getClientOriginalExtension();
-        $image->move($dest, $pictureName);
+        $path = $request->file('foto')->store('slider');
+        $path = Storage::putFile('slider', $request->file('foto'));
 
-        $slider->update($request->all());
+        $slider->update([
+            'nama' => $request->nama,
+            'foto' => $path
+        ]);
         
         return redirect('slider-setting')->with('status', 'Data Berhasil Diubah !');
     }
@@ -102,6 +106,8 @@ class SliderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $slider = Slider::find($id);
+        $slider->delete();
+        return redirect('slider-setting')->with('status', 'Data Berhasil Dihapus !');;
     }
 }

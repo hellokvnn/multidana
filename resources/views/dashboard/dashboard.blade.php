@@ -92,15 +92,15 @@
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li style="margin-top: -10px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+            <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
+                <a class="nav-link {{ ($title === "Pulsa H2H Setting") ? 'active' : '' }}" href="/pulsa-h2h-setting">
                     <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
-                <a class="nav-link {{ ($title === "Format Setting") ? 'active' : '' }}" href="/format-setting">
+                <a class="nav-link  {{ ($title === "Format Setting") ? 'active' : '' }}" href="/format-setting">
                     <i class=""><img src="images/pulsah2h.png" alt="formattransaksi"></i>
                     <span>Format Transaksi</span></a>
             </li>
@@ -112,14 +112,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/komplain">
                     <i class=""><img src="images/komplain-icon.png" alt="komplainicon"></i>
                     <span>Komplain</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="customer-service-setting">
                     <i class=""><img src="images/cs-admin.png" alt="csadmin"></i>
                     <span>Customer Service</span></a>
             </li>
@@ -203,7 +203,7 @@
                                 <h6 class="m-0">SELAMAT DATANG</h6>
                             </div>
                             <div class="card-body">
-                                <p style="font-size: 42px; color:black">Sunarwan</p>
+                                <p style="font-size: 42px; color:black">Admin</p>
                             </div>
                         </div>
 
@@ -215,11 +215,11 @@
                                             <div class="col mr-2">
                                                 <div class="text-uppercase mb-1">
                                                     <h6 style="font-size: 14px" class="m-0">Total keluhan</h6>
-                                                    <p style="font-size: 32px">20</p>
+                                                        <p style="font-size: 32px" class="mt-4"> {{ $totalkeluhans->count() }} </p>                                         
                                                 </div>
                                             </div>
                                             <div class="col-auto">
-                                                <i class="fas fa-user fa-2x text-gray-300"></i>
+                                                <i class="fas fa-user fa-2x text-gray-300 mt-4"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -257,7 +257,14 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="logout.php">Logout</a>
+                    <a class="btn btn-primary" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </div>
             </div>
         </div>

@@ -89,14 +89,14 @@
             </div>
 
             <!-- Nav Item - Dashboard -->
-            <li style="padding-left: 30px" class="nav-item">
+            <li style="padding-left: 30px; margin-bottom: -5px" class="nav-item">
                 <a class="nav-link {{ ($title === "Multibiller Setting") ? 'active' : '' }}" href="/pulsa-retail-setting">
                     <i class=""><img src="images/pulsaretail.png" alt="pulsaretail"></i>
                     <span>Pulsa Retail</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
+            <li style="margin-top: -10x; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="#">
                     <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
@@ -110,20 +110,20 @@
             </li>
 
             <!-- Heading -->
-            <div class="sidebar-heading pl-5 mb-2 mt-4">
+            <div style="margin-top: 30px" class="sidebar-heading pl-5 mb-2">
                 Service
             </div>
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link {{ ($title === "Komplain") ? 'active' : '' }}" href="/komplain">
                     <i class=""><img src="images/komplain-icon.png" alt="komplainicon"></i>
                     <span>Komplain</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link {{ ($title === "Customer Service Setting") ? 'activeee' : '' }}" href="/customer-service-setting">
                     <i class=""><img src="images/cs-admin.png" alt="csadmin"></i>
                     <span>Customer Service</span></a>
             </li>
@@ -364,7 +364,14 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="logout.php">Logout</a>
+                    <a class="btn btn-primary" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </div>
             </div>
         </div>

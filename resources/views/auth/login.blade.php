@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +22,7 @@
      {{-- End CSS --}}
 </head>
 <body>
-    
+
 {{-- Navbar --}}
 <nav class="navbar navbar-expand-lg">
     <div class="container">
@@ -34,13 +35,13 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="/">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ ($title === "About") ? 'active' : '' }}"  href="/about">About</a>
+              <a class="nav-link"  href="/about">About</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link {{ ($title === "PLN TV Kabel") ? 'active' : '' }} dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pulsa Retail
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -53,13 +54,13 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ ($title === "Download App") ? 'active' : '' }}" href="/download-app">Download App</a>
+              <a class="nav-link" href="/download-app">Download App</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ ($title === "Pulsa H2H") ? 'active' : '' }}" href="/pulsa-h2h">Pulsa H2H</a>
+              <a class="nav-link" href="/pulsa-h2h">Pulsa H2H</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ ($title === "Kontak Kami") ? 'active' : '' }}" href="/kontak-kami">Kontak Kami</a>
+              <a class="nav-link" href="/kontak-kami">Kontak Kami</a>
             </li>
           </ul>
         </div>
@@ -67,20 +68,47 @@
   </nav>
   {{-- End Navbar --}}
 
-<div style="margin-top: 50px" class="container">
-    <main class="form-signin">
-        <form>
-        <h1 style="margin-left: 60px; color:#A00043;" class="h3 mb-4">Mulai Login</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <h1 style="margin-left: 100px; margin-top: 80px; color:#A00043;" class="h3 mb-4">Mulai Login</h1>
+            <form method="POST" action="{{ route('login') }}">
+                @csrf
 
-        <div style="margin-left: 50px" class="container col-4 mb-4">
-            <input style="border-color: #A00043 !important" type="email" class="form-control mb-4 border-bottom rounded-0" placeholder="Email/username">
-            <input style="border-color: #A00043 !important" type="password" class="form-control mb-4 border-bottom rounded-0" placeholder="Password">
-            <a style="color: #A00043;" href="" class="text-decoration-none">APAKAH ANDA LUPA KATA SANDI ANDA?</a>
-        </div>
-        <button style="background: #A00043; color:#fff; margin-left: 60px" class="btn" type="submit">LOGIN</button>
+                <div style="margin-left: 50px" class="col-4 mb-4">
+                    <input style="border-color: #A00043 !important" id="email" type="email" class="form-control border-bottom rounded-0 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email">
 
-        </form>
-    </main>
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+
+                <div style="margin-left: 50px" class="col-4 mb-2">
+                    <input style="border-color: #A00043 !important" id="password" type="password" class="form-control border-bottom rounded-0 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
+
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+
+                <div style="margin-left: 60px" class="col-4 mb-4">
+                    @if (Route::has('password.request'))
+                    <a style="margin-left: -10px; color: #A00043" class="btn btn-link mb-4 text-decoration-none" href="{{ route('password.request') }}">
+                        <small> ANDA LUPA KATA SANDI ANDA? </small>
+                    </a>
+                    @endif
+
+                    <br>
+
+                    <button style="margin-left: -10px; background: #A00043; color: #fff" type="submit" class="btn">
+                        {{ __('Login') }}
+                    </button>
+                </div>
+            </form>
+    </div>
 </div>
 
 <div class="container mt-4">

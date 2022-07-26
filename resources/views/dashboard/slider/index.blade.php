@@ -60,21 +60,21 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/layanan-setting">
                     <i class=""></i>
                     <span>Layanan</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/tentang-setting">
                     <i class=""></i>
                     <span>Tentang</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/profil-aplikasi-setting">
                     <i class=""></i>
                     <span>Profil Aplikasi</span></a>
             </li>
@@ -93,14 +93,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/pulsa-h2h-setting">
                     <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/format-setting">
                     <i class=""><img src="images/pulsah2h.png" alt="formattransaksi"></i>
                     <span>Format Transaksi</span></a>
             </li>
@@ -112,14 +112,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/komplain">
                     <i class=""><img src="images/komplain-icon.png" alt="komplainicon"></i>
                     <span>Komplain</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/customer-service-setting">
                     <i class=""><img src="images/cs-admin.png" alt="csadmin"></i>
                     <span>Customer Service</span></a>
             </li>
@@ -194,8 +194,26 @@
                     document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
                     </script>
 
+                    <a href="{{route('slider-setting.create')}}" class="text-decoration-none">
+                        <button type="button" style="border-color: #A00043; color:#A00043; margin-top: 20px;" class="btn d-block">
+                            <img src="/images/add.png" alt="add"> 
+                                Add Slider
+                        </button>
+                        </a>
+
                     <br>
 
+                    <div class="container">
+                        @if (session('status'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{session('status')}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        @endif
+                    </div>
+                    
                     <div class="row">
                         <!-- Card Example -->
                         <div class="card-body">
@@ -213,14 +231,31 @@
                                     <tr>
                                         <td> {{$loop->iteration}}</td>
                                         <td> {{$slider->nama}} </td>
-                                        <td> <img width="162px" height="51px" style="object-fit: cover" src="{{asset('slider/' . $slider->foto)}}"> </td>
+                                        <td> <img width="162px" height="51px" style="object-fit: cover" src="{{asset('storage/' . $slider->foto)}}"> </td>
                                         <td colspan="2">
                                             <a href="{{route('slider-setting.edit', $slider->id )}}" class="text-decoration-none">
                                                 <img src="/images/edit.png" alt="edit">
                                             </a>
-                                            <a href="">
+                                            <button style="border: transparent" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 <img src="/images/delete.png" alt="delete">
-                                            </a>
+                                            </button>
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel">Are You Sure?</h5>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <form action="{{route('slider-setting.destroy', $slider->id)}}" method="POST">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button style="border: transparent" type="submit" class="btn btn-danger">Delete</button>
+                                                        </form>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -258,7 +293,14 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="logout.php">Logout</a>
+                    <a class="btn btn-primary" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </div>
             </div>
         </div>
@@ -272,8 +314,8 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>    
-
+    <script src="js/sb-admin-2.min.js"></script>   
+    
 </body>
 
 </html>

@@ -2,21 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CekHargaProduk;
-use App\Models\CekSaldo;
-use App\Models\CekTagihanPembayaran;
-use App\Models\DepositViaTiket;
-use App\Models\GantiPin;
-use App\Models\KomlainFormat;
-use App\Models\MarkupGlobal;
-use App\Models\MarkupSpesifik;
-use App\Models\PembayaranPascabayar;
-use App\Models\RekapTransaksi;
-use App\Models\TransaksiPulsa;
-use App\Models\TransferDeposit;
+use App\Models\CustomerServiceSetting;
 use Illuminate\Http\Request;
 
-class FormatController extends Controller
+class CustomerServiceSettingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -25,20 +14,9 @@ class FormatController extends Controller
      */
     public function index()
     {
-        return view('layouts.main', [
-            "title" => "Home",
-            "transaksipulsas" => TransaksiPulsa::all(),
-            "ceksaldos" => CekSaldo::all(),
-            "depositviatikets" => DepositViaTiket::all(),
-            "gantipins" => GantiPin::all(),
-            "rekaptransaksis" => RekapTransaksi::all(),
-            "komplainformats" => KomlainFormat::all(),
-            "cektagihanpembayarans" => CekTagihanPembayaran::all(),
-            "pembayaranpascabayars" => PembayaranPascabayar::all(),
-            "cekhargaproduks" => CekHargaProduk::all(),
-            "transferdeposits" => TransferDeposit::all(),
-            "markupglobals" => MarkupGlobal::all(),
-            "markupspesifiks" => MarkupSpesifik::all()
+        return view('dashboard.customer-service.index', [
+            'title' => 'Customer Service Setting',
+            'customerservicesettings' => CustomerServiceSetting::all()
         ]);
     }
 
@@ -49,7 +27,8 @@ class FormatController extends Controller
      */
     public function create()
     {
-        //
+        $customerservicesettings = CustomerServiceSetting::all(); 
+        return view('dashboard.customer-service.create', compact('customerservicesettings'));
     }
 
     /**
@@ -60,7 +39,11 @@ class FormatController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        CustomerServiceSetting::create([
+            'nama' => $request->nama,
+            'nomor' => $request->nomor,
+        ]);
+        return redirect('customer-service-setting')->with('status', 'Data Berhasil Ditambah !');
     }
 
     /**
@@ -82,7 +65,10 @@ class FormatController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('dashboard.customer-service.edit', [
+            "title" => "Customer Service Setting Edit",
+            'customerservicesetting' => CustomerServiceSetting::find($id)
+        ]);
     }
 
     /**
@@ -94,7 +80,10 @@ class FormatController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $customerservicesetting = CustomerServiceSetting::find($id);
+
+        $customerservicesetting->update($request->all());
+        return redirect('customer-service-setting')-> with('status', 'Data Berhasil Diubah !');
     }
 
     /**

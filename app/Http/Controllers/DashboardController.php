@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Komplain;
 use Illuminate\Http\Request;
 
-class LoginController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +14,9 @@ class LoginController extends Controller
      */
     public function index()
     {
-        return view('login.index', [
-            'title' => "Login"
+        return view('dashboard.dashboard', [
+            'title' => 'Dashboard',
+            'totalkeluhans' => Komplain::all()
         ]);
     }
 

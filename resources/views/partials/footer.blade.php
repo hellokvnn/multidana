@@ -26,7 +26,7 @@
                 Email : csmultidana@office.com
                 </p>
                 <p>
-                Solution Centre : 1500-3990-1111-1111 <br>
+                Solution Centre : 1500-399 <br>
                 WhatsApp : 0824 2321 3123
                 </p>
             </div>

@@ -4044,6 +4044,20 @@ input[type="button"].btn-block {
     color: #ffff !important;
   }
 
+.nav-link.activeee {
+    border-bottom: #ffff solid;
+    height: 50px;
+    width: 180px !important;
+    color: #ffff !important;
+  }
+
+.nav-link.activeeee {
+    border-bottom: #ffff solid;
+    height: 50px;
+    width: 200px !important;
+    color: #ffff !important;
+  }
+
   /* Info Card */
   .card-1 {
     background-color: #A00043;
@@ -4120,7 +4134,7 @@ input[type="button"].btn-block {
 }
 
 .col-2 {
-  margin-left: 20px;
+  margin-left: 50px;
 }
 /*  End Info Card */
 
@@ -4163,7 +4177,7 @@ input[type="button"].btn-block {
 }
 
 .col-2 {
-  margin-left: 20px;
+  margin-left: 50px;
 }
 /*  End Info Card */
 

@@ -63,9 +63,15 @@ use App\Http\Controllers\CekHargaProdukController;
 use App\Http\Controllers\TransferDepositController;
 use App\Http\Controllers\MarkupGlobalController;
 use App\Http\Controllers\MarkupSpesifikController;
-use App\Http\Controllers\FormatController;
+use App\Http\Controllers\MainController;
 use App\Http\Controllers\SliderController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CustomerServiceSettingController;
+use App\Http\Controllers\KomplainController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PulsaH2HClientController;
+use App\Http\Controllers\PulsaH2HController;
+use App\Http\Controllers\PulsaH2HItemAdminController;
+use App\Models\PulsaH2H;
 
 use Illuminate\Support\Facades\Route;
 
@@ -194,125 +200,141 @@ Route::get('/slider-setting', function () {
     ]);
 });
 
-Route::resource('indosat-retail', IndosatController::class);
 
-Route::resource('telkomsel-retail', TelkomselController::class);
+Route::middleware(['auth'])->group(function(){
+    Route::resource('dashboard', DashboardController::class);
 
-Route::resource('axis-retail', AxisController::class);
+    Route::resource('indosat-retail', IndosatController::class);
 
-Route::resource('smartfren-retail', SmartfrenController::class);
+    Route::resource('telkomsel-retail', TelkomselController::class);
 
-Route::resource('xl-retail', XlController::class);
+    Route::resource('axis-retail', AxisController::class);
 
-Route::resource('three-retail', ThreeController::class);
+    Route::resource('smartfren-retail', SmartfrenController::class);
 
-Route::resource('mtix-retail', MtixController::class);
+    Route::resource('xl-retail', XlController::class);
 
-Route::resource('tix-retail', TixController::class);
+    Route::resource('three-retail', ThreeController::class);
 
-Route::resource('indosat-pln', IndosatPlnController::class);
+    Route::resource('mtix-retail', MtixController::class);
 
-Route::resource('telkomsel-pln', TelkomselPlnController::class);
+    Route::resource('tix-retail', TixController::class);
 
-Route::resource('axis-pln', AxisPlnController::class);
+    Route::resource('indosat-pln', IndosatPlnController::class);
 
-Route::resource('xl-pln', XlPlnController::class);
+    Route::resource('telkomsel-pln', TelkomselPlnController::class);
 
-Route::resource('smartfren-pln', SmartfrenPlnController::class);
+    Route::resource('axis-pln', AxisPlnController::class);
 
-Route::resource('three-pln', ThreePlnController::class);
+    Route::resource('xl-pln', XlPlnController::class);
 
-Route::resource('pln-pln', PlnPlnController::class);
+    Route::resource('smartfren-pln', SmartfrenPlnController::class);
 
-Route::resource('kvision-pln', KvisionPlnController::class);
+    Route::resource('three-pln', ThreePlnController::class);
 
-Route::resource('cherry-voucher-games', CherryController::class);
+    Route::resource('pln-pln', PlnPlnController::class);
 
-Route::resource('digicash-voucher-games', DigicashController::class);
+    Route::resource('kvision-pln', KvisionPlnController::class);
 
-Route::resource('garena-voucher-games', GarenaController::class);
+    Route::resource('cherry-voucher-games', CherryController::class);
 
-Route::resource('gemscool-voucher-games', GemscoolController::class);
+    Route::resource('digicash-voucher-games', DigicashController::class);
 
-Route::resource('geon-voucher-games', GeonController::class);
+    Route::resource('garena-voucher-games', GarenaController::class);
 
-Route::resource('iah-voucher-games', IahController::class);
+    Route::resource('gemscool-voucher-games', GemscoolController::class);
 
-Route::resource('itunes-voucher-games', ItunesController::class);
+    Route::resource('geon-voucher-games', GeonController::class);
 
-Route::resource('lyto-voucher-games', LytoController::class);
+    Route::resource('iah-voucher-games', IahController::class);
 
-Route::resource('megaxus-voucher-games', MegaxusController::class);
+    Route::resource('itunes-voucher-games', ItunesController::class);
 
-Route::resource('mogplay-voucher-games', MogplayController::class);
+    Route::resource('lyto-voucher-games', LytoController::class);
 
-Route::resource('playstation-voucher-games', PlaystationController::class);
+    Route::resource('megaxus-voucher-games', MegaxusController::class);
 
-Route::resource('mol-voucher-games', MolController::class);
+    Route::resource('mogplay-voucher-games', MogplayController::class);
 
-Route::resource('pts-voucher-games', PtsController::class);
+    Route::resource('playstation-voucher-games', PlaystationController::class);
 
-Route::resource('steam-voucher-games', SteamController::class);
+    Route::resource('mol-voucher-games', MolController::class);
 
-Route::resource('vcoin-voucher-games', VcoinController::class);
+    Route::resource('pts-voucher-games', PtsController::class);
 
-Route::resource('zynga-voucher-games', ZyngaController::class);
+    Route::resource('steam-voucher-games', SteamController::class);
 
-Route::resource('ml-voucher-games', MlbbController::class);
+    Route::resource('vcoin-voucher-games', VcoinController::class);
 
-Route::resource('pln-multibiller', PlnMultibillerController::class);
+    Route::resource('zynga-voucher-games', ZyngaController::class);
 
-Route::resource('telkom-multibiller', TelkomMultibillerController::class);
+    Route::resource('ml-voucher-games', MlbbController::class);
 
-Route::resource('pdam-multibiller', PdamMultibillerController::class);
+    Route::resource('pln-multibiller', PlnMultibillerController::class);
 
-Route::resource('bpjs-multibiller', BpjsMultibillerController::class);
+    Route::resource('telkom-multibiller', TelkomMultibillerController::class);
 
-Route::resource('finance-multibiller', FinanceMultibillerController::class);
+    Route::resource('pdam-multibiller', PdamMultibillerController::class);
 
-Route::resource('postpaid-multibiller', PostpaidMultibillerController::class);
+    Route::resource('bpjs-multibiller', BpjsMultibillerController::class);
 
-Route::resource('tvberlangganan-multibiller', TvberlanggananMultibillerController::class);
+    Route::resource('finance-multibiller', FinanceMultibillerController::class);
 
-Route::resource('gopay-topup', GopayTopupController::class);
+    Route::resource('postpaid-multibiller', PostpaidMultibillerController::class);
 
-Route::resource('ovo-topup', OvoTopupController::class);
+    Route::resource('tvberlangganan-multibiller', TvberlanggananMultibillerController::class);
 
-Route::resource('etool-topup', EtoolTopupController::class);
+    Route::resource('gopay-topup', GopayTopupController::class);
 
-Route::resource('dana-topup', DanaTopupController::class);
+    Route::resource('ovo-topup', OvoTopupController::class);
 
-Route::resource('gojek-topup', GojekTopupController::class);
+    Route::resource('etool-topup', EtoolTopupController::class);
 
-Route::resource('grab-topup', GrabTopupController::class);
+    Route::resource('dana-topup', DanaTopupController::class);
 
-Route::resource('transaksi-pulsa-format', TransaksiPulsaController::class);
+    Route::resource('gojek-topup', GojekTopupController::class);
 
-Route::resource('cek-saldo-format', CekSaldoController::class);
+    Route::resource('grab-topup', GrabTopupController::class);
 
-Route::resource('deposit-via-tiket-format', DepositViaTiketController::class);
+    Route::resource('transaksi-pulsa-format', TransaksiPulsaController::class);
 
-Route::resource('ganti-pin-format', GantiPinController::class);
+    Route::resource('cek-saldo-format', CekSaldoController::class);
 
-Route::resource('rekap-transaksi-format', RekapTransaksiController::class);
+    Route::resource('deposit-via-tiket-format', DepositViaTiketController::class);
 
-Route::resource('komplain-format', KomplainFormatController::class);
+    Route::resource('ganti-pin-format', GantiPinController::class);
 
-Route::resource('cek-tagihan-pembayaran-format', CekTagihanPembayaranController::class);
+    Route::resource('rekap-transaksi-format', RekapTransaksiController::class);
 
-Route::resource('pembayaran-pascabayar-format', PembayaranPascabayarController::class);
+    Route::resource('komplain-format', KomplainFormatController::class);
 
-Route::resource('cek-harga-produk-format', CekHargaProdukController::class);
+    Route::resource('cek-tagihan-pembayaran-format', CekTagihanPembayaranController::class);
 
-Route::resource('transfer-deposit-format', TransferDepositController::class);
+    Route::resource('pembayaran-pascabayar-format', PembayaranPascabayarController::class);
 
-Route::resource('markup-global-format', MarkupGlobalController::class);
+    Route::resource('cek-harga-produk-format', CekHargaProdukController::class);
 
-Route::resource('markup-spesifik-format', MarkupSpesifikController::class);
+    Route::resource('transfer-deposit-format', TransferDepositController::class);
 
-Route::resource('slider-setting', SliderController::class);
+    Route::resource('markup-global-format', MarkupGlobalController::class);
 
-Route::get('login', [LoginController::class, 'index']);
+    Route::resource('markup-spesifik-format', MarkupSpesifikController::class);
+
+    Route::resource('slider-setting', SliderController::class);
+
+    Route::resource('customer-service-setting', CustomerServiceSettingController::class);
+
+    Route::resource('komplain', KomplainController::class);
+
+    Route::resource('pulsa-h2h-setting', PulsaH2HController::class);
+
+    Route::get('pulsa-h2h-item/{id}', [PulsaH2HController::class, 'detail'])->name('pulsa-h2h-item');
+
+    Route::resource('pulsa-h2h-item-setting', PulsaH2HItemAdminController::class);
+
+});
+
+Route::get('pulsa-h2h-list/{id}', [PulsaH2HClientController::class, 'index']);
 
 Route::get('pulsa-telepon', [PulsaController::class, 'index']);
 
@@ -324,4 +346,10 @@ Route::get('produk-multibiller', [MultibillerController::class, 'index']);
 
 Route::get('topup-e-money', [TopupController::class, 'index']);
 
-Route::get('', [FormatController::class, 'index']);
+Route::get('', [MainController::class, 'index']);
+
+Route::resource('', MainController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
