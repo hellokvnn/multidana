@@ -57,28 +57,28 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item pl-5">
-                <a class="nav-link product {{ ($title === "Slider") ? 'active' : '' }}" href="/slider">
+                <a class="nav-link product {{ ($title === "Slider") ? 'active' : '' }}" href="/slider-setting">
                     <i class=""></i>
                     <span>Slider</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/layanan-setting">
                     <i class=""></i>
                     <span>Layanan</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/tentang-setting">
                     <i class=""></i>
                     <span>Tentang</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/profil=aplikasi=setting">
                     <i class=""></i>
                     <span>Profil Aplikasi</span></a>
             </li>
@@ -97,7 +97,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10x; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/pulsa-h2h-setting">
                     <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
             </li>

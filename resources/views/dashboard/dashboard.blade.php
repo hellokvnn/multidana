@@ -60,21 +60,21 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/layanan-setting">
                     <i class=""></i>
                     <span>Layanan</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/tentang-setting">
                     <i class=""></i>
                     <span>Tentang</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/profil-aplikasi-setting">
                     <i class=""></i>
                     <span>Profil Aplikasi</span></a>
             </li>
