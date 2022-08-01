@@ -87,8 +87,17 @@ class SliderController extends Controller
     {
         $slider = Slider::find($id);
 
-        $path = $request->file('foto')->store('slider');
-        $path = Storage::putFile('slider', $request->file('foto'));
+        if ($request->file('foto') == null) {
+            $slider->update([
+                'nama' => $request->nama,
+            ]);
+
+            return redirect('slider-setting')->with('status', 'Data Berhasil Diubah !');
+
+        }else{
+            $path = $request->file('foto')->store('slider');
+            $path = Storage::putFile('slider', $request->file('foto'));
+        }
 
         $slider->update([
             'nama' => $request->nama,

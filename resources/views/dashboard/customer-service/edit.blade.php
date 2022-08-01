@@ -92,7 +92,7 @@
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
+            <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="/pulsa-h2h-setting">
                     <i class=""><img src="/images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
@@ -126,9 +126,9 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/footer-setting">
                     <i class=""><img src="/images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+                    <span>Footer</span></a>
             </li>
 
         </ul>
@@ -206,11 +206,11 @@
                             @method('PUT')
                             <div style="margin-top: 20px" class="card-body ml-5">
                                 <div style="column-width: 650px" class="form-group mb-4">
-                                    <label for="nama">nama</label>
+                                    <label for="nama">Nama</label>
                                     <input type="text" class="form-control" name="nama" value="{{$customerservicesetting->nama}}">
                                 </div>
                                 <div class="form-group mb-4">
-                                    <label for="nomor">Contoh</label>
+                                    <label for="nomor">Nomor</label>
                                     <input type="number" class="form-control" name="nomor" value="{{$customerservicesetting->nomor}}">
                                 </div>
                                 <button style="margin-left: 550px" type="submit" class="btn btn-success">Simpan</button>

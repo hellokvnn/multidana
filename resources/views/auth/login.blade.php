@@ -38,7 +38,7 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="/about">About</a>
+              <a class="nav-link"  href="/#about">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,17 +50,33 @@
                 <li><a class="dropdown-item" href="/voucher-games">Voucher Games</a></li>
                 <li><a class="dropdown-item" href="/produk-multibiller">Produk Multibiller</a></li>
                 <li><a class="dropdown-item" href="/topup-e-money">Top-Up E-Money</a></li>
-                <li><a class="dropdown-item" href="#">Tiket Kereta</a></li>
+                <li><a class="dropdown-item" href="/tiket-kereta">Tiket Kereta</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/download-app">Download App</a>
+              <a class="nav-link" href="/#download-app">Download App</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pulsa H2H
+              </a>
+  
+              @php $lists = App\Models\PulsaH2H::all(); @endphp
+  
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                @foreach ($lists as $list)
+                  <li><a class="dropdown-item" href="/pulsa-h2h-list/{{$list->id}}">{{ $list->title }}</a></li>
+                @endforeach
+                <!-- <li><a class="dropdown-item" href="/pulsa-telepon">Pulsa Telepon</a></li>
+                <li><a class="dropdown-item" href="/pln-tv-kabel">PLN TV Kabel</a></li>
+                <li><a class="dropdown-item" href="/voucher-games">Voucher Games</a></li>
+                <li><a class="dropdown-item" href="/produk-multibiller">Produk Multibiller</a></li>
+                <li><a class="dropdown-item" href="/topup-e-money">Top-Up E-Money</a></li>
+                <li><a class="dropdown-item" href="#">Tiket Kereta</a></li> -->
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pulsa-h2h">Pulsa H2H</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/kontak-kami">Kontak Kami</a>
+              <a class="nav-link" href="/#kontak-kami">Kontak Kami</a>
             </li>
           </ul>
         </div>
@@ -75,7 +91,7 @@
                 @csrf
 
                 <div style="margin-left: 50px" class="col-4 mb-4">
-                    <input style="border-color: #A00043 !important" id="email" type="email" class="form-control border-bottom rounded-0 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email">
+                    <input style="border-color: #A00043 !important; width: 350px; height: 40px" id="email" type="email" class="form-control-1 border-bottom mb-2 mt-2 rounded-0 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email">
 
                     @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -85,7 +101,7 @@
                 </div>
 
                 <div style="margin-left: 50px" class="col-4 mb-2">
-                    <input style="border-color: #A00043 !important" id="password" type="password" class="form-control border-bottom rounded-0 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
+                    <input style="border-color: #A00043 !important; width: 350px; height: 40px" id="password" type="password" class="form-control-1 border-bottom rounded-0 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Kata Sandi">
 
                     @error('password')
                         <span class="invalid-feedback" role="alert">
@@ -97,7 +113,7 @@
                 <div style="margin-left: 60px" class="col-4 mb-4">
                     @if (Route::has('password.request'))
                     <a style="margin-left: -10px; color: #A00043" class="btn btn-link mb-4 text-decoration-none" href="{{ route('password.request') }}">
-                        <small> ANDA LUPA KATA SANDI ANDA? </small>
+                        <small>APAKAH ANDA LUPA KATA SANDI ANDA?</small>
                     </a>
                     @endif
 

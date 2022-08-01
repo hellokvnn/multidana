@@ -126,10 +126,11 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/footer-setting">
                     <i class=""><img src="/images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+                    <span>Footer</span></a>
             </li>
+
 
         </ul>
         <!-- End of Sidebar -->
@@ -195,7 +196,7 @@
                         </script>
                     </div>
 
-                    <a href="axis-retail">
+                    <a href="/axis-retail">
                         <img src="/images/back.png" alt="back">
                     </a>
 

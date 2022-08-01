@@ -112,23 +112,23 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/komplain">
                     <i class=""><img src="/images/komplain-icon.png" alt="komplainicon"></i>
                     <span>Komplain</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/customer-service-setting">
                     <i class=""><img src="/images/cs-admin.png" alt="csadmin"></i>
                     <span>Customer Service</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/footer-setting">
                     <i class=""><img src="/images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+                    <span>Footer</span></a>
             </li>
 
         </ul>

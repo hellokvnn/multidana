@@ -126,9 +126,9 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/footer-setting">
                     <i class=""><img src="images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+                    <span>Footer</span></a>
             </li>
 
         </ul>
@@ -208,7 +208,7 @@
                         </div>
 
                         <div style="margin-left: -10px !important" class="col-xl-3 col-md-6">
-                            <a class="nav-link text-dark" href="daftar.php">
+                            <a class="nav-link text-dark" href="/komplain">
                                 <div class="card border-left-secondary shadow h-100 py-2">
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">

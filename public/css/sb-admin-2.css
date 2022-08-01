@@ -4058,6 +4058,14 @@ input[type="button"].btn-block {
     color: #ffff !important;
   }
 
+    /* .sidebar-heading {
+    margin-left: -40px;
+    }
+
+    .nav-item {
+    margin-left: -50px;
+    } */
+
   /* Info Card */
   .card-1 {
     background-color: #A00043;
@@ -4069,9 +4077,9 @@ input[type="button"].btn-block {
 }
 
 .card-1 img {
-    object-fit: none;
-    height: 100px;
-    width: auto;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
     margin-top: 25px;
 }
 

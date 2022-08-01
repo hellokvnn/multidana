@@ -78,7 +78,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="/profil-aplikasi=setting">
+                <a class="nav-link" href="/profil-aplikasi-setting">
                     <i class=""></i>
                     <span>Profil Aplikasi</span></a>
             </li>
@@ -130,9 +130,9 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class=""><img src="images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+              <a class="nav-link" href="/footer-setting">
+                  <i class=""><img src="images/setting.png" alt="setting"></i>
+                  <span>Footer</span></a>
             </li>
 
         </ul>
@@ -202,7 +202,7 @@
                         <div class="col-sm-3">
                           <a href="/pulsa-telepon-setting" class="text-decoration-none">
                           <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/hp.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
+                            <img src="images/pulsa-h2h/pulsa-telepon.png" class="card-img-top rounded mx-auto d-block" alt="hp" >
                             <div class="card-body">
                               <h4>Pulsa Telepon</h4>
                             </div>
@@ -212,7 +212,7 @@
                         <div class="col-sm-3">
                           <a href="/pln-setting" class="text-decoration-none">
                           <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/tv.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
+                            <img src="images/pulsa-h2h/pln.png" class="card-img-top rounded mx-auto d-block" alt="tv" >
                             <div class="card-body">
                               <h4>PLN TV Kabel Data</h4>
                             </div>
@@ -222,7 +222,7 @@
                         <div class="col-sm-3">
                           <a href="/voucher-games-setting" class="text-decoration-none">
                           <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
+                            <img src="images/pulsa-h2h/voucher-game.png" class="card-img-top rounded mx-auto d-block" alt="game" >
                             <div class="card-body">
                               <h4>Voucher Game</h4>
                             </div>
@@ -235,7 +235,7 @@
                         <div class="col-sm-3">
                           <a href="/multibiller-setting" class="text-decoration-none">
                           <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/money.png" class="card-img-top rounded mx-auto d-block" alt="money" >
+                            <img src="images/pulsa-h2h/multibiller.png" class="card-img-top rounded mx-auto d-block" alt="money" >
                             <div class="card-body">
                               <h4>Produk Multibiller</h4>
                             </div>
@@ -245,7 +245,7 @@
                         <div class="col-sm-3">
                           <a href="/topup-e-money-setting" class="text-decoration-none">
                           <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/topup-money.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
+                            <img src="images/pulsa-h2h/topup.png" class="card-img-top rounded mx-auto d-block" alt="topup-money" >
                             <div class="card-body">
                               <h4>Top-Up E-Money</h4>
                             </div>
@@ -253,12 +253,14 @@
                           </a>
                         </div>
                         <div class="col-sm-3">
+                          <a href="/tiket-kereta-setting" class="text-decoration-none">
                           <div class="card-1" style="width: 20rem; height: 17rem">
-                            <img src="images/kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
+                            <img src="images/pulsa-h2h/tiket-kereta.png" class="card-img-top rounded mx-auto d-block" alt="kereta" >
                             <div class="card-body">
                               <h4>Tiket Kereta</h4>
                             </div>
                           </div>
+                          </a>
                         </div>
                       </div>
                 <!-- /.container-fluid -->

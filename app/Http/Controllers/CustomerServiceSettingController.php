@@ -94,6 +94,9 @@ class CustomerServiceSettingController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $customerservicesetting = CustomerServiceSetting::find($id);
+        
+        $customerservicesetting->delete();
+        return redirect('customer-service-setting')->with('status', 'Data Berhasil Dihapus !');;
     }
 }

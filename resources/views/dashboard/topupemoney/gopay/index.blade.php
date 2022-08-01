@@ -126,9 +126,9 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/footer-setting">
                     <i class=""><img src="images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+                    <span>Footer</span></a>
             </li>
 
         </ul>
@@ -199,12 +199,14 @@
                         <img src="/images/back.png" alt="back">
                     </a>
 
+                    <div class="row col">
                     <a href="{{route('gopay-topup.create')}}" class="text-decoration-none">
                     <button type="button" style="border-color: #A00043; color:#A00043; margin-top: 20px;" class="btn d-block">
                         <img src="/images/add.png" alt="add"> 
                             Add Product
                     </button>
                     </a>
+                    </div>
 
                     <br>
 

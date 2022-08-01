@@ -1,3 +1,17 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+.my-container {
+    width: 70%;
+    margin: auto;
+}
+
+@media (max-width: 767.98px) { 
+    .my-container {
+        width: 95%;
+    }
+}
 /* Navbar */
 .nav-link {
     font-family: Inter;
@@ -10,13 +24,26 @@
 .nav-link:hover {
     color: #A00043;
 }
+
+@media (max-width: 767.98px) { 
+    #multidana-logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        padding: 3px 8px;
+        line-height: 0;
+    }
+    .navbar-toggler-icon {
+        height: 1em;
+        width: 1em;
+    }
+}
 /* End Navbar */
 
 /* Carousel */
-.carousel-inner {
-    margin-top: 50px;
-    border-radius: 12px;
-}
+
 
 .carousel-indicators {
     width: 40px;
@@ -43,6 +70,16 @@
     margin-top: 10px;
     font-weight: 500;
 }
+
+@media (max-width: 767.98px) { 
+    .heading h2 {
+        font-size: 1.2rem;
+    }
+
+    .heading p {
+        font-size: 1rem;
+    }
+}
 /* End Container Heading */
 
 /* Info Card */
@@ -50,7 +87,6 @@
     background-color: #A00043;
     color: #ffff;
     margin: auto;
-    margin-top: 30px;
     border-radius: 15px;
 }
 
@@ -58,7 +94,6 @@
     object-fit: cover;
     width: 150px;
     height: 150px;
-    margin-top: 5px;
 }
 
 .card h4 {
@@ -74,6 +109,21 @@
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     text-align: center;
+}
+
+@media (max-width: 767.98px) { 
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card h4 {
+        font-size: 0.9rem;
+    }
+
+    .card p {
+        font-size: 0.7rem;
+    }
 }
 /* End Info Card */
 
@@ -101,28 +151,29 @@
 }
 
 .search-box {
-    margin-top: 30px;
-    width: 350px;
     background-color: #ffff;
+    width: 60%;
     border-radius: 50px;
-    display: flex;
-    align-items: center;
     padding: 5px;
+    border-color: #A00043 !important;
 }
 
 .search-box > form {
     flex: 1;
 }
 
-.form-control {
+.form-control-1 {
     background-color: #ffff;
     border-radius: 50px;
     border: none;
-    outline: none;
+    outline: none ;
+    width: 300px;
+    padding-left: 20px;
 }
 
-.form-control::placeholder {
+.form-control-1::placeholder {
     color: #A00043;
+
 }
 
 .search-box img {
@@ -140,6 +191,31 @@ form:active::after {
 .search-box button {
     display: contents;
 }
+
+#services-list {
+    background: url("/images/lb.png") no-repeat, url("/images/rb.png") no-repeat;
+    background-position: left 20%, right 20%;
+}
+
+@media (max-width: 767.98px) { 
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-heading h2 {
+        font-size: 1.2rem;
+    }
+
+    .search-box {
+        width: 95%;
+    }
+
+    #services-list {
+        background-size: 80px, 80px;
+        background-position: -10% top, 110% top;
+    }
+}
 /* End Container Logo */
 
 /* Info Card 2 */
@@ -152,10 +228,10 @@ form:active::after {
 }
 
 .card-2 img {
-    object-fit: none;
-    height: 200px;
-    width: 200px;
-    position: relative;
+    object-fit: cover;
+    /* height: 200px;
+    width: 200px; */
+    /* position: relative; */
 }
 
 .card-2 h4 {
@@ -173,15 +249,29 @@ form:active::after {
     font-size: 15px;
     text-align: center;
 }
+
+@media (max-width: 767.98px) { 
+    .card-2 img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    .card-2 h4 {
+        font-size: 1rem;
+    }
+
+    .card-2 p {
+        font-size: 0.8rem;
+    }
+}
 /* End Info Card 2 */
 
 /* Jumbotron */
 .jumbotron {
-    background-color: #A00043;
     background-image: url(../images/bg.png);
     background-size: cover;
-    height: 650px;
-    margin-top: 70px;
+    margin-top: 5rem;
 }
 
 .jumbotron .display-4 {
@@ -190,24 +280,16 @@ form:active::after {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
-    padding-top: 50px;
 }
 
 .jumbotron iframe {
-    width: 353px;
+    width: 100%;
     height: 180px;
-    margin-top: -430px;
-    position: absolute;
 }
 
-.jumbotron img {
-    margin-left: -90px;
-}
 
 .container .reason {
-    margin-top: -230px;
     color: #ffff;
-    margin-left: 10px;
 }
 
 .reason h5 {
@@ -233,6 +315,27 @@ form:active::after {
     font-weight: bold;
     background-color: #ffff;
 }
+
+@media (max-width: 767.98px) {
+    .jumbotron {
+        height: 100vh;
+    } 
+    .jumbotron .display-4 {
+        font-size: 1.2rem;
+    }
+
+    .reason h5 {
+        font-size: 1rem;
+    }
+
+    .reason p {
+        font-size: 0.8rem;
+    }
+
+    .reason button p {
+        font-size: 0.8rem;
+    }
+}
 /* End Jumbotron */
 
 /* Heading 2*/
@@ -253,15 +356,23 @@ form:active::after {
     font-size: 16px;
     margin-top: 10px;
 }
+
+@media (max-width: 767.98px) { 
+    .heading-2 h2 {
+        font-size: 1.2rem;
+    }
+
+    .heading-2 p {
+        font-size: 1rem;
+    }
+}
 /* End Heading 2*/
 
 /* Jumbotron 2 */
-  .jumbotron-2 {
+.jumbotron-2 {
     background-color: #A00043;
     background-image: url(../images/bg.png);
     background-size: cover;
-    height: 780px;
-    margin-top: 100px;
 }
 
 .jumbotron-2 .display-4 {
@@ -309,15 +420,47 @@ form:active::after {
 
 .container-2 img {
     height: 213px;
-    margin-top: -25px;
-    margin-right: -30px;
+    margin-top: 21px;
+    margin-right: -33px;
+}
+
+@media (max-width: 767.98px) { 
+    .reason-2 h5 {
+        font-size: 1rem;
+    }
+
+    .reason-2 p {
+        font-size: 0.8rem;
+    }
+
+    .reason-2 button {
+        font-size: 0.8rem;
+    }
 }
 /* End Jumbotron 2 */
 
+/* Carousel */
+.inner-1 {
+    border-radius: 12px;
+}
+.inner-2 {
+    border-radius: 12px;
+}
+
+.carousel-item-1 {
+    height: 50vh;
+}
+
+@media (max-width: 767.98px) { 
+    .carousel-item-1 {
+        height: 30vh;
+    }
+}
+
+/* End Carousel */
+
 /* Heading 3*/
 .heading-3 {
-    margin-top: 80px;
-    margin-bottom: 80px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #A00043;
@@ -333,6 +476,16 @@ form:active::after {
     font-size: 16px;
     margin-top: 10px;
 }
+
+@media (max-width: 767.98px) { 
+    .heading-3 h2 {
+        font-size: 1.2rem;
+    }
+
+    .heading-3 p {
+        font-size: 1rem;
+    }
+}
 /* End Heading 3*/
 
  /* Info Card 3*/
@@ -345,7 +498,7 @@ form:active::after {
 
 .card-3 img {
     object-fit: cover;
-    height: 100px;
+    height: 80px;
     width: auto;
     margin-top: 10px;
 }
@@ -374,6 +527,17 @@ br {
 .card-3 .h4-fix {
     margin-top: 10px;
 }
+
+@media (max-width: 767.98px) { 
+    .card-3 img {
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .card-3 h4 {
+        font-size: 0.8rem;
+    }
+}
 /*  End Info Card 3 */
 
 /* Heading 4 */
@@ -383,7 +547,6 @@ br {
     font-weight: bolder;
     color: #A00043;
     text-align: center;
-    margin-top: 300px;
 }
 
 .heading-4 img {
@@ -392,10 +555,15 @@ br {
 
 .heading-4 hr {
     margin-top: 15px;
-    margin-left: 25px;
     width: 300px;
     color: #A00043;
     background-color: #A00043;
+}
+
+@media (max-width: 767.98px) { 
+    .heading-4 h2{
+        font-size: 1.2rem;
+    }
 }
 /* End Heading 4 */
 
@@ -405,24 +573,20 @@ br {
     font-size: 20px;
     font-weight: bold;
     color: #A00043;
-    margin-top: -300px;
-    text-align: right;
-    margin-left: -245px;
 
+}
+
+@media (max-width: 767.98px) { 
+    .heading-5 {
+        font-size: 1rem;
+    }
 }
 /* End Heading 5 */
 
 /* Komplain */
-.cs {
-    margin-top: -170px;
-    margin-left: 90px;
-    display: none;
-} 
-
 .form-control-2 {
-    margin-top: 10px;
-    width: 350px;
-    height: 37px;
+    display: block;
+    width: 80%;
     border-radius: 8px;
     border: solid;
     border-color: #A00043;
@@ -430,15 +594,13 @@ br {
     font-size: 13px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: px;
+    outline: none;
 }
 
-.form-select {
-    margin-left: px;
-}
-
-.textarea {
-    height: 80px;
+@media (max-width: 767.98px) { 
+    .form-control-2 {
+        width: 100%;
+    }
 }
 
 .kirim {
@@ -459,6 +621,18 @@ br {
     color: #ffff;
 }
 
+#komplain-form {
+    background: url("/images/lb.png") no-repeat, url("/images/rb.png") no-repeat;
+    background-position: left 20%, right 75%;
+    background-size: 110px;
+}
+
+@media (max-width: 767.98px) { 
+    #komplain-form {
+        background-size: 80px, 80px;
+        background-position: -10% 5%, 110% 68%;
+    }
+}
 /* End Komplain */
 
 /* Heading 6 */
@@ -467,15 +641,17 @@ br {
     font-size: 18px;
     color: #A00043;
     text-align: center;
-    margin-top: 380px;
 }
 
 .heading-6 hr {
-    margin-top: 30px;
-    margin-left: px;
-    width: 350px;
     color: #A00043;
     background-color: #A00043;
+}
+
+@media (max-width: 767.98px) { 
+    .heading-6 {
+        font-size: 1.2rem;
+    }
 }
 /* End Heading 6 */
 
@@ -510,17 +686,29 @@ br {
     font-weight: bold;
     text-align: center;
 }
+
+@media (max-width: 767.98px) { 
+    .card-4 img {
+        height: 90px;
+        object-fit: contain;
+    }
+    
+    .card-4 h4 {
+        font-size: 0.8rem;
+    }
+
+    .card-4 p {
+        font-size: 0.8rem;
+    }
+}
 /* End Card 4 */
 
 /* Jumbotron 3 */
  .jumbotron-3 {
     background-color: #A00043;
     background-size: cover;
-    height: 800px;
-    margin-top: 100px;
     color: #ffff;
     font-family: Inter;
-    padding-left: 10px;
 }
 
 .jumbotron-3 .display-4 {
@@ -528,7 +716,7 @@ br {
     color: #ffff;
     text-align: center;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 
 .jumbotron-3 img {
@@ -537,23 +725,23 @@ br {
 
 .jumbotron-3 .text-footer {
     text-transform: uppercase;
-    margin-left: 4px;
     font-size: 12px;
     font-weight: bold;
-    margin-bottom: 40px;
 }
 
 .jumbotron-3 h5 {
     text-transform: uppercase;
-    margin-left: 4px;
     font-size: 16px;
     font-weight: bolder;
     margin-bottom: 5px;
 }
 
 .jumbotron-3 p {
-    margin-left: 4px;
     font-size: 16px;
+}
+
+.jumbotron-3 br {
+    display: block;
 }
 
 .container-footer {
@@ -579,6 +767,25 @@ br {
 .container-footer .img-footer-2 {
     margin-top: 20px;
     margin-left: 10px;
+}
+
+@media (max-width: 767.98px) { 
+    .jumbotron-3 img {
+        width: 40px;
+    }
+
+    .jumbotron-3 h5 {
+        font-size: 0.8rem;
+    }
+
+    .jumbotron-3 p {
+        font-size: 0.7rem;
+    }
+
+    .socmed-icon img {
+        width: 20px;
+    }
+
 }
 /* End Jumbotron 3 */
 
@@ -715,12 +922,8 @@ br {
     display: contents;
 }
 
-.item-1 {
+.carousel-item-1 {
     border-color: #BBBBBB !important;
-}
-
-.header-1 {
-    margin-bottom: 20px;
 }
 
 .bodyy-1 {
@@ -805,6 +1008,24 @@ br {
         margin-bottom: -8px;
     } */
 
+    .carousel-inner {
+        border-radius: 12px;
+    }
+    
+    .carousel-indicators {
+        width: 40px;
+        margin: auto;
+    }
+
+    .form-control-1 {
+        background-color: #ffff;
+        border-radius: 50px;
+        border: none;
+        outline: none ;
+        width: 760px;
+        padding-left: 20px;
+    }
+
     .nav-link.active {
         background-color: #A00043;
         border-radius: 50px;
@@ -823,7 +1044,6 @@ br {
     .card {
         background-color: #A00043;
         color: #ffff;
-        margin-top: 30px;
         border-radius: 15px;
     }
 
@@ -870,7 +1090,6 @@ br {
 
     .search-box {
         margin-top: 50px;
-        width: 820px;
         background-color: #ffff;
         border-radius: 50px;
         display: flex;
@@ -883,8 +1102,6 @@ br {
     .card-2 {
         background-color: #ffff;
         color: #A00043;
-        margin-left: -13%;
-        margin-top: 70px;
         border-radius: 15px;
     }
 
@@ -916,8 +1133,8 @@ br {
         background-color: #A00043;
         background-image: url(../images/bg.png);
         background-size: cover;
-        height: 800px;
-        margin-top: 100px;
+        margin-top: 5rem;
+        height: 100vh;
     }
 
     .jumbotron .display-4 {
@@ -926,15 +1143,11 @@ br {
         text-align: center;
         font-weight: bold;
         font-size: 30px;
-        padding-top: 175px;
     }
 
     .jumbotron iframe {
-        width: 560px;
+        width: 100%;
         height: 315px;
-        margin-top: -450px;
-        margin-left: 50px;
-        position: absolute;
     }
 
     .jumbotron img {
@@ -943,8 +1156,6 @@ br {
 
     .container .reason {
         color: #ffff;
-        margin-left: 70%;
-        margin-top: -33%;
     }
 
     .reason h5 {
@@ -979,15 +1190,6 @@ br {
 
     /* End Jumbotron */
 
-    /* Jumbotron 2 */
-    .jumbotron-2 {
-        background-color: #A00043;
-        background-image: url(../images/bg.png);
-        background-size: cover;
-        height: 800px;
-        margin-top: 200px;
-    }
-
     .jumbotron-2 .display-4 {
         font-family: Inter;
         color: #ffff;
@@ -1003,12 +1205,6 @@ br {
         margin-top: 50px;
         margin-left: 50px;
         position: absolute;
-    }
-
-    .container .reason-2 {
-        color: #ffff;
-        margin-left: 60%;
-        margin-top: -397px;
     }
 
     .reason-2 h5 {
@@ -1050,16 +1246,9 @@ br {
     /* End Jumbotron 2 */
 
     /* Carousel */
-    .inner-2 {
-        margin-top: 50px;
-        width: 560px;
-        height: 315px;
-        border-radius: 12px
-    }
-
     .indicators-2 {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         margin-left: 250px;
     }
     /* End Carousel */
@@ -1149,7 +1338,6 @@ br {
         font-weight: bolder;
         color: #A00043;
         text-align: center;
-        margin-top: 50px;
     }
 
     .heading-4 img {
@@ -1158,7 +1346,6 @@ br {
 
     .heading-4 hr {
         margin-top: 15px;
-        margin-left: 500px;
         width: 300px;
         color: #A00043;
         background-color: #A00043;
@@ -1171,33 +1358,8 @@ br {
         font-size: 20px;
         font-weight: bold;
         color: #A00043;
-        margin-top: -360px;
-        text-align: right;
-        margin-left: -435px;
-
     }
     /* End Heading 5 */
-
-    /* Komplain */
-    .cs {
-        margin-top: -170px;
-        margin-left: 90px;
-        display: inline;
-    } 
-
-    .form-control-2 {
-        margin-top: 10px;
-        width: 377px;
-        height: 37px;
-        border-radius: 8px;
-        border: solid;
-        border-color: #A00043;
-        font-family: Inter;
-        font-size: 13px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 680px;
-    }
     
     .textarea {
         height: 80px;
@@ -1210,8 +1372,6 @@ br {
         border-radius: 8px;
         font-family: Inter;
         font-size: 15px;
-        margin-left: 750px;
-        margin-top: 25px;
         border: solid;
         border-color: #A00043 !important;
     }
@@ -1222,24 +1382,6 @@ br {
     }
 
     /* End Komplain */
-
-    /* Heading 6 */
-    .heading-6 {
-        font-family: Inter;
-        font-size: 18px;
-        color: #A00043;
-        text-align: center;
-        margin-top: 100px;
-    }
-
-    .heading-6 hr {
-        margin-top: 30px;
-        margin-left: 240px;
-        width: 800px;
-        color: #A00043;
-        background-color: #A00043;
-    }
-    /* End Heading 6 */
 
     /* Card 4 */
     .card-4 {
@@ -1278,11 +1420,8 @@ br {
     .jumbotron-3 {
         background-color: #A00043;
         background-size: cover;
-        height: 600px;
-        margin-top: 100px;
         color: #ffff;
         font-family: Inter;
-        padding-left: 100px;
     }
 
     .jumbotron-3 .display-4 {
@@ -1510,9 +1649,7 @@ br {
         border-color: #BBBBBB !important;
     }
 
-    .header-1 {
-        margin-bottom: 20px;
-    }
+    
 
     .bodyy-1 {
         background-color: #F1F1F1;

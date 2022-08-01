@@ -211,7 +211,7 @@
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="foto" class="form-label">Foto Slider</label>
-                                    <input class="form-control" type="file" id="foto" name="foto" value="{{asset('storage/imgslider/') . $slider->foto}}">
+                                    <input class="form-control" type="file" id="foto" name="foto" value="{{asset('storage/slider/') . $slider->foto}}">
                                   </div>                                  
                                 <button style="margin-left: 550px" type="submit" class="btn btn-success">Simpan</button>
                             </div>

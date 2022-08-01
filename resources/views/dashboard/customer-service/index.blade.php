@@ -18,6 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
 
@@ -92,7 +95,7 @@
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
+            <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="/pulsa-h2h-setting">
                     <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
@@ -126,9 +129,9 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/footer-setting">
                     <i class=""><img src="images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+                    <span>Footer</span></a>
             </li>
 
         </ul>
@@ -195,13 +198,6 @@
                         </script>
                     </div>
 
-                    <a href="{{route('customer-service-setting.create')}}" class="text-decoration-none">
-                        <button type="button" style="border-color: #A00043; color:#A00043; margin-top: 20px;" class="btn d-block">
-                            <img src="/images/add.png" alt="add"> 
-                                Add Product
-                        </button>
-                        </a>
-
                     <br>
 
                     <div class="container">
@@ -231,10 +227,17 @@
                                     <tr>
                                         <td> {{$customerservicesetting->nama}} </td>
                                         <td> {{$customerservicesetting->nomor}} </td>
-                                        <td>
+                                        <td colspan="2">
+                                            <form action="{{route('customer-service-setting.destroy', $customerservicesetting->id)}}" method="POST">
                                             <a href="{{route('customer-service-setting.edit', $customerservicesetting->id )}}" class="text-decoration-none">
                                                 <img src="/images/edit.png" alt="edit">
                                             </a>
+                                            @csrf
+                                            @method('DELETE')
+                                            <button style="border: transparent; background: transparent" type="submit">
+                                                <img src="/images/delete.png" alt="delete">
+                                            </button>
+                                            </form>
                                         </td>
                                      </tr>
                                     @endforeach
@@ -294,6 +297,9 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 

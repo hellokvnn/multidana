@@ -1,54 +1,47 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Multidana</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    {{-- Jumbotron 3 --}}
-    <div class="jumbotron-3">
-        <div class="container">
-            <h1 class="display-4"></h1>
-            <div class="container">
-                <img src="images/logofooter.png" alt="logofooter">
+<div class="jumbotron-3 py-4">
+    <div class="container">
+        <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between">
+            @php $footers = App\Models\Footer::all(); @endphp
+            @foreach ($footers as $footer)
+            <div>
+                <img src="{{asset('storage/' . $footer->logo)}}" alt="logofooter">
                 <p class="text-footer">2022 PT Multidana Payment</p>
-                <br>
-                <h5>Kota Makasar</h5>
-                <p>Jl. Makasar no. 78 <br>
-                    Sulawesi Selatan
-                </p>
-                <p>
-                Telp : (021) 9990920 <br>
-                Fax : (021) 9990920 <br>
-                Email : csmultidana@office.com
-                </p>
-                <p>
-                Solution Centre : 1500-399 <br>
-                WhatsApp : 0824 2321 3123
-                </p>
-            </div>
-        </div>
-        <div class="container-footer">
-            <div class="container">
-                <img src="images/whatsapp.png" alt="whatsapp">
-                <p>Tentang kami</p>
-                <p>Layanan Multidana</p>
-                <p>Jaringan</p>
-                <p>Kontak</p>
-                <img class="img-footer-1" src="images/instagram.png" alt="instagram">
-                <img class="img-footer-2" src="images/twitter.png" alt="twitter">
-            </div>
-        </div>
-    </div>
-    {{-- End Jumbotron 3 --}}
-  
-  
-    <div class="container mt-4">
-        @yield('container')
-    </div>
+                <h5>Kota {{$footer->kota}}</h5>
 
-</body>
-</html>
+                <p>{{$footer->alamat}}</p>
+
+                <p>
+                    Telp : {{$footer->telp}} <br>
+                    Fax : {{$footer->fax}} <br>
+                    Email : {{$footer->email}}
+                </p>
+
+                <p>
+                    Solution Centre : {{$footer->solution_centre}} <br>
+                    WhatsApp : {{$footer->whatsapp}}
+                </p>
+            </div>
+
+            <div>
+                <a href="{{$footer->link_whatsapp}}" target="_blank" class="text-decoration-none">
+                    <img src="/images/whatsapp.png" alt="whatsapp">
+                </a>
+                <p id="section4"><a href="#download-app" style="color: #fff" class="text-decoration-none">Tentang kami</a></p>
+                <p id="section5"><a href="#about" style="color: #fff" class="text-decoration-none">Layanan Multidana</a></p>
+                <p id="section6"><a href="#jaringan" style="color: #fff" class="text-decoration-none">Jaringan</p>
+                <p id="section7"><a href="#kontak-kami" style="color: #fff" class="text-decoration-none">Kontak</a></p>
+
+                <div class="socmed-icon">
+                    <a href="{{$footer->link_instagram}}" target="_blank" class="text-decoration-none">
+                        <img class="img-footer-1" src="/images/instagram.png" alt="instagram">
+                    </a>
+
+                    <a href="{{$footer->link_twitter}}" target="_blank" class="text-decoration-none">
+                    <img class="img-footer-2" src="/images/twitter.png" alt="twitter">
+                    </a>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>

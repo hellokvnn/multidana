@@ -60,14 +60,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="/tentang">
+                <a class="nav-link" href="/layanan-setting">
                     <i class=""></i>
                     <span>Layanan</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="/tentang">
+                <a class="nav-link" href="/tentang-setting">
                     <i class=""></i>
                     <span>Tentang</span></a>
             </li>
@@ -126,9 +126,9 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/footer-setting">
                     <i class=""><img src="/images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+                    <span>Footer</span></a>
             </li>
 
         </ul>

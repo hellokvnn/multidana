@@ -37,7 +37,7 @@
               <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ ($title === "About") ? 'active' : '' }}"  href="/about">About</a>
+              <a class="nav-link {{ ($title === "About") ? 'active' : '' }}"  href="/#about">About</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link {{ ($title === "Voucher Games") ? 'active' : '' }} dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,13 +53,29 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ ($title === "Download App") ? 'active' : '' }}" href="/download-app">Download App</a>
+              <a class="nav-link {{ ($title === "Download App") ? 'active' : '' }}" href="/#download-app">Download App</a>
             </li>
+            <li class="nav-item {{ ($title === "Pulsa H2H") ? 'active' : '' }} dropdown">
+                <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pulsa H2H
+                </a>
+    
+                @php $lists = App\Models\PulsaH2H::all(); @endphp
+    
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  @foreach ($lists as $list)
+                    <li><a class="dropdown-item" href="/pulsa-h2h-list/{{$list->id}}">{{ $list->title }}</a></li>
+                  @endforeach
+                  <!-- <li><a class="dropdown-item" href="/pulsa-telepon">Pulsa Telepon</a></li>
+                  <li><a class="dropdown-item" href="/pln-tv-kabel">PLN TV Kabel</a></li>
+                  <li><a class="dropdown-item" href="/voucher-games">Voucher Games</a></li>
+                  <li><a class="dropdown-item" href="/produk-multibiller">Produk Multibiller</a></li>
+                  <li><a class="dropdown-item" href="/topup-e-money">Top-Up E-Money</a></li>
+                  <li><a class="dropdown-item" href="#">Tiket Kereta</a></li> -->
+                </ul>
+              </li>
             <li class="nav-item">
-              <a class="nav-link {{ ($title === "Pulsa H2H") ? 'active' : '' }}" href="/pulsa-h2h">Pulsa H2H</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {{ ($title === "Kontak Kami") ? 'active' : '' }}" href="/kontak-kami">Kontak Kami</a>
+              <a class="nav-link {{ ($title === "Kontak Kami") ? 'active' : '' }}" href="/#kontak-kami">Kontak Kami</a>
             </li>
           </ul>
         </div>

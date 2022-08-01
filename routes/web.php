@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\PulsaController;
 use App\Http\Controllers\IndosatController;
 use App\Http\Controllers\IndosatPlnController;
@@ -71,7 +72,13 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PulsaH2HClientController;
 use App\Http\Controllers\PulsaH2HController;
 use App\Http\Controllers\PulsaH2HItemAdminController;
+use App\Http\Controllers\TiketKeretaController;
+use App\Http\Controllers\LayananController;
+use App\Http\Controllers\TentangController;
+use App\Http\Controllers\ProfilAplikasiController;
+use App\Http\Controllers\FooterController;
 use App\Models\PulsaH2H;
+use App\Models\Footer;
 
 use Illuminate\Support\Facades\Route;
 
@@ -332,6 +339,16 @@ Route::middleware(['auth'])->group(function(){
 
     Route::resource('pulsa-h2h-item-setting', PulsaH2HItemAdminController::class);
 
+    Route::resource('tiket-kereta-setting', TiketKeretaController::class);
+
+    Route::resource('layanan-setting', LayananController::class);
+
+    Route::resource('tentang-setting', TentangController::class);
+
+    Route::resource('profil-aplikasi-setting', ProfilAplikasiController::class);
+
+    Route::resource('footer-setting', FooterController::class);
+
 });
 
 Route::get('pulsa-h2h-list/{id}', [PulsaH2HClientController::class, 'index']);
@@ -345,6 +362,8 @@ Route::get('voucher-games', [VoucherGamesController::class, 'index']);
 Route::get('produk-multibiller', [MultibillerController::class, 'index']);
 
 Route::get('topup-e-money', [TopupController::class, 'index']);
+
+Route::get('tiket-kereta', [TiketKeretaController::class, 'index2']);
 
 Route::get('', [MainController::class, 'index']);
 

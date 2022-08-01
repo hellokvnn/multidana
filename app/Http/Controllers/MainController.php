@@ -7,14 +7,18 @@ use App\Models\CekSaldo;
 use App\Models\CekTagihanPembayaran;
 use App\Models\CustomerServiceSetting;
 use App\Models\DepositViaTiket;
+use App\Models\Footer;
 use App\Models\GantiPin;
 use App\Models\KomlainFormat;
 use App\Models\Komplain;
+use App\Models\Layanan;
 use App\Models\MarkupGlobal;
 use App\Models\MarkupSpesifik;
 use App\Models\PembayaranPascabayar;
+use App\Models\ProfilAplikasi;
 use App\Models\RekapTransaksi;
 use App\Models\Slider;
+use App\Models\Tentang;
 use App\Models\TransaksiPulsa;
 use App\Models\TransferDeposit;
 use Illuminate\Http\Request;
@@ -44,7 +48,11 @@ class MainController extends Controller
             "markupspesifiks" => MarkupSpesifik::all(),
             "customerservicesettings" => CustomerServiceSetting::all(),
             "komplains" => Komplain::all(),
-            "sliders" => Slider::all()
+            "sliders" => Slider::all(),
+            "layanans" => Layanan::all(),
+            "tentangs" => Tentang::all(),
+            "profilaplikasis" => ProfilAplikasi::all(),
+            "footers" => Footer::all()
         ]);
     }
 

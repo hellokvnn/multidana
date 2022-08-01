@@ -126,9 +126,9 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/footer-setting">
                     <i class=""><img src="images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+                    <span>Footer</span></a>
             </li>
 
         </ul>
@@ -194,12 +194,14 @@
                     document.getElementById("tanggalwaktu").innerHTML =" "+tanggal+" "+bulanarray[bulan]+" "+tahun;
                     </script>
 
+                    <div class="row col">
                     <a href="{{route('slider-setting.create')}}" class="text-decoration-none">
                         <button type="button" style="border-color: #A00043; color:#A00043; margin-top: 20px;" class="btn d-block">
                             <img src="/images/add.png" alt="add"> 
                                 Add Slider
                         </button>
-                        </a>
+                    </a>
+                    </div>
 
                     <br>
 
@@ -233,29 +235,15 @@
                                         <td> {{$slider->nama}} </td>
                                         <td> <img width="162px" height="51px" style="object-fit: cover" src="{{asset('storage/' . $slider->foto)}}"> </td>
                                         <td colspan="2">
+                                            <form action="{{route('slider-setting.destroy', $slider->id)}}" method="POST">
                                             <a href="{{route('slider-setting.edit', $slider->id )}}" class="text-decoration-none">
                                                 <img src="/images/edit.png" alt="edit">
                                             </a>
-                                            <button style="border: transparent" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button style="border: transparent; background: transparent;" type="submit" class="btn">
                                                 <img src="/images/delete.png" alt="delete">
                                             </button>
-                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                  <div class="modal-content">
-                                                    <div class="modal-header">
-                                                      <h5 class="modal-title" id="exampleModalLabel">Are You Sure?</h5>
-                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <form action="{{route('slider-setting.destroy', $slider->id)}}" method="POST">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button style="border: transparent" type="submit" class="btn btn-danger">Delete</button>
-                                                        </form>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </td>
                                     </tr>
                                     @endforeach

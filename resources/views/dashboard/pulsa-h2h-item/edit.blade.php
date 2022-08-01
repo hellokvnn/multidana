@@ -53,28 +53,28 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item pl-5">
-                <a class="nav-link" href="/slider">
+                <a class="nav-link" href="/slider-setting">
                     <i class=""></i>
                     <span>Slider</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/layanan-setting">
                     <i class=""></i>
                     <span>Layanan</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/tentang-setting">
                     <i class=""></i>
                     <span>Tentang</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px" class="nav-item pl-5">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/profil-aplikasi-setting">
                     <i class=""></i>
                     <span>Profil Aplikasi</span></a>
             </li>
@@ -93,14 +93,14 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="/pulsa-h2h-setting">
                     <i class=""><img src="/images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/format-setting">
                     <i class=""><img src="/images/pulsah2h.png" alt="formattransaksi"></i>
                     <span>Format Transaksi</span></a>
             </li>
@@ -112,23 +112,23 @@
 
             <!-- Nav Item - Dashboard -->
             <li style="padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/komplain">
                     <i class=""><img src="/images/komplain-icon.png" alt="komplainicon"></i>
                     <span>Komplain</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: -10px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/customer-service-setting">
                     <i class=""><img src="/images/cs-admin.png" alt="csadmin"></i>
                     <span>Customer Service</span></a>
             </li>
 
             <!-- Nav Item - Dashboard -->
             <li style="margin-top: 20px; padding-left: 30px" class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/footer-setting">
                     <i class=""><img src="/images/setting.png" alt="setting"></i>
-                    <span>Setting</span></a>
+                    <span>Footer</span></a>
             </li>
 
         </ul>
