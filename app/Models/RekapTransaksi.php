@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class RekapTransaksi extends Model
 {
-    protected $fillable = ['format', 'contoh', 'desc'];
+    protected $fillable = ['format', 'contoh', 'title', 'desc'];
 }

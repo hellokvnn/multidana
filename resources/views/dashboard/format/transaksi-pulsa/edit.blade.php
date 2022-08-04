@@ -92,7 +92,7 @@
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
+            <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="/pulsa-h2h-setting">
                     <i class=""><img src="/images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
@@ -106,7 +106,7 @@
             </li>
 
             <!-- Heading -->
-            <div class="sidebar-heading pl-5 mb-2 mt-4">
+            <div style="margin-top: 30px" class="sidebar-heading pl-5 mb-2">
                 Service
             </div>
 
@@ -180,7 +180,7 @@
 
                     <!-- Page Heading -->
                     <div>
-                        <h1 style="color: black" class="h3 mb-4">Edit Transaksi Pulsa</h1>
+                        <h1 style="color: black" class="h3 mb-4">Edit Transaksi Pulsa Format</h1>
                         <p style="text-align: right; margin-top: -55px; margin-right: 20px"><span id="tanggalwaktu"></span></p>
                         <script>
                         var tw = new Date();
@@ -211,11 +211,15 @@
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="contoh">Contoh</label>
-                                    <input type="text" class="form-control" name="contoh" value="{{$transaksipulsa->Contoh}}">
+                                    <input type="text" class="form-control" name="contoh" value="{{$transaksipulsa->contoh}}">
                                 </div>
                                 <div class="form-group mb-4">
-                                    <label for="description">Description</label>
-                                    <textarea class="form-control" style="height: 100px;" name="description"> {{$ceksaldo->desc}} </textarea>
+                                    <label for="title">Judul</label>
+                                    <input type="text" class="form-control" name="title" value="{{$transaksipulsa->title}}">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="desc">Description</label>
+                                    <textarea class="form-control" style="height: 100px;" name="desc"> {{$transaksipulsa->desc}} </textarea>
                                 </div>
                                 <button style="margin-left: 550px" type="submit" class="btn btn-success">Simpan</button>
                             </div>

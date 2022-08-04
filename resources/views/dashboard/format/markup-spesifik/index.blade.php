@@ -92,7 +92,7 @@
             </li>
 
             <!-- Nav Item - Dashboard -->
-            <li style="margin-top: -5x; padding-left: 30px" class="nav-item">
+            <li style="margin-top: -5px; padding-left: 30px" class="nav-item">
                 <a class="nav-link" href="/pulsa-h2h-setting">
                     <i class=""><img src="images/pulsah2h.png" alt="pulsah2h"></i>
                     <span>Pulsa House to House</span></a>
@@ -106,7 +106,7 @@
             </li>
 
             <!-- Heading -->
-            <div class="sidebar-heading pl-5 mb-2 mt-4">
+            <div style="margin-top: 30px" class="sidebar-heading pl-5 mb-2">
                 Service
             </div>
 
@@ -220,6 +220,7 @@
                                     <tr>
                                         <th scope="col">Format</th>
                                         <th scope="col">Contoh</th>
+                                        <th scope="col">Judul</th>
                                         <th scope="col">Description</th>
                                         <th scope="col"></th>
                                     </tr>
@@ -229,6 +230,7 @@
                                     <tr>
                                         <td> {{$markupspesifik->format}} </td>
                                         <td> {{$markupspesifik->contoh}} </td>
+                                        <td> {{$markupspesifik->title}} </td>
                                         <td> {{$markupspesifik->desc}}  </td>
                                         <td>
                                             <a href="{{route('markup-spesifik-format.edit', $markupspesifik->id )}}" class="text-decoration-none">

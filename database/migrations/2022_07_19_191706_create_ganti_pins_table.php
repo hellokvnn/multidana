@@ -17,6 +17,7 @@ class CreateGantiPinsTable extends Migration
             $table->bigIncrements('id');
             $table->string('format', 30);
             $table->string('contoh', 30);
+            $table->string('title', 30);
             $table->string('desc', 255);
             $table->timestamps();
         });

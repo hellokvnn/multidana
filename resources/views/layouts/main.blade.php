@@ -36,7 +36,7 @@
           </div>
           <div class="carousel-inner inner-1">
             @foreach ($sliders as $slider)
-            <div class="carousel-item active" data-bs-interval="2000">
+            <div class="carousel-item active" data-bs-interval="5000">
               <img src="{{asset('storage/' . $slider->foto)}}" width="500px" height="400px" class="d-block w-100">
             </div>
             @endforeach
@@ -334,7 +334,7 @@
 
             <div class="carousel-inner inner-2 mt-5">
               @foreach ($profilaplikasis as $profilaplikasi)
-              <div class="carousel-item active carousel-item-1" data-bs-interval="2000">
+              <div class="carousel-item active carousel-item-1" data-bs-interval="5000">
                 <img src="{{asset('storage/' . $profilaplikasi->foto)}}" class="d-block w-100" alt="test">
               </div>
               @endforeach
@@ -407,7 +407,7 @@
                     </div>
                   </form>
                   <div class="container heading-8">
-                    <h4>Cek Saldo</h4>
+                    <h4>{{$transaksipulsa->title}}</h4>
                     <p>{!!$transaksipulsa->desc!!}</p>
                   </div>
                   @endforeach 
@@ -444,7 +444,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$ceksaldo->title}}</h4>
                   <p>{!!$ceksaldo->desc!!}</p>
                 </div>
                 @endforeach 
@@ -481,7 +481,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$depositviatiket->title}}</h4>
                   <p>{!!$depositviatiket->desc!!}</p>
                 </div>
                 @endforeach 
@@ -518,7 +518,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$gantipin->title}}</h4>
                   <p>{!!$gantipin->desc!!}</p>
                 </div>
                 @endforeach 
@@ -561,7 +561,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$rekaptransaksi->title}}</h4>
                   <p>{!!$rekaptransaksi->desc!!}</p>
                 </div>
                 @endforeach 
@@ -598,7 +598,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$komplainformat->title}}</h4>
                   <p>{!!$komplainformat->desc!!}</p>
                 </div>
                 @endforeach 
@@ -635,7 +635,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$cektagihanpembayaran->title}}</h4>
                   <p>{!!$cektagihanpembayaran->desc!!}</p>
                 </div>
                 @endforeach 
@@ -672,7 +672,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$pembayaranpascabayar->title}}</h4>
                   <p>{!!$pembayaranpascabayar->desc!!}</p>
                 </div>
                 @endforeach 
@@ -715,7 +715,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$cekhargaproduk->title}}</h4>
                   <p>{!!$cekhargaproduk->desc!!}</p>
                 </div>
                 @endforeach 
@@ -752,7 +752,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$transferdeposit->title}}</h4>
                   <p>{!!$transferdeposit->desc!!}</p>
                 </div>
                 @endforeach 
@@ -789,7 +789,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$markupglobal->title}}</h4>
                   <p>{!!$markupglobal->desc!!}</p>
                 </div>
                 @endforeach 
@@ -826,7 +826,7 @@
                   </div>
                 </form>
                 <div class="container heading-8">
-                  <h4>Cek Saldo</h4>
+                  <h4>{{$markupspesifik->title}}</h4>
                   <p>{!!$markupspesifik->desc!!}</p>
                 </div>
                 @endforeach 
