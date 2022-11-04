@@ -108,6 +108,8 @@ class ProfilAplikasiController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $profilaplikasi = ProfilAplikasi::find($id);
+        $profilaplikasi->delete();
+        return redirect('profil-aplikasi-setting')->with('status', 'Data Berhasil Dihapus !');;
     }
 }

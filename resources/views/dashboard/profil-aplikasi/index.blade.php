@@ -242,9 +242,16 @@
                                                 <img width="250px" height="100px" style="object-fit: cover" src="{{asset('storage/' . $profilaplikasi->foto)}}">
                                             </td>
                                             <td>
+                                                <form action="{{route('profil-aplikasi-setting.destroy', $profilaplikasi->id)}}" method="POST">
                                                 <a href="{{route('profil-aplikasi-setting.edit', $profilaplikasi->id )}}" class="text-decoration-none">
                                                     <img src="/images/edit.png" alt="edit">
                                                 </a>
+                                                @csrf
+                                                @method('DELETE')
+                                                <button style="border: transparent; background: transparent;" type="submit" class="btn">
+                                                    <img src="/images/delete.png" alt="delete">
+                                                </button>
+                                                </form>
                                             </td>
                                         </tr>
                                         @endforeach

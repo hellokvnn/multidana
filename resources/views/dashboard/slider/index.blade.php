@@ -244,6 +244,7 @@
                                             <button style="border: transparent; background: transparent;" type="submit" class="btn">
                                                 <img src="/images/delete.png" alt="delete">
                                             </button>
+                                            </form>
                                         </td>
                                     </tr>
                                     @endforeach
